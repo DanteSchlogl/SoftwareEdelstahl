@@ -1,0 +1,8 @@
+<Solution>
+  <Project Path="Edelstahl.BLL/Edelstahl.BLL.csproj" />
+  <Project Path="Edelstahl.DAL/Edelstahl.DAL.csproj" />
+  <Project Path="Edelstahl.Domain/Edelstahl.Domain.csproj" />
+  <Project Path="Edelstahl.Services/Edelstahl.Services.csproj" />
+  <Project Path="Edelstahl.Test/Edelstahl.Test.csproj" />
+  <Project Path="Edelstahl.WinApp/Edelstahl.WinApp.csproj" />
+</Solution>

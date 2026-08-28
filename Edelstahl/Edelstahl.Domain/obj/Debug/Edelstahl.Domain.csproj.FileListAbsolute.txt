@@ -1,0 +1,6 @@
+C:\Users\Dana Eilin\Documents\Edelstahl\Edelstahl\Edelstahl.Domain\bin\Debug\Edelstahl.Domain.dll
+C:\Users\Dana Eilin\Documents\Edelstahl\Edelstahl\Edelstahl.Domain\bin\Debug\Edelstahl.Domain.pdb
+C:\Users\Dana Eilin\Documents\Edelstahl\Edelstahl\Edelstahl.Domain\obj\Debug\Edelstahl.Domain.csproj.AssemblyReference.cache
+C:\Users\Dana Eilin\Documents\Edelstahl\Edelstahl\Edelstahl.Domain\obj\Debug\Edelstahl.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Dana Eilin\Documents\Edelstahl\Edelstahl\Edelstahl.Domain\obj\Debug\Edelstahl.Domain.dll
+C:\Users\Dana Eilin\Documents\Edelstahl\Edelstahl\Edelstahl.Domain\obj\Debug\Edelstahl.Domain.pdb

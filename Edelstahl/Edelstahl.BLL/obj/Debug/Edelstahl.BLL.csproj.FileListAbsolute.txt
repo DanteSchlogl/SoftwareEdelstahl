@@ -1,0 +1,13 @@
+C:\Users\Dana Eilin\Documents\Edelstahl\Edelstahl\Edelstahl.BLL\bin\Debug\Edelstahl.BLL.dll
+C:\Users\Dana Eilin\Documents\Edelstahl\Edelstahl\Edelstahl.BLL\bin\Debug\Edelstahl.BLL.pdb
+C:\Users\Dana Eilin\Documents\Edelstahl\Edelstahl\Edelstahl.BLL\bin\Debug\Edelstahl.DAL.dll
+C:\Users\Dana Eilin\Documents\Edelstahl\Edelstahl\Edelstahl.BLL\bin\Debug\Edelstahl.Domain.dll
+C:\Users\Dana Eilin\Documents\Edelstahl\Edelstahl\Edelstahl.BLL\bin\Debug\Edelstahl.Services.dll
+C:\Users\Dana Eilin\Documents\Edelstahl\Edelstahl\Edelstahl.BLL\bin\Debug\Edelstahl.DAL.pdb
+C:\Users\Dana Eilin\Documents\Edelstahl\Edelstahl\Edelstahl.BLL\bin\Debug\Edelstahl.Domain.pdb
+C:\Users\Dana Eilin\Documents\Edelstahl\Edelstahl\Edelstahl.BLL\bin\Debug\Edelstahl.Services.pdb
+C:\Users\Dana Eilin\Documents\Edelstahl\Edelstahl\Edelstahl.BLL\obj\Debug\Edelstahl.BLL.csproj.AssemblyReference.cache
+C:\Users\Dana Eilin\Documents\Edelstahl\Edelstahl\Edelstahl.BLL\obj\Debug\Edelstahl.BLL.csproj.CoreCompileInputs.cache
+C:\Users\Dana Eilin\Documents\Edelstahl\Edelstahl\Edelstahl.BLL\obj\Debug\Edelstah.8E8B15D1.Up2Date
+C:\Users\Dana Eilin\Documents\Edelstahl\Edelstahl\Edelstahl.BLL\obj\Debug\Edelstahl.BLL.dll
+C:\Users\Dana Eilin\Documents\Edelstahl\Edelstahl\Edelstahl.BLL\obj\Debug\Edelstahl.BLL.pdb

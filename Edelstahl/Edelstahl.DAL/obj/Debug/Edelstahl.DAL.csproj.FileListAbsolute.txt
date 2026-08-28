@@ -1,0 +1,11 @@
+C:\Users\Dana Eilin\Documents\Edelstahl\Edelstahl\Edelstahl.DAL\bin\Debug\Edelstahl.DAL.dll
+C:\Users\Dana Eilin\Documents\Edelstahl\Edelstahl\Edelstahl.DAL\bin\Debug\Edelstahl.DAL.pdb
+C:\Users\Dana Eilin\Documents\Edelstahl\Edelstahl\Edelstahl.DAL\bin\Debug\Edelstahl.Domain.dll
+C:\Users\Dana Eilin\Documents\Edelstahl\Edelstahl\Edelstahl.DAL\bin\Debug\Edelstahl.Services.dll
+C:\Users\Dana Eilin\Documents\Edelstahl\Edelstahl\Edelstahl.DAL\bin\Debug\Edelstahl.Domain.pdb
+C:\Users\Dana Eilin\Documents\Edelstahl\Edelstahl\Edelstahl.DAL\bin\Debug\Edelstahl.Services.pdb
+C:\Users\Dana Eilin\Documents\Edelstahl\Edelstahl\Edelstahl.DAL\obj\Debug\Edelstahl.DAL.csproj.AssemblyReference.cache
+C:\Users\Dana Eilin\Documents\Edelstahl\Edelstahl\Edelstahl.DAL\obj\Debug\Edelstahl.DAL.csproj.CoreCompileInputs.cache
+C:\Users\Dana Eilin\Documents\Edelstahl\Edelstahl\Edelstahl.DAL\obj\Debug\Edelstah.11F1D487.Up2Date
+C:\Users\Dana Eilin\Documents\Edelstahl\Edelstahl\Edelstahl.DAL\obj\Debug\Edelstahl.DAL.dll
+C:\Users\Dana Eilin\Documents\Edelstahl\Edelstahl\Edelstahl.DAL\obj\Debug\Edelstahl.DAL.pdb
