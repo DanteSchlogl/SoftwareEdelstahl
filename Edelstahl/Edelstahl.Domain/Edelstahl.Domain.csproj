@@ -42,6 +42,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Comercial\Cliente.cs" />
+    <Compile Include="Comercial\DetallePresupuesto.cs" />
+    <Compile Include="Comercial\EstadoPresupuesto.cs" />
+    <Compile Include="Comercial\Moneda.cs" />
+    <Compile Include="Comercial\Presupuesto.cs" />
+    <Compile Include="Comercial\TipoItemPresupuesto.cs" />
     <Compile Include="Common\Entity.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

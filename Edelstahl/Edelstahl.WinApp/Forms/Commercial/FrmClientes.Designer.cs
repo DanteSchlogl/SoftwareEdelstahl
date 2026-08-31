@@ -31,18 +31,18 @@
             this.lblTitulo = new System.Windows.Forms.Label();
             this.lblSubtitulo = new System.Windows.Forms.Label();
             this.grpDatosCliente = new System.Windows.Forms.GroupBox();
-            this.lblCUIT = new System.Windows.Forms.Label();
-            this.txtCUIT = new System.Windows.Forms.TextBox();
-            this.lblRazonSocial = new System.Windows.Forms.Label();
-            this.lblEmail = new System.Windows.Forms.Label();
-            this.lblTelefono = new System.Windows.Forms.Label();
-            this.txtRazonSocial = new System.Windows.Forms.TextBox();
-            this.txtEmail = new System.Windows.Forms.TextBox();
-            this.txtTelefono = new System.Windows.Forms.TextBox();
-            this.lblLocalidad = new System.Windows.Forms.Label();
-            this.lblLimiteCredito = new System.Windows.Forms.Label();
-            this.txtLocalidad = new System.Windows.Forms.TextBox();
             this.nudLimiteCredito = new System.Windows.Forms.NumericUpDown();
+            this.txtLocalidad = new System.Windows.Forms.TextBox();
+            this.lblLimiteCredito = new System.Windows.Forms.Label();
+            this.lblLocalidad = new System.Windows.Forms.Label();
+            this.txtTelefono = new System.Windows.Forms.TextBox();
+            this.txtEmail = new System.Windows.Forms.TextBox();
+            this.txtRazonSocial = new System.Windows.Forms.TextBox();
+            this.lblTelefono = new System.Windows.Forms.Label();
+            this.lblEmail = new System.Windows.Forms.Label();
+            this.lblRazonSocial = new System.Windows.Forms.Label();
+            this.txtCUIT = new System.Windows.Forms.TextBox();
+            this.lblCUIT = new System.Windows.Forms.Label();
             this.btnGuardar = new System.Windows.Forms.Button();
             this.btnRefrescar = new System.Windows.Forms.Button();
             this.lblListado = new System.Windows.Forms.Label();
@@ -54,6 +54,7 @@
             this.colEmail = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colLocalidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colRazonSocial = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnLimpiar = new System.Windows.Forms.Button();
             this.grpDatosCliente.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudLimiteCredito)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvClientes)).BeginInit();
@@ -104,102 +105,6 @@
             this.grpDatosCliente.TabStop = false;
             this.grpDatosCliente.Text = "Datos del cliente";
             // 
-            // lblCUIT
-            // 
-            this.lblCUIT.AutoSize = true;
-            this.lblCUIT.Location = new System.Drawing.Point(25, 38);
-            this.lblCUIT.Name = "lblCUIT";
-            this.lblCUIT.Size = new System.Drawing.Size(36, 15);
-            this.lblCUIT.TabIndex = 0;
-            this.lblCUIT.Text = "CUIT:";
-            // 
-            // txtCUIT
-            // 
-            this.txtCUIT.Location = new System.Drawing.Point(150, 34);
-            this.txtCUIT.MaxLength = 13;
-            this.txtCUIT.Name = "txtCUIT";
-            this.txtCUIT.Size = new System.Drawing.Size(230, 23);
-            this.txtCUIT.TabIndex = 0;
-            this.txtCUIT.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
-            // 
-            // lblRazonSocial
-            // 
-            this.lblRazonSocial.AutoSize = true;
-            this.lblRazonSocial.Location = new System.Drawing.Point(25, 78);
-            this.lblRazonSocial.Name = "lblRazonSocial";
-            this.lblRazonSocial.Size = new System.Drawing.Size(75, 15);
-            this.lblRazonSocial.TabIndex = 2;
-            this.lblRazonSocial.Text = "Razón social:";
-            // 
-            // lblEmail
-            // 
-            this.lblEmail.AutoSize = true;
-            this.lblEmail.Location = new System.Drawing.Point(25, 118);
-            this.lblEmail.Name = "lblEmail";
-            this.lblEmail.Size = new System.Drawing.Size(46, 15);
-            this.lblEmail.TabIndex = 3;
-            this.lblEmail.Text = "Correo:";
-            // 
-            // lblTelefono
-            // 
-            this.lblTelefono.AutoSize = true;
-            this.lblTelefono.Location = new System.Drawing.Point(25, 158);
-            this.lblTelefono.Name = "lblTelefono";
-            this.lblTelefono.Size = new System.Drawing.Size(56, 15);
-            this.lblTelefono.TabIndex = 4;
-            this.lblTelefono.Text = "Teléfono:";
-            this.lblTelefono.Click += new System.EventHandler(this.label3_Click);
-            // 
-            // txtRazonSocial
-            // 
-            this.txtRazonSocial.Location = new System.Drawing.Point(150, 74);
-            this.txtRazonSocial.MaxLength = 150;
-            this.txtRazonSocial.Name = "txtRazonSocial";
-            this.txtRazonSocial.Size = new System.Drawing.Size(400, 23);
-            this.txtRazonSocial.TabIndex = 1;
-            // 
-            // txtEmail
-            // 
-            this.txtEmail.Location = new System.Drawing.Point(150, 114);
-            this.txtEmail.MaxLength = 100;
-            this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(400, 23);
-            this.txtEmail.TabIndex = 2;
-            // 
-            // txtTelefono
-            // 
-            this.txtTelefono.Location = new System.Drawing.Point(150, 154);
-            this.txtTelefono.MaxLength = 50;
-            this.txtTelefono.Name = "txtTelefono";
-            this.txtTelefono.Size = new System.Drawing.Size(230, 23);
-            this.txtTelefono.TabIndex = 3;
-            // 
-            // lblLocalidad
-            // 
-            this.lblLocalidad.AutoSize = true;
-            this.lblLocalidad.Location = new System.Drawing.Point(590, 34);
-            this.lblLocalidad.Name = "lblLocalidad";
-            this.lblLocalidad.Size = new System.Drawing.Size(61, 15);
-            this.lblLocalidad.TabIndex = 8;
-            this.lblLocalidad.Text = "Localidad:\n";
-            // 
-            // lblLimiteCredito
-            // 
-            this.lblLimiteCredito.AutoSize = true;
-            this.lblLimiteCredito.Location = new System.Drawing.Point(590, 78);
-            this.lblLimiteCredito.Name = "lblLimiteCredito";
-            this.lblLimiteCredito.Size = new System.Drawing.Size(99, 15);
-            this.lblLimiteCredito.TabIndex = 9;
-            this.lblLimiteCredito.Text = "Límite de crédito:";
-            // 
-            // txtLocalidad
-            // 
-            this.txtLocalidad.Location = new System.Drawing.Point(720, 34);
-            this.txtLocalidad.MaxLength = 100;
-            this.txtLocalidad.Name = "txtLocalidad";
-            this.txtLocalidad.Size = new System.Drawing.Size(350, 23);
-            this.txtLocalidad.TabIndex = 4;
-            // 
             // nudLimiteCredito
             // 
             this.nudLimiteCredito.Location = new System.Drawing.Point(720, 74);
@@ -213,6 +118,100 @@
             this.nudLimiteCredito.TabIndex = 5;
             this.nudLimiteCredito.ThousandsSeparator = true;
             // 
+            // txtLocalidad
+            // 
+            this.txtLocalidad.Location = new System.Drawing.Point(720, 34);
+            this.txtLocalidad.MaxLength = 100;
+            this.txtLocalidad.Name = "txtLocalidad";
+            this.txtLocalidad.Size = new System.Drawing.Size(350, 23);
+            this.txtLocalidad.TabIndex = 4;
+            // 
+            // lblLimiteCredito
+            // 
+            this.lblLimiteCredito.AutoSize = true;
+            this.lblLimiteCredito.Location = new System.Drawing.Point(590, 78);
+            this.lblLimiteCredito.Name = "lblLimiteCredito";
+            this.lblLimiteCredito.Size = new System.Drawing.Size(99, 15);
+            this.lblLimiteCredito.TabIndex = 9;
+            this.lblLimiteCredito.Text = "Límite de crédito:";
+            // 
+            // lblLocalidad
+            // 
+            this.lblLocalidad.AutoSize = true;
+            this.lblLocalidad.Location = new System.Drawing.Point(590, 34);
+            this.lblLocalidad.Name = "lblLocalidad";
+            this.lblLocalidad.Size = new System.Drawing.Size(61, 15);
+            this.lblLocalidad.TabIndex = 8;
+            this.lblLocalidad.Text = "Localidad:";
+            // 
+            // txtTelefono
+            // 
+            this.txtTelefono.Location = new System.Drawing.Point(150, 154);
+            this.txtTelefono.MaxLength = 50;
+            this.txtTelefono.Name = "txtTelefono";
+            this.txtTelefono.Size = new System.Drawing.Size(230, 23);
+            this.txtTelefono.TabIndex = 3;
+            // 
+            // txtEmail
+            // 
+            this.txtEmail.Location = new System.Drawing.Point(150, 114);
+            this.txtEmail.MaxLength = 100;
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(400, 23);
+            this.txtEmail.TabIndex = 2;
+            // 
+            // txtRazonSocial
+            // 
+            this.txtRazonSocial.Location = new System.Drawing.Point(150, 74);
+            this.txtRazonSocial.MaxLength = 150;
+            this.txtRazonSocial.Name = "txtRazonSocial";
+            this.txtRazonSocial.Size = new System.Drawing.Size(400, 23);
+            this.txtRazonSocial.TabIndex = 1;
+            // 
+            // lblTelefono
+            // 
+            this.lblTelefono.AutoSize = true;
+            this.lblTelefono.Location = new System.Drawing.Point(25, 158);
+            this.lblTelefono.Name = "lblTelefono";
+            this.lblTelefono.Size = new System.Drawing.Size(56, 15);
+            this.lblTelefono.TabIndex = 4;
+            this.lblTelefono.Text = "Teléfono:";
+            // 
+            // lblEmail
+            // 
+            this.lblEmail.AutoSize = true;
+            this.lblEmail.Location = new System.Drawing.Point(25, 118);
+            this.lblEmail.Name = "lblEmail";
+            this.lblEmail.Size = new System.Drawing.Size(46, 15);
+            this.lblEmail.TabIndex = 3;
+            this.lblEmail.Text = "Correo:";
+            // 
+            // lblRazonSocial
+            // 
+            this.lblRazonSocial.AutoSize = true;
+            this.lblRazonSocial.Location = new System.Drawing.Point(25, 78);
+            this.lblRazonSocial.Name = "lblRazonSocial";
+            this.lblRazonSocial.Size = new System.Drawing.Size(75, 15);
+            this.lblRazonSocial.TabIndex = 2;
+            this.lblRazonSocial.Text = "Razón social:";
+            // 
+            // txtCUIT
+            // 
+            this.txtCUIT.Location = new System.Drawing.Point(150, 34);
+            this.txtCUIT.MaxLength = 13;
+            this.txtCUIT.Name = "txtCUIT";
+            this.txtCUIT.Size = new System.Drawing.Size(230, 23);
+            this.txtCUIT.TabIndex = 0;
+            // 
+            // lblCUIT
+            // 
+            this.lblCUIT.AutoSize = true;
+            this.lblCUIT.Location = new System.Drawing.Point(25, 38);
+            this.lblCUIT.Name = "lblCUIT";
+            this.lblCUIT.Size = new System.Drawing.Size(36, 15);
+            this.lblCUIT.TabIndex = 0;
+            this.lblCUIT.Text = "CUIT:";
+            // 
             // btnGuardar
             // 
             this.btnGuardar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(125)))), ((int)(((byte)(90)))));
@@ -224,14 +223,14 @@
             this.btnGuardar.TabIndex = 6;
             this.btnGuardar.Text = "Guardar cliente";
             this.btnGuardar.UseVisualStyleBackColor = false;
-            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click_1);
             // 
             // btnRefrescar
             // 
             this.btnRefrescar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
             this.btnRefrescar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRefrescar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(55)))), ((int)(((byte)(72)))));
-            this.btnRefrescar.Location = new System.Drawing.Point(315, 335);
+            this.btnRefrescar.Location = new System.Drawing.Point(307, 335);
             this.btnRefrescar.Name = "btnRefrescar";
             this.btnRefrescar.Size = new System.Drawing.Size(120, 38);
             this.btnRefrescar.TabIndex = 8;
@@ -244,7 +243,7 @@
             this.lblListado.Cursor = System.Windows.Forms.Cursors.Default;
             this.lblListado.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.lblListado.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(55)))), ((int)(((byte)(72)))));
-            this.lblListado.Location = new System.Drawing.Point(25, 395);
+            this.lblListado.Location = new System.Drawing.Point(21, 390);
             this.lblListado.Name = "lblListado";
             this.lblListado.Size = new System.Drawing.Size(139, 20);
             this.lblListado.TabIndex = 9;
@@ -269,13 +268,13 @@
             this.colEmail,
             this.colLocalidad,
             this.colRazonSocial});
-            this.dgvClientes.Location = new System.Drawing.Point(25, 425);
+            this.dgvClientes.Location = new System.Drawing.Point(25, 432);
             this.dgvClientes.MultiSelect = false;
             this.dgvClientes.Name = "dgvClientes";
             this.dgvClientes.ReadOnly = true;
             this.dgvClientes.RowHeadersVisible = false;
             this.dgvClientes.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvClientes.Size = new System.Drawing.Size(1120, 211);
+            this.dgvClientes.Size = new System.Drawing.Size(1120, 204);
             this.dgvClientes.TabIndex = 9;
             // 
             // colCUIT
@@ -327,11 +326,24 @@
             this.colRazonSocial.Name = "colRazonSocial";
             this.colRazonSocial.ReadOnly = true;
             // 
+            // btnLimpiar
+            // 
+            this.btnLimpiar.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnLimpiar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLimpiar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(55)))), ((int)(((byte)(72)))));
+            this.btnLimpiar.Location = new System.Drawing.Point(181, 335);
+            this.btnLimpiar.Name = "btnLimpiar";
+            this.btnLimpiar.Size = new System.Drawing.Size(120, 38);
+            this.btnLimpiar.TabIndex = 7;
+            this.btnLimpiar.Text = "Limpiar";
+            this.btnLimpiar.UseVisualStyleBackColor = false;
+            // 
             // FrmClientes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1163, 648);
+            this.Controls.Add(this.btnLimpiar);
             this.Controls.Add(this.dgvClientes);
             this.Controls.Add(this.lblListado);
             this.Controls.Add(this.btnRefrescar);
@@ -378,5 +390,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn colEmail;
         private System.Windows.Forms.DataGridViewTextBoxColumn colLocalidad;
         private System.Windows.Forms.DataGridViewTextBoxColumn colRazonSocial;
+        private System.Windows.Forms.Button btnLimpiar;
     }
 }

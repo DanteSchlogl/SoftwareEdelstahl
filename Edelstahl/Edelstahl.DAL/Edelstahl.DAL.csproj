@@ -43,8 +43,10 @@
   <ItemGroup>
     <Compile Include="Factory\FactoryDataAccess.cs" />
     <Compile Include="Implementations\Memory\ClienteRepositoryMemory.cs" />
+    <Compile Include="Implementations\Memory\PresupuestoRepositoryMemory.cs" />
     <Compile Include="Interfaces\IClienteRepository.cs" />
     <Compile Include="Interfaces\IGenericRepository.cs" />
+    <Compile Include="Interfaces\IPresupuestoRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

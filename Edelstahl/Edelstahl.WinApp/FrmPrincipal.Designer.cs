@@ -31,6 +31,8 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.mnuGestionComercia = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuClientes = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuPedidos = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuConfirmarPedido = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -48,7 +50,8 @@
             // mnuGestionComercia
             // 
             this.mnuGestionComercia.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.mnuClientes});
+            this.mnuClientes,
+            this.mnuPedidos});
             this.mnuGestionComercia.Name = "mnuGestionComercia";
             this.mnuGestionComercia.Size = new System.Drawing.Size(116, 20);
             this.mnuGestionComercia.Text = "Gestión Comercial";
@@ -59,6 +62,21 @@
             this.mnuClientes.Size = new System.Drawing.Size(180, 22);
             this.mnuClientes.Text = "Clientes";
             this.mnuClientes.Click += new System.EventHandler(this.mnuClientes_Click);
+            // 
+            // mnuPedidos
+            // 
+            this.mnuPedidos.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.mnuConfirmarPedido});
+            this.mnuPedidos.Name = "mnuPedidos";
+            this.mnuPedidos.Size = new System.Drawing.Size(180, 22);
+            this.mnuPedidos.Text = "Pedidos";
+            // 
+            // mnuConfirmarPedido
+            // 
+            this.mnuConfirmarPedido.Name = "mnuConfirmarPedido";
+            this.mnuConfirmarPedido.Size = new System.Drawing.Size(180, 22);
+            this.mnuConfirmarPedido.Text = "Confirmar pedido";
+            this.mnuConfirmarPedido.Click += new System.EventHandler(this.mnuConfirmarPedido_Click);
             // 
             // FrmPrincipal
             // 
@@ -85,6 +103,8 @@
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem mnuGestionComercia;
         private System.Windows.Forms.ToolStripMenuItem mnuClientes;
+        private System.Windows.Forms.ToolStripMenuItem mnuPedidos;
+        private System.Windows.Forms.ToolStripMenuItem mnuConfirmarPedido;
     }
 }
 

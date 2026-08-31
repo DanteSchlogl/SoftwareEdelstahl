@@ -3,6 +3,7 @@ using Edelstahl.BLL.Exceptions.Base;
 using Edelstahl.BLL.Services;
 using Edelstahl.Domain.Comercial;
 
+
 namespace Edelstahl.Test
 {
     internal class Program
@@ -12,92 +13,62 @@ namespace Edelstahl.Test
             ClienteService clienteService =
                 new ClienteService();
 
+            PresupuestoService presupuestoService =
+                new PresupuestoService();
+
             Cliente cliente = new Cliente
             {
-                CUIT = "20-29491211-9",
-                RazonSocial = "Cliente de prueba",
-                DireccionFacturacion = "Domicilio de prueba",
-                DireccionEntrega = "Domicilio de entrega",
-                Localidad = "Vicente Lopez",
-                Provincia = "Buenos Aires",
-                CodigoPostal = "1638",
-                Email = "cliente@ejemplo.com",
-                Telefono = "1112345678",
-                LimiteCredito = 500000m
+                CUIT = "30-87654321-0",
+                RazonSocial = "Industrias Delta SRL",
+                Email = "ventas@industriasdelta.test",
+                Telefono = "1145678901",
+                Localidad = "San Martín",
+                LimiteCredito = 850000m
             };
 
-            try
+            clienteService.Registrar(cliente);
+
+            presupuestoService
+                .CrearPresupuestosDemostracion(cliente.Id);
+
+            Console.WriteLine("PRESUPUESTOS DEL CLIENTE");
+            Console.WriteLine("------------------------");
+
+            foreach (Presupuesto presupuesto
+                in presupuestoService.ObtenerPorCliente(
+                    cliente.Id))
             {
-                Cliente clienteRegistrado =
-                    clienteService.Registrar(cliente);
-
-                // Realizo un prueba fuera de catch
-                //Cliente clienteDuplicado = new Cliente
-                //{
-                //    CUIT = "20294912119",
-                //    RazonSocial = "Otro cliente",
-                //    LimiteCredito = 100000m
-                //};
-                //clienteService.Registrar(clienteDuplicado);//
-                Console.WriteLine(
-                    "CLIENTE REGISTRADO MEDIANTE BLL");
-
-                Console.WriteLine(
-                    "------------------------------");
-
-                Console.WriteLine(
-                    $"Id: {clienteRegistrado.Id}");
-
-                Console.WriteLine(
-                    $"CUIT: {clienteRegistrado.CUIT}");
-
-                Console.WriteLine(
-                    $"Razon social: {clienteRegistrado.RazonSocial}");
-
-                Console.WriteLine(
-                    $"Activo: {clienteRegistrado.Activo}");
-
-                Console.WriteLine(
-                    $"Credito disponible: " +
-                    $"{clienteRegistrado.CalcularCreditoDisponible():N2}");
-
                 Console.WriteLine();
+                Console.WriteLine(
+                    $"Número: {presupuesto.Numero}");
 
                 Console.WriteLine(
-                    $"Total de clientes: " +
-                    $"{clienteService.ObtenerTodos().Count}");
-
-                Cliente clienteEncontrado =
-                    clienteService.ObtenerPorCUIT(
-                        clienteRegistrado.CUIT);
-
-                Console.WriteLine();
-                Console.WriteLine("BUSQUEDA MEDIANTE BLL");
-                Console.WriteLine("--------------------");
+                    $"Estado: {presupuesto.Estado}");
 
                 Console.WriteLine(
-                    clienteEncontrado != null
-                        ? clienteEncontrado.RazonSocial
-                        : "Cliente no encontrado");
-            }
-            catch (BusinessRuleException ex)
-            {
-                Console.WriteLine("REGLA DE NEGOCIO");
-                Console.WriteLine("----------------");
-                Console.WriteLine($"Codigo: {ex.Code}");
-                Console.WriteLine($"Mensaje: {ex.Message}");
-            }
-            catch (ArgumentException ex)
-            {
-                Console.WriteLine("VALIDACION RECHAZADA");
-                Console.WriteLine("--------------------");
-                Console.WriteLine(ex.Message);
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine("ERROR INESPERADO");
-                Console.WriteLine("----------------");
-                Console.WriteLine(ex.Message);
+                    $"Moneda: {presupuesto.Moneda}");
+
+                Console.WriteLine(
+                    $"Cantidad de detalles: " +
+                    $"{presupuesto.Detalles.Count}");
+
+                Console.WriteLine(
+                    $"Subtotal: " +
+                    $"{presupuesto.CalcularSubtotal():N2}");
+
+                Console.WriteLine(
+                    $"IVA: {presupuesto.CalcularIVA():N2}");
+
+                Console.WriteLine(
+                    $"Total: {presupuesto.CalcularTotal():N2}");
+
+                Console.WriteLine(
+                    $"Anticipo: " +
+                    $"{presupuesto.CalcularAnticipo():N2}");
+
+                Console.WriteLine(
+                    $"Puede confirmarse: " +
+                    $"{presupuesto.PuedeConfirmarse()}");
             }
 
             Console.WriteLine();

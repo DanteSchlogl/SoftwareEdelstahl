@@ -44,5 +44,25 @@ namespace Edelstahl.WinApp
 
             formulario.Show();
         }
+
+        private void mnuConfirmarPedido_Click(object sender, EventArgs e)
+        {
+            foreach (Form formularioAbierto in MdiChildren)
+            {
+                if (formularioAbierto is FrmConfirmarPedido)
+                {
+                    formularioAbierto.Activate();
+                    return;
+                }
+            }
+
+            FrmConfirmarPedido formulario = new FrmConfirmarPedido
+            {
+                MdiParent = this,
+                WindowState = FormWindowState.Maximized
+            };
+
+            formulario.Show();
+        }
     }
 }

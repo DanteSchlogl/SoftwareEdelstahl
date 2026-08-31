@@ -1,33 +1,152 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+using Edelstahl.BLL.Exceptions.Base;
+using Edelstahl.BLL.Services;
+using Edelstahl.Domain.Comercial;
 
 namespace Edelstahl.WinApp.Forms.Commercial
 {
     public partial class FrmClientes : Form
     {
+        private readonly ClienteService _clienteService;
+
         public FrmClientes()
         {
             InitializeComponent();
+
+            _clienteService = new ClienteService();
+
+            ConfigurarGrilla();
+            ConfigurarEventos();
+            RefrescarGrilla();
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
+        private void ConfigurarEventos()
         {
-
+            btnGuardar.Click += btnGuardar_Click;
+            btnRefrescar.Click += btnRefrescar_Click;
+            btnLimpiar.Click += btnLimpiar_Click;
         }
 
-        private void label3_Click(object sender, EventArgs e)
+        private void ConfigurarGrilla()
         {
+            dgvClientes.AutoGenerateColumns = false;
+            dgvClientes.ReadOnly = true;
+            dgvClientes.MultiSelect = false;
+            dgvClientes.AllowUserToAddRows = false;
+            dgvClientes.AllowUserToDeleteRows = false;
+            dgvClientes.AllowUserToResizeRows = false;
+            dgvClientes.RowHeadersVisible = false;
 
+            dgvClientes.SelectionMode =
+                DataGridViewSelectionMode.FullRowSelect;
+
+            dgvClientes.AutoSizeColumnsMode =
+                DataGridViewAutoSizeColumnsMode.Fill;
         }
 
         private void btnGuardar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Cliente cliente = CrearClienteDesdeFormulario();
+
+                Cliente clienteRegistrado =
+                    _clienteService.Registrar(cliente);
+
+                RefrescarGrilla();
+                LimpiarCampos();
+
+                MessageBox.Show(
+                    $"El cliente '{clienteRegistrado.RazonSocial}' " +
+                    "fue registrado correctamente.",
+                    "Cliente registrado",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Information);
+
+                txtCUIT.Focus();
+            }
+            catch (BusinessRuleException ex)
+            {
+                MessageBox.Show(
+                    ex.Message,
+                    $"Regla de negocio: {ex.Code}",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Warning);
+            }
+            catch (ArgumentException ex)
+            {
+                MessageBox.Show(
+                    ex.Message,
+                    "Datos incorrectos",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Warning);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(
+                    "No se pudo registrar el cliente.\n\n" +
+                    ex.Message,
+                    "Error",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Error);
+            }
+        }
+
+        private void btnRefrescar_Click(object sender, EventArgs e)
+        {
+            RefrescarGrilla();
+
+            MessageBox.Show(
+                "El listado de clientes fue actualizado.",
+                "Listado actualizado",
+                MessageBoxButtons.OK,
+                MessageBoxIcon.Information);
+        }
+        //Agregar el evento btnLimpiar_Click para limpiar los campos del formulario y reutilizo el codigo
+        private void btnLimpiar_Click(object sender, EventArgs e)
+        {
+            LimpiarCampos();
+            txtCUIT.Focus();
+        }
+
+        private Cliente CrearClienteDesdeFormulario()
+        {
+            return new Cliente
+            {
+                CUIT = txtCUIT.Text,
+                RazonSocial = txtRazonSocial.Text,
+                Email = txtEmail.Text,
+                Telefono = txtTelefono.Text,
+                Localidad = txtLocalidad.Text,
+                LimiteCredito = nudLimiteCredito.Value,
+
+                DireccionFacturacion = string.Empty,
+                DireccionEntrega = string.Empty,
+                Provincia = string.Empty,
+                CodigoPostal = string.Empty
+            };
+        }
+
+        private void RefrescarGrilla()
+        {
+            dgvClientes.DataSource = null;
+            dgvClientes.DataSource =
+                _clienteService.ObtenerTodos();
+        }
+
+        private void LimpiarCampos()
+        {
+            txtCUIT.Clear();
+            txtRazonSocial.Clear();
+            txtEmail.Clear();
+            txtTelefono.Clear();
+            txtLocalidad.Clear();
+
+            nudLimiteCredito.Value = 0;
+        }
+
+        private void btnGuardar_Click_1(object sender, EventArgs e)
         {
 
         }

@@ -41,11 +41,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DTOs\ClienteSeleccionDto.cs" />
+    <Compile Include="DTOs\DetallePresupuestoDto.cs" />
+    <Compile Include="DTOs\PresupuestoSeleccionDto.cs" />
     <Compile Include="Exceptions\Base\BusinessRuleException.cs" />
     <Compile Include="Exceptions\Commercial\ClienteDuplicadoException.cs" />
     <Compile Include="Exceptions\Commercial\CUITInvalidoException.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\ClienteService.cs" />
+    <Compile Include="Services\ConfirmarPedidoService.cs" />
+    <Compile Include="Services\PresupuestoService.cs" />
     <Compile Include="Validators\Crear ClienteValidator.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -62,8 +67,6 @@
       <Name>Edelstahl.Services</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="DTOs\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

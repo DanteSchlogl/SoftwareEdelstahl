@@ -4,10 +4,14 @@ C:\Users\Dana Eilin\Documents\Edelstahl\Edelstahl\Edelstahl.WinApp\bin\Debug\Ede
 C:\Users\Dana Eilin\Documents\Edelstahl\Edelstahl\Edelstahl.WinApp\bin\Debug\Edelstahl.BLL.dll
 C:\Users\Dana Eilin\Documents\Edelstahl\Edelstahl\Edelstahl.WinApp\bin\Debug\Edelstahl.Domain.dll
 C:\Users\Dana Eilin\Documents\Edelstahl\Edelstahl\Edelstahl.WinApp\bin\Debug\Edelstahl.Services.dll
+C:\Users\Dana Eilin\Documents\Edelstahl\Edelstahl\Edelstahl.WinApp\bin\Debug\Edelstahl.DAL.dll
 C:\Users\Dana Eilin\Documents\Edelstahl\Edelstahl\Edelstahl.WinApp\bin\Debug\Edelstahl.BLL.pdb
 C:\Users\Dana Eilin\Documents\Edelstahl\Edelstahl\Edelstahl.WinApp\bin\Debug\Edelstahl.Domain.pdb
 C:\Users\Dana Eilin\Documents\Edelstahl\Edelstahl\Edelstahl.WinApp\bin\Debug\Edelstahl.Services.pdb
+C:\Users\Dana Eilin\Documents\Edelstahl\Edelstahl\Edelstahl.WinApp\bin\Debug\Edelstahl.DAL.pdb
 C:\Users\Dana Eilin\Documents\Edelstahl\Edelstahl\Edelstahl.WinApp\obj\Debug\Edelstahl.WinApp.csproj.AssemblyReference.cache
+C:\Users\Dana Eilin\Documents\Edelstahl\Edelstahl\Edelstahl.WinApp\obj\Debug\Edelstahl.WinApp.Forms.Commercial.FrmClientes.resources
+C:\Users\Dana Eilin\Documents\Edelstahl\Edelstahl\Edelstahl.WinApp\obj\Debug\Edelstahl.WinApp.Forms.Commercial.FrmConfirmarPedido.resources
 C:\Users\Dana Eilin\Documents\Edelstahl\Edelstahl\Edelstahl.WinApp\obj\Debug\Edelstahl.WinApp.FrmPrincipal.resources
 C:\Users\Dana Eilin\Documents\Edelstahl\Edelstahl\Edelstahl.WinApp\obj\Debug\Edelstahl.WinApp.Properties.Resources.resources
 C:\Users\Dana Eilin\Documents\Edelstahl\Edelstahl\Edelstahl.WinApp\obj\Debug\Edelstahl.WinApp.csproj.GenerateResource.cache
@@ -15,6 +19,3 @@ C:\Users\Dana Eilin\Documents\Edelstahl\Edelstahl\Edelstahl.WinApp\obj\Debug\Ede
 C:\Users\Dana Eilin\Documents\Edelstahl\Edelstahl\Edelstahl.WinApp\obj\Debug\Edelstah.38239676.Up2Date
 C:\Users\Dana Eilin\Documents\Edelstahl\Edelstahl\Edelstahl.WinApp\obj\Debug\Edelstahl.WinApp.exe
 C:\Users\Dana Eilin\Documents\Edelstahl\Edelstahl\Edelstahl.WinApp\obj\Debug\Edelstahl.WinApp.pdb
-C:\Users\Dana Eilin\Documents\Edelstahl\Edelstahl\Edelstahl.WinApp\bin\Debug\Edelstahl.DAL.dll
-C:\Users\Dana Eilin\Documents\Edelstahl\Edelstahl\Edelstahl.WinApp\bin\Debug\Edelstahl.DAL.pdb
-C:\Users\Dana Eilin\Documents\Edelstahl\Edelstahl\Edelstahl.WinApp\obj\Debug\Edelstahl.WinApp.Forms.Commercial.FrmClientes.resources
