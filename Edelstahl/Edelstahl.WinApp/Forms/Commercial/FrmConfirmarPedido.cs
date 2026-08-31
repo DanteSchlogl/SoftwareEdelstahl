@@ -12,6 +12,7 @@ using Edelstahl.BLL.Services;
 using Edelstahl.Domain.Comercial;
 
 
+
 namespace Edelstahl.WinApp.Forms.Commercial
 {
     public partial class FrmConfirmarPedido : Form
@@ -22,13 +23,11 @@ namespace Edelstahl.WinApp.Forms.Commercial
         private Cliente _clienteSeleccionado;
         private Presupuesto _presupuestoSeleccionado;
 
-        // Modifique este contructor para que no reciba parámetros y se pueda instanciar desde el diseñador de Visual Studio.
         public FrmConfirmarPedido()
         {
             InitializeComponent();
 
-            if (LicenseManager.UsageMode ==
-                LicenseUsageMode.Designtime)
+            if (LicenseManager.UsageMode == LicenseUsageMode.Designtime)
             {
                 return;
             }
@@ -38,256 +37,124 @@ namespace Edelstahl.WinApp.Forms.Commercial
 
             ConfigurarGrillaClientes();
             ConfigurarGrillaPresupuestos();
-            ConfigurarEventos();
-            CargarClientes();
             ConfigurarGrillaProductos();
-        }
-        private void ConfigurarGrillaProductos()
-        {
-            dgvDetallePresupuesto.AutoGenerateColumns = false;
-            dgvDetallePresupuesto.ReadOnly = true;
-            dgvDetallePresupuesto.MultiSelect = false;
-            dgvDetallePresupuesto.AllowUserToAddRows = false;
-            dgvDetallePresupuesto.AllowUserToDeleteRows = false;
-            dgvDetallePresupuesto.AllowUserToResizeRows = false;
-            dgvDetallePresupuesto.RowHeadersVisible = false;
+            ConfigurarEventos();
 
-            dgvDetallePresupuesto.SelectionMode =
-                DataGridViewSelectionMode.FullRowSelect;
-
-            dgvDetallePresupuesto.DefaultCellStyle.ForeColor =
-                Color.Black;
-
-            dgvDetallePresupuesto.DefaultCellStyle.BackColor =
-                Color.White;
-
-            dgvDetallePresupuesto.DefaultCellStyle.SelectionForeColor =
-                Color.White;
-
-            dgvDetallePresupuesto.DefaultCellStyle.SelectionBackColor =
-                Color.FromArgb(0, 120, 215);
+            CargarClientes();
+            LimpiarSeleccionPresupuesto();
+            LimpiarProductos();
         }
 
         private void ConfigurarGrillaClientes()
         {
-            dgvSeleccionClientes.AutoGenerateColumns = false;
-            dgvSeleccionClientes.ReadOnly = true;
-            dgvSeleccionClientes.MultiSelect = false;
-            dgvSeleccionClientes.AllowUserToAddRows = false;
-            dgvSeleccionClientes.AllowUserToDeleteRows = false;
-            dgvSeleccionClientes.AllowUserToResizeRows = false;
-            dgvSeleccionClientes.RowHeadersVisible = false;
-
-            dgvSeleccionClientes.SelectionMode =
-                DataGridViewSelectionMode.FullRowSelect;
-
-            dgvSeleccionClientes.DefaultCellStyle.ForeColor =
-                Color.Black;
-
-            dgvSeleccionClientes.DefaultCellStyle.BackColor =
-                Color.White;
-
-            dgvSeleccionClientes.DefaultCellStyle.SelectionForeColor =
-                Color.White;
-
-            dgvSeleccionClientes.DefaultCellStyle.SelectionBackColor =
-                Color.FromArgb(0, 120, 215);
+            ConfigurarGrillaBase(dgvSeleccionClientes);
         }
 
         private void ConfigurarGrillaPresupuestos()
         {
-            dgvPresupuestos.AutoGenerateColumns = false;
-            dgvPresupuestos.ReadOnly = true;
-            dgvPresupuestos.MultiSelect = false;
-            dgvPresupuestos.AllowUserToAddRows = false;
-            dgvPresupuestos.AllowUserToDeleteRows = false;
-            dgvPresupuestos.AllowUserToResizeRows = false;
-            dgvPresupuestos.RowHeadersVisible = false;
+            ConfigurarGrillaBase(dgvPresupuestos);
+        }
 
-            dgvPresupuestos.SelectionMode =
-                DataGridViewSelectionMode.FullRowSelect;
+        private void ConfigurarGrillaProductos()
+        {
+            ConfigurarGrillaBase(dgvDetallePresupuesto);
+        }
 
-            dgvPresupuestos.DefaultCellStyle.ForeColor =
-                Color.Black;
-
-            dgvPresupuestos.DefaultCellStyle.BackColor =
-                Color.White;
-
-            dgvPresupuestos.DefaultCellStyle.SelectionForeColor =
-                Color.White;
-
-            dgvPresupuestos.DefaultCellStyle.SelectionBackColor =
-                Color.FromArgb(0, 120, 215);
+        private static void ConfigurarGrillaBase(DataGridView grilla)
+        {
+            grilla.AutoGenerateColumns = false;
+            grilla.ReadOnly = true;
+            grilla.MultiSelect = false;
+            grilla.AllowUserToAddRows = false;
+            grilla.AllowUserToDeleteRows = false;
+            grilla.AllowUserToResizeRows = false;
+            grilla.RowHeadersVisible = false;
+            grilla.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            grilla.DefaultCellStyle.ForeColor = Color.Black;
+            grilla.DefaultCellStyle.BackColor = Color.White;
+            grilla.DefaultCellStyle.SelectionForeColor = Color.White;
+            grilla.DefaultCellStyle.SelectionBackColor = Color.FromArgb(0, 120, 215);
         }
 
         private void ConfigurarEventos()
         {
-            // Paso 1: Cliente
-            btnBuscarCliente.Click +=
-                btnBuscarCliente_Click;
+            btnBuscarCliente.Click += btnBuscarCliente_Click;
+            btnActualizarClientes.Click += btnActualizarClientes_Click;
+            btnSiguienteCliente.Click += btnSiguienteCliente_Click;
+            dgvSeleccionClientes.CellClick += dgvSeleccionClientes_CellClick;
+            dgvSeleccionClientes.CellDoubleClick += dgvSeleccionClientes_CellDoubleClick;
+            txtBuscarCliente.KeyDown += txtBuscarCliente_KeyDown;
 
-            btnActualizarClientes.Click +=
-                btnActualizarClientes_Click;
+            btnBuscarPresupuesto.Click += btnBuscarPresupuesto_Click;
+            btnActualizarPresupuestos.Click += btnActualizarPresupuestos_Click;
+            btnAnteriorPresupuesto.Click += btnAnteriorPresupuesto_Click;
+            btnSiguientePresupuesto.Click += btnSiguientePresupuesto_Click;
+            dgvPresupuestos.CellClick += dgvPresupuestos_CellClick;
+            txtBuscarPresupuesto.KeyDown += txtBuscarPresupuesto_KeyDown;
 
-            btnSiguienteCliente.Click +=
-                btnSiguienteCliente_Click;
+            btnAnteriorProductos.Click += btnAnteriorProductos_Click;
+            btnSiguienteProductos.Click += btnSiguienteProductos_Click;
 
-            dgvSeleccionClientes.CellClick +=
-                dgvSeleccionClientes_CellClick;
-
-            dgvSeleccionClientes.CellDoubleClick +=
-                dgvSeleccionClientes_CellDoubleClick;
-
-            txtBuscarCliente.KeyDown +=
-                txtBuscarCliente_KeyDown;
-
-            // Paso 2: Presupuesto
-            btnBuscarPresupuesto.Click +=
-                btnBuscarPresupuesto_Click;
-
-            btnActualizarPresupuestos.Click +=
-                btnActualizarPresupuestos_Click;
-
-            btnAnteriorPresupuesto.Click +=
-                btnAnteriorPresupuesto_Click;
-
-            btnSiguientePresupuesto.Click +=
-                btnSiguientePresupuesto_Click;
-
-            dgvPresupuestos.CellClick +=
-                dgvPresupuestos_CellClick;
-
-            txtBuscarPresupuesto.KeyDown +=
-                txtBuscarPresupuesto_KeyDown;
-
-            // Actualización general del formulario
-            Activated +=
-                FrmConfirmarPedido_Activated;
-            // Paso 3: Productos
-            btnAnteriorProductos.Click +=
-                btnAnteriorProductos_Click;
-
-            btnSiguienteProductos.Click +=
-                btnSiguienteProductos_Click;
-
-        }
-        private void btnAnteriorProductos_Click(
-    object sender,
-    EventArgs e)
-        {
-            TabPage.SelectedTab = tabPresupuesto;
-        }
-
-        private void btnSiguienteProductos_Click(
-            object sender,
-            EventArgs e)
-        {
-            if (_presupuestoSeleccionado == null)
-            {
-                MessageBox.Show(
-                    "Debe seleccionar un presupuesto.",
-                    "Presupuesto requerido",
-                    MessageBoxButtons.OK,
-                    MessageBoxIcon.Warning);
-
-                return;
-            }
-
-            if (_presupuestoSeleccionado.Detalles == null ||
-                _presupuestoSeleccionado.Detalles.Count == 0)
-            {
-                MessageBox.Show(
-                    "El presupuesto no contiene productos o servicios.",
-                    "Presupuesto sin detalles",
-                    MessageBoxButtons.OK,
-                    MessageBoxIcon.Warning);
-
-                return;
-            }
-
-            TabPage.SelectedTab = tabValidacion;
+            Activated += FrmConfirmarPedido_Activated;
         }
 
         private void CargarClientes(string filtro = "")
         {
-            List<Cliente> clientes =
-                _clienteService.ObtenerTodos();
+            List<Cliente> clientes = _clienteService.ObtenerTodos();
 
             if (!string.IsNullOrWhiteSpace(filtro))
             {
-                string filtroTexto =
-                    filtro.Trim().ToLowerInvariant();
-
-                string filtroCUIT =
-                    filtroTexto
-                        .Replace("-", string.Empty)
-                        .Replace(" ", string.Empty);
+                string filtroTexto = filtro.Trim().ToLowerInvariant();
+                string filtroCUIT = filtroTexto.Replace("-", string.Empty).Replace(" ", string.Empty);
 
                 clientes = clientes
                     .Where(cliente =>
                     {
-                        string clienteCUIT =
-                            (cliente.CUIT ?? string.Empty)
-                                .Replace("-", string.Empty)
-                                .Replace(" ", string.Empty);
+                        string clienteCUIT = (cliente.CUIT ?? string.Empty)
+                            .Replace("-", string.Empty)
+                            .Replace(" ", string.Empty);
 
-                        string clienteRazonSocial =
-                            (cliente.RazonSocial ?? string.Empty)
-                                .ToLowerInvariant();
+                        string clienteRazonSocial = (cliente.RazonSocial ?? string.Empty)
+                            .ToLowerInvariant();
 
-                        bool coincideCUIT =
-                            clienteCUIT.Contains(filtroCUIT);
-
-                        bool coincideRazonSocial =
-                            clienteRazonSocial.Contains(filtroTexto);
-
-                        return coincideCUIT || coincideRazonSocial;
+                        return clienteCUIT.Contains(filtroCUIT) ||
+                               clienteRazonSocial.Contains(filtroTexto);
                     })
                     .ToList();
             }
 
-            List<ClienteSeleccionDto> clientesDto =
-                clientes
-                    .Select(cliente => new ClienteSeleccionDto
-                    {
-                        Id = cliente.Id,
-                        CUIT = cliente.CUIT,
-                        RazonSocial = cliente.RazonSocial,
-                        Localidad = cliente.Localidad,
-                        CreditoDisponible =
-                            cliente.CalcularCreditoDisponible(),
-                        Activo = cliente.Activo
-                    })
-                    .ToList();
+            List<ClienteSeleccionDto> clientesDto = clientes
+                .Select(cliente => new ClienteSeleccionDto
+                {
+                    Id = cliente.Id,
+                    CUIT = cliente.CUIT,
+                    RazonSocial = cliente.RazonSocial,
+                    Localidad = cliente.Localidad,
+                    CreditoDisponible = cliente.CalcularCreditoDisponible(),
+                    Activo = cliente.Activo
+                })
+                .ToList();
 
             dgvSeleccionClientes.DataSource = null;
             dgvSeleccionClientes.DataSource = clientesDto;
-
             dgvSeleccionClientes.ClearSelection();
             dgvSeleccionClientes.CurrentCell = null;
-
             LimpiarSeleccionCliente();
         }
 
-        private void btnBuscarCliente_Click(
-            object sender,
-            EventArgs e)
+        private void btnBuscarCliente_Click(object sender, EventArgs e)
         {
             CargarClientes(txtBuscarCliente.Text);
         }
 
-        private void btnActualizarClientes_Click(
-            object sender,
-            EventArgs e)
+        private void btnActualizarClientes_Click(object sender, EventArgs e)
         {
             txtBuscarCliente.Clear();
             CargarClientes();
             txtBuscarCliente.Focus();
         }
 
-        private void txtBuscarCliente_KeyDown(
-            object sender,
-            KeyEventArgs e)
+        private void txtBuscarCliente_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode != Keys.Enter)
             {
@@ -298,41 +165,26 @@ namespace Edelstahl.WinApp.Forms.Commercial
             CargarClientes(txtBuscarCliente.Text);
         }
 
-        private void dgvSeleccionClientes_CellClick(
-            object sender,
-            DataGridViewCellEventArgs e)
+        private void dgvSeleccionClientes_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (e.RowIndex < 0)
+            if (e.RowIndex >= 0)
             {
-                return;
+                SeleccionarClienteActual();
             }
-
-            SeleccionarClienteActual();
         }
 
-        private void dgvSeleccionClientes_CellDoubleClick(
-            object sender,
-            DataGridViewCellEventArgs e)
+        private void dgvSeleccionClientes_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (e.RowIndex < 0)
+            if (e.RowIndex >= 0)
             {
-                return;
+                SeleccionarClienteActual();
             }
-
-            SeleccionarClienteActual();
         }
 
         private void SeleccionarClienteActual()
         {
-            if (dgvSeleccionClientes.CurrentRow == null)
-            {
-                LimpiarSeleccionCliente();
-                return;
-            }
-
             ClienteSeleccionDto clienteDto =
-                dgvSeleccionClientes.CurrentRow.DataBoundItem
-                    as ClienteSeleccionDto;
+                dgvSeleccionClientes.CurrentRow?.DataBoundItem as ClienteSeleccionDto;
 
             if (clienteDto == null)
             {
@@ -340,8 +192,7 @@ namespace Edelstahl.WinApp.Forms.Commercial
                 return;
             }
 
-            _clienteSeleccionado =
-                _clienteService.ObtenerPorId(clienteDto.Id);
+            _clienteSeleccionado = _clienteService.ObtenerPorId(clienteDto.Id);
 
             if (_clienteSeleccionado == null)
             {
@@ -349,84 +200,51 @@ namespace Edelstahl.WinApp.Forms.Commercial
                 return;
             }
 
-            lblCUITSeleccionado.Text =
-                _clienteSeleccionado.CUIT;
-
-            lblRazonSeleccionada.Text =
-                _clienteSeleccionado.RazonSocial;
-
-            btnSiguienteCliente.Enabled =
-                _clienteSeleccionado.Activo;
+            lblCUITSeleccionado.Text = _clienteSeleccionado.CUIT;
+            lblRazonSeleccionada.Text = _clienteSeleccionado.RazonSocial;
+            btnSiguienteCliente.Enabled = _clienteSeleccionado.Activo;
         }
 
         private void LimpiarSeleccionCliente()
         {
             _clienteSeleccionado = null;
-
-            lblCUITSeleccionado.Text =
-                "Sin seleccionar";
-
-            lblRazonSeleccionada.Text =
-                "Sin seleccionar";
-
+            lblCUITSeleccionado.Text = "Sin seleccionar";
+            lblRazonSeleccionada.Text = "Sin seleccionar";
             btnSiguienteCliente.Enabled = false;
         }
 
-        private void btnSiguienteCliente_Click(
-            object sender,
-            EventArgs e)
+        private void btnSiguienteCliente_Click(object sender, EventArgs e)
         {
             if (_clienteSeleccionado == null)
             {
-                MessageBox.Show(
-                    "Debe seleccionar un cliente para continuar.",
-                    "Cliente requerido",
-                    MessageBoxButtons.OK,
-                    MessageBoxIcon.Warning);
-
+                MostrarAdvertencia("Debe seleccionar un cliente para continuar.", "Cliente requerido");
                 return;
             }
 
             if (!_clienteSeleccionado.Activo)
             {
-                MessageBox.Show(
-                    "El cliente seleccionado no se encuentra activo.",
-                    "Cliente inactivo",
-                    MessageBoxButtons.OK,
-                    MessageBoxIcon.Warning);
-
+                MostrarAdvertencia("El cliente seleccionado no se encuentra activo.", "Cliente inactivo");
                 return;
             }
 
-            lblClientePresupuestoCUIT.Text =
-                _clienteSeleccionado.CUIT;
+            lblClientePresupuestoCUIT.Text = _clienteSeleccionado.CUIT;
+            lblClientePresupuestoRazon.Text = _clienteSeleccionado.RazonSocial;
 
-            lblClientePresupuestoRazon.Text =
-                _clienteSeleccionado.RazonSocial;
-
-            _presupuestoService.CrearPresupuestosDemostracion(
-                _clienteSeleccionado.Id);
-
+            _presupuestoService.CrearPresupuestosDemostracion(_clienteSeleccionado.Id);
             _presupuestoSeleccionado = null;
 
             txtBuscarPresupuesto.Clear();
             CargarPresupuestos();
-
             TabPage.SelectedTab = tabPresupuesto;
         }
 
-        private void FrmConfirmarPedido_Activated(
-            object sender,
-            EventArgs e)
+        private void FrmConfirmarPedido_Activated(object sender, EventArgs e)
         {
-            if (TabPage.SelectedTab == tabCliente)
+            if (_clienteService != null && TabPage.SelectedTab == tabCliente)
             {
                 CargarClientes(txtBuscarCliente.Text);
             }
         }
-        // =====================================================
-        // PASO 2: BUSCAR Y SELECCIONAR PRESUPUESTO
-        // =====================================================
 
         private void CargarPresupuestos(string filtro = "")
         {
@@ -437,74 +255,46 @@ namespace Edelstahl.WinApp.Forms.Commercial
                 return;
             }
 
-            List<Presupuesto> presupuestos =
-                _presupuestoService.BuscarPorCliente(
-                    _clienteSeleccionado.Id,
-                    filtro);
+            List<Presupuesto> presupuestos = _presupuestoService.BuscarPorCliente(
+                _clienteSeleccionado.Id,
+                filtro);
 
-            List<PresupuestoSeleccionDto> presupuestosDto =
-                presupuestos
-                    .Select(presupuesto =>
-                        new PresupuestoSeleccionDto
-                        {
-                            Id = presupuesto.Id,
-                            Numero = presupuesto.Numero,
-                            FechaEmision = presupuesto.FechaEmision,
-                            FechaVencimiento = presupuesto.FechaVencimiento,
-
-                            Moneda =
-                                presupuesto.Moneda ==
-                                Moneda.DolaresEstadounidenses
-                                    ? "USD"
-                                    : "ARS",
-
-                            Total = presupuesto.CalcularTotal(),
-
-                            Anticipo =
-                                presupuesto.CalcularAnticipo(),
-
-                            Estado =
-                                presupuesto.Estado.ToString(),
-
-                            Vigente =
-                                presupuesto.EstaVigente(),
-
-                            PuedeConfirmarse =
-                                presupuesto.PuedeConfirmarse()
-                        })
-                    .ToList();
+            List<PresupuestoSeleccionDto> presupuestosDto = presupuestos
+                .Select(presupuesto => new PresupuestoSeleccionDto
+                {
+                    Id = presupuesto.Id,
+                    Numero = presupuesto.Numero,
+                    FechaEmision = presupuesto.FechaEmision,
+                    FechaVencimiento = presupuesto.FechaVencimiento,
+                    Moneda = presupuesto.Moneda == Moneda.DolaresEstadounidenses ? "USD" : "ARS",
+                    Total = presupuesto.CalcularTotal(),
+                    Anticipo = presupuesto.CalcularAnticipo(),
+                    Estado = presupuesto.Estado.ToString(),
+                    Vigente = presupuesto.EstaVigente(),
+                    PuedeConfirmarse = presupuesto.PuedeConfirmarse()
+                })
+                .ToList();
 
             dgvPresupuestos.DataSource = null;
             dgvPresupuestos.DataSource = presupuestosDto;
-
             dgvPresupuestos.ClearSelection();
             dgvPresupuestos.CurrentCell = null;
-
             LimpiarSeleccionPresupuesto();
         }
 
-        private void btnBuscarPresupuesto_Click(
-            object sender,
-            EventArgs e)
+        private void btnBuscarPresupuesto_Click(object sender, EventArgs e)
         {
-            CargarPresupuestos(
-                txtBuscarPresupuesto.Text);
+            CargarPresupuestos(txtBuscarPresupuesto.Text);
         }
 
-        private void btnActualizarPresupuestos_Click(
-            object sender,
-            EventArgs e)
+        private void btnActualizarPresupuestos_Click(object sender, EventArgs e)
         {
             txtBuscarPresupuesto.Clear();
-
             CargarPresupuestos();
-
             txtBuscarPresupuesto.Focus();
         }
 
-        private void txtBuscarPresupuesto_KeyDown(
-            object sender,
-            KeyEventArgs e)
+        private void txtBuscarPresupuesto_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode != Keys.Enter)
             {
@@ -512,34 +302,21 @@ namespace Edelstahl.WinApp.Forms.Commercial
             }
 
             e.SuppressKeyPress = true;
-
-            CargarPresupuestos(
-                txtBuscarPresupuesto.Text);
+            CargarPresupuestos(txtBuscarPresupuesto.Text);
         }
 
-        private void dgvPresupuestos_CellClick(
-            object sender,
-            DataGridViewCellEventArgs e)
+        private void dgvPresupuestos_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (e.RowIndex < 0)
+            if (e.RowIndex >= 0)
             {
-                return;
+                SeleccionarPresupuestoActual();
             }
-
-            SeleccionarPresupuestoActual();
         }
 
         private void SeleccionarPresupuestoActual()
         {
-            if (dgvPresupuestos.CurrentRow == null)
-            {
-                LimpiarSeleccionPresupuesto();
-                return;
-            }
-
             PresupuestoSeleccionDto presupuestoDto =
-                dgvPresupuestos.CurrentRow.DataBoundItem
-                    as PresupuestoSeleccionDto;
+                dgvPresupuestos.CurrentRow?.DataBoundItem as PresupuestoSeleccionDto;
 
             if (presupuestoDto == null)
             {
@@ -547,9 +324,7 @@ namespace Edelstahl.WinApp.Forms.Commercial
                 return;
             }
 
-            _presupuestoSeleccionado =
-                _presupuestoService.ObtenerPorId(
-                    presupuestoDto.Id);
+            _presupuestoSeleccionado = _presupuestoService.ObtenerPorId(presupuestoDto.Id);
 
             if (_presupuestoSeleccionado == null)
             {
@@ -557,113 +332,155 @@ namespace Edelstahl.WinApp.Forms.Commercial
                 return;
             }
 
-            lblPresupuestoSeleccionado.Text =
-                _presupuestoSeleccionado.Numero;
-
-            lblTotalSeleccionado.Text =
-                _presupuestoSeleccionado
-                    .CalcularTotal()
-                    .ToString("N2");
-
-            lblEstadoSeleccionado.Text =
-                _presupuestoSeleccionado.Estado.ToString();
-
-            btnSiguientePresupuesto.Enabled =
-                _presupuestoSeleccionado.PuedeConfirmarse();
+            lblPresupuestoSeleccionado.Text = _presupuestoSeleccionado.Numero;
+            lblTotalSeleccionado.Text = _presupuestoSeleccionado.CalcularTotal().ToString("N2");
+            lblEstadoSeleccionado.Text = _presupuestoSeleccionado.Estado.ToString();
+            btnSiguientePresupuesto.Enabled = _presupuestoSeleccionado.PuedeConfirmarse();
         }
 
         private void LimpiarSeleccionPresupuesto()
         {
             _presupuestoSeleccionado = null;
-
-            lblPresupuestoSeleccionado.Text =
-                "Sin seleccionar";
-
-            lblTotalSeleccionado.Text =
-                "0,00";
-
-            lblEstadoSeleccionado.Text =
-                "Sin seleccionar";
-
+            lblPresupuestoSeleccionado.Text = "Sin seleccionar";
+            lblTotalSeleccionado.Text = "0,00";
+            lblEstadoSeleccionado.Text = "Sin seleccionar";
             btnSiguientePresupuesto.Enabled = false;
         }
 
-        private void btnAnteriorPresupuesto_Click(
-            object sender,
-            EventArgs e)
+        private void btnAnteriorPresupuesto_Click(object sender, EventArgs e)
         {
             LimpiarSeleccionPresupuesto();
-
-            TabPage.SelectedTab =
-                tabCliente;
+            TabPage.SelectedTab = tabCliente;
         }
 
-        private void btnSiguientePresupuesto_Click(
-            object sender,
-            EventArgs e)
+        private void btnSiguientePresupuesto_Click(object sender, EventArgs e)
         {
             if (_presupuestoSeleccionado == null)
             {
-                MessageBox.Show(
-                    "Debe seleccionar un presupuesto para continuar.",
-                    "Presupuesto requerido",
-                    MessageBoxButtons.OK,
-                    MessageBoxIcon.Warning);
-
+                MostrarAdvertencia("Debe seleccionar un presupuesto para continuar.", "Presupuesto requerido");
                 return;
             }
 
             if (!_presupuestoSeleccionado.PuedeConfirmarse())
             {
-                MessageBox.Show(
-                    "El presupuesto no está vigente, no fue aceptado " +
-                    "o no contiene detalles.",
-                    "Presupuesto no confirmable",
-                    MessageBoxButtons.OK,
-                    MessageBoxIcon.Warning);
-
+                MostrarAdvertencia(
+                    "El presupuesto no esta vigente, no fue aceptado o no contiene detalles.",
+                    "Presupuesto no confirmable");
                 return;
             }
 
-            TabPage.SelectedTab =
-                tabProductos;
+            CargarProductosPresupuesto();
+            TabPage.SelectedTab = tabProductos;
         }
 
-        /*
-         * Estos métodos permanecen temporalmente porque están
-         * conectados desde FrmConfirmarPedido.Designer.cs.
-         */
+        private void CargarProductosPresupuesto()
+        {
+            if (_presupuestoSeleccionado == null || _clienteSeleccionado == null)
+            {
+                LimpiarProductos();
+                return;
+            }
 
+            List<DetallePresupuestoDto> detallesDto = _presupuestoSeleccionado.Detalles
+                .Select(detalle => new DetallePresupuestoDto
+                {
+                    Codigo = detalle.Codigo,
+                    Descripcion = detalle.Descripcion,
+                    Tipo = detalle.TipoItem.ToString(),
+                    Cantidad = detalle.Cantidad,
+                    PrecioUnitario = detalle.PrecioUnitario,
+                    Subtotal = detalle.CalcularSubtotal()
+                })
+                .ToList();
+
+            dgvDetallePresupuesto.DataSource = null;
+            dgvDetallePresupuesto.DataSource = detallesDto;
+            dgvDetallePresupuesto.ClearSelection();
+            dgvDetallePresupuesto.CurrentCell = null;
+
+            lblProductoPresupuestoNumero.Text = _presupuestoSeleccionado.Numero;
+            lblProductoCliente.Text = _clienteSeleccionado.RazonSocial;
+            lblProductosSubtotal.Text = _presupuestoSeleccionado.CalcularSubtotal().ToString("N2");
+            lblProductosIVA.Text = _presupuestoSeleccionado.CalcularIVA().ToString("N2");
+            lblProductosTotal.Text = _presupuestoSeleccionado.CalcularTotal().ToString("N2");
+            lblProductosMoneda.Text =
+                _presupuestoSeleccionado.Moneda == Moneda.DolaresEstadounidenses ? "USD" : "ARS";
+            btnSiguienteProductos.Enabled = detallesDto.Count > 0;
+        }
+
+        private void LimpiarProductos()
+        {
+            dgvDetallePresupuesto.DataSource = null;
+            lblProductoPresupuestoNumero.Text = "Sin seleccionar";
+            lblProductoCliente.Text = "Sin seleccionar";
+            lblProductosSubtotal.Text = "0,00";
+            lblProductosIVA.Text = "0,00";
+            lblProductosTotal.Text = "0,00";
+            lblProductosMoneda.Text = "Sin seleccionar";
+            btnSiguienteProductos.Enabled = false;
+        }
+
+        private void btnAnteriorProductos_Click(object sender, EventArgs e)
+        {
+            TabPage.SelectedTab = tabPresupuesto;
+        }
+
+        private void btnSiguienteProductos_Click(object sender, EventArgs e)
+        {
+            if (_presupuestoSeleccionado == null)
+            {
+                MostrarAdvertencia("Debe seleccionar un presupuesto.", "Presupuesto requerido");
+                return;
+            }
+
+            if (_presupuestoSeleccionado.Detalles == null ||
+                _presupuestoSeleccionado.Detalles.Count == 0)
+            {
+                MostrarAdvertencia(
+                    "El presupuesto no contiene productos o servicios.",
+                    "Presupuesto sin detalles");
+                return;
+            }
+
+            TabPage.SelectedTab = tabValidacion;
+        }
+
+        private static void MostrarAdvertencia(string mensaje, string titulo)
+        {
+            MessageBox.Show(
+                mensaje,
+                titulo,
+                MessageBoxButtons.OK,
+                MessageBoxIcon.Warning);
+        }
+
+        // Eventos temporales conectados desde FrmConfirmarPedido.Designer.cs.
         private void dgvSeleccionClientes_CellContentClick(
             object sender,
             DataGridViewCellEventArgs e)
         {
         }
 
-        private void grpClienteSeleccionado_Enter(
-            object sender,
-            EventArgs e)
+        private void grpClienteSeleccionado_Enter(object sender, EventArgs e)
         {
         }
 
-        private void lblClientePresupuestoCUITTitulo_Click(
-            object sender,
-            EventArgs e)
+        private void lblClientePresupuestoCUITTitulo_Click(object sender, EventArgs e)
         {
         }
 
-        private void label6_Click(
-            object sender,
-            EventArgs e)
+        private void label6_Click(object sender, EventArgs e)
         {
         }
 
         private void lblProductosTotal_Click(object sender, EventArgs e)
         {
-
         }
     }
-
 }
+
+
+
+
 
 

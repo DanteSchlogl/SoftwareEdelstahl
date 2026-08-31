@@ -7,11 +7,11 @@
       "RelativeMoniker": "D:0:0:{2303C0B0-B684-442E-B2AB-E14BBF058313}|Edelstahl.WinApp\\Edelstahl.WinApp.csproj|solutionrelative:edelstahl.winapp\\forms\\commercial\\frmconfirmarpedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2303C0B0-B684-442E-B2AB-E14BBF058313}|Edelstahl.WinApp\\Edelstahl.WinApp.csproj|c:\\users\\dana eilin\\documents\\edelstahl\\edelstahl\\edelstahl.winapp\\forms\\commercial\\frmconfirmarpedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{2303C0B0-B684-442E-B2AB-E14BBF058313}|Edelstahl.WinApp\\Edelstahl.WinApp.csproj|C:\\Users\\Dana Eilin\\Documents\\Edelstahl\\Edelstahl\\edelstahl.winapp\\forms\\commercial\\frmconfirmarpedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{2303C0B0-B684-442E-B2AB-E14BBF058313}|Edelstahl.WinApp\\Edelstahl.WinApp.csproj|solutionrelative:edelstahl.winapp\\forms\\commercial\\frmconfirmarpedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{42CBEEE8-002D-455B-804F-147097D48B34}|Edelstahl.BLL\\Edelstahl.BLL.csproj|c:\\users\\dana eilin\\documents\\edelstahl\\edelstahl\\edelstahl.bll\\dtos\\detallepresupuestodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{42CBEEE8-002D-455B-804F-147097D48B34}|Edelstahl.BLL\\Edelstahl.BLL.csproj|C:\\Users\\Dana Eilin\\Documents\\Edelstahl\\Edelstahl\\edelstahl.bll\\dtos\\detallepresupuestodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{42CBEEE8-002D-455B-804F-147097D48B34}|Edelstahl.BLL\\Edelstahl.BLL.csproj|solutionrelative:edelstahl.bll\\dtos\\detallepresupuestodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -32,7 +32,7 @@
               "RelativeDocumentMoniker": "Edelstahl.WinApp\\Forms\\Commercial\\FrmConfirmarPedido.cs",
               "ToolTip": "C:\\Users\\Dana Eilin\\Documents\\Edelstahl\\Edelstahl\\Edelstahl.WinApp\\Forms\\Commercial\\FrmConfirmarPedido.cs",
               "RelativeToolTip": "Edelstahl.WinApp\\Forms\\Commercial\\FrmConfirmarPedido.cs",
-              "ViewState": "AgIAAJgAAAAAAAAAAAAQwNAAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-08-30T22:37:38.881Z",
               "EditorCaption": ""
@@ -47,8 +47,7 @@
               "RelativeToolTip": "Edelstahl.BLL\\DTOs\\DetallePresupuestoDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-30T23:36:17.932Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-08-30T23:36:17.932Z"
             },
             {
               "$type": "Document",
@@ -59,8 +58,7 @@
               "ToolTip": "C:\\Users\\Dana Eilin\\Documents\\Edelstahl\\Edelstahl\\Edelstahl.WinApp\\Forms\\Commercial\\FrmConfirmarPedido.cs [Dise\u00F1o]",
               "RelativeToolTip": "Edelstahl.WinApp\\Forms\\Commercial\\FrmConfirmarPedido.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-30T22:44:48.966Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2026-08-30T22:44:48.966Z"
             }
           ]
         }
