@@ -17,7 +17,104 @@ namespace Edelstahl.DAL.Implementations.Memory
         public ClienteRepositoryMemory()
         {
             _clientes = new List<Cliente>();
+
+            CargarClientesDemostracion();
         }
+
+
+        private void CargarClientesDemostracion()
+        {
+            _clientes.Add(
+                new Cliente
+                {
+                    CUIT = "30667788992",
+                    RazonSocial = "Soluciones Sanitarias Norte SRL",
+                    Email = "compras@sanitariasnorte.test",
+                    Telefono = "1144556677",
+                    Localidad = "Vicente Lopez",
+                    Provincia = "Buenos Aires",
+                    CodigoPostal = "1638",
+                    DireccionFacturacion = "Av. del Libertador 2500",
+                    DireccionEntrega = "Av. del Libertador 2500",
+                    LimiteCredito = 1500000m,
+                    DeudaActual = 0m,
+                    Activo = true
+                });
+
+            _clientes.Add(
+                new Cliente
+                {
+                    CUIT = "30334455662",
+                    RazonSocial = "Automatizacion Sanitaria Central SRL",
+                    Email = "compras@sanitariacentral.test",
+                    Telefono = "1144226688",
+                    Localidad = "San Martin",
+                    Provincia = "Buenos Aires",
+                    CodigoPostal = "1650",
+                    DireccionFacturacion = "Calle Industrial 1450",
+                    DireccionEntrega = "Parque Industrial San Martin",
+                    LimiteCredito = 7000000m,
+                    DeudaActual = 0m,
+                    Activo = true
+                });
+
+            _clientes.Add(
+                new Cliente
+                {
+                    CUIT = "30445566778",
+                    RazonSocial = "Equipos Sanitarios Patagonicos SRL",
+                    Email = "compras@equipospatagonicos.test",
+                    Telefono = "1144558899",
+                    Localidad = "Pilar",
+                    Provincia = "Buenos Aires",
+                    CodigoPostal = "1629",
+                    DireccionFacturacion = "Ruta Industrial 8 Km 52",
+                    DireccionEntrega = "Parque Industrial Pilar",
+                    LimiteCredito = 7000000m,
+                    DeudaActual = 0m,
+                    Activo = true
+                });
+
+            _clientes.Add(
+                new Cliente
+                {
+                    CUIT = "30889977663",
+                    RazonSocial = "Ingenieria de Procesos del Sur SRL",
+                    Email = "compras@procesosdelsur.test",
+                    Telefono = "1155448899",
+                    Localidad = "Pilar",
+                    Provincia = "Buenos Aires",
+                    CodigoPostal = "1629",
+                    DireccionFacturacion = "Colectora Industrial 750",
+                    DireccionEntrega = "Deposito Industrial 12",
+                    LimiteCredito = 6000000m,
+                    DeudaActual = 0m,
+                    Activo = true
+                });
+
+            _clientes.Add(
+    new Cliente
+    {
+        CUIT = "30221100998",
+        RazonSocial = "Cliente con Credito Limitado SRL",
+        Email = "pruebas@creditolimitado.test",
+        Telefono = "1112340000",
+        Localidad = "Tigre",
+        Provincia = "Buenos Aires",
+        CodigoPostal = "1648",
+        DireccionFacturacion = "Domicilio de prueba",
+        DireccionEntrega = "Deposito de prueba",
+        LimiteCredito = 70000m,
+        DeudaActual = 0m,
+        Activo = true
+    }
+    
+    
+    );
+        }   
+
+        
+
 
         public void Add(Cliente entity)
         {
@@ -97,6 +194,9 @@ namespace Edelstahl.DAL.Implementations.Memory
                     cliente.CUIT,
                     cuit,
                     StringComparison.OrdinalIgnoreCase));
+
         }
+
+
     }
 }

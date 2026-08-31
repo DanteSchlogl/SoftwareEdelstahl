@@ -18,12 +18,13 @@ namespace Edelstahl.WinApp.Forms.Commercial
         private Cliente _clienteSeleccionado;
         private Presupuesto _presupuestoSeleccionado;
         private string _numeroPedidoGenerado;
-
+        private decimal _importeSenaRegistrado;
         public FrmConfirmarPedido()
         {
             InitializeComponent();
 
-            if (LicenseManager.UsageMode == LicenseUsageMode.Designtime)
+            if (LicenseManager.UsageMode ==
+                LicenseUsageMode.Designtime)
             {
                 return;
             }
@@ -35,11 +36,15 @@ namespace Edelstahl.WinApp.Forms.Commercial
             ConfigurarGrillaPresupuestos();
             ConfigurarGrillaProductos();
             ConfigurarEventos();
+            ConfigurarMediosPago();
 
             CargarClientes();
             LimpiarSeleccionPresupuesto();
             LimpiarProductos();
             LimpiarValidacionCredito();
+            LimpiarSena();
+            LimpiarConfirmacion();
+            LimpiarResultado();
         }
 
         private void ConfigurarGrillaClientes()
@@ -99,9 +104,14 @@ namespace Edelstahl.WinApp.Forms.Commercial
             btnAnteriorValidacion.Click += btnAnteriorValidacion_Click;
             btnSiguienteValidacion.Click += btnSiguienteValidacion_Click;
 
+            // Paso 5: Sena
+            btnAnteriorSena.Click += btnAnteriorSena_Click;
+            btnRegistrarSena.Click += btnRegistrarSena_Click;
+
             // Paso 6: Confirmacion
-            btnAnteriorConfirmacion.Click += btnAnteriorConfirmacion_Click;
-            btnConfirmarPedido.Click += btnConfirmarPedido_Click;
+            btnAnteriorConfirmacion.Click += btnAnteriorConfirmacion_Click;        
+            //btnConfirmarPedido.Click += btnConfirmarPedido_Click;
+
 
             // Paso 7: Resultado
             btnNuevoPedido.Click += btnNuevoPedido_Click;
@@ -522,7 +532,7 @@ namespace Edelstahl.WinApp.Forms.Commercial
         private void CargarValidacionCredito()
         {
             if (_clienteSeleccionado == null ||
-                _presupuestoSeleccionado == null)
+    _presupuestoSeleccionado == null)
             {
                 LimpiarValidacionCredito();
                 return;
@@ -711,11 +721,13 @@ namespace Edelstahl.WinApp.Forms.Commercial
 
             if (_presupuestoSeleccionado.RequiereAnticipo())
             {
+                CargarSena();
+
                 TabPage.SelectedTab = tabSena;
                 return;
             }
 
-             CargarConfirmacion();
+            CargarConfirmacion();
 
               TabPage.SelectedTab = tabConfirmacion;
 
@@ -731,6 +743,250 @@ namespace Edelstahl.WinApp.Forms.Commercial
                 MessageBoxButtons.OK,
                 MessageBoxIcon.Warning);
         }
+        // =====================================================
+        // PASO 5: REGISTRAR SENA
+        // =====================================================
+
+        private void ConfigurarMediosPago()
+        {
+            cboSenaMedioPago.Items.Clear();
+
+            cboSenaMedioPago.Items.Add(
+                "Transferencia bancaria");
+
+            cboSenaMedioPago.Items.Add(
+                "Deposito bancario");
+
+            cboSenaMedioPago.Items.Add(
+                "Cheque");
+
+            cboSenaMedioPago.Items.Add(
+                "Efectivo");
+
+            cboSenaMedioPago.SelectedIndex = -1;
+        }
+
+        private void CargarSena()
+        {
+            if (_clienteSeleccionado == null ||
+                _presupuestoSeleccionado == null)
+            {
+                LimpiarSena();
+                return;
+            }
+
+            string moneda =
+                _presupuestoSeleccionado.Moneda ==
+                Moneda.DolaresEstadounidenses
+                    ? "USD"
+                    : "ARS";
+
+            decimal importeRequerido =
+                _presupuestoSeleccionado.CalcularAnticipo();
+
+            lblSenaCliente.Text =
+                _clienteSeleccionado.RazonSocial;
+
+            lblSenaPresupuesto.Text =
+                _presupuestoSeleccionado.Numero;
+
+            lblSenaTotal.Text =
+                _presupuestoSeleccionado
+                    .CalcularTotal()
+                    .ToString("N2") +
+                " " + moneda;
+
+            lblSenaPorcentaje.Text =
+                _presupuestoSeleccionado
+                    .PorcentajeAnticipo
+                    .ToString("N2") +
+                "%";
+
+            lblSenaImporteRequerido.Text =
+                importeRequerido.ToString("N2") +
+                " " + moneda;
+            nudSenaImporteRecibido.Value = 0m;
+            cboSenaMedioPago.SelectedIndex = -1;
+            //gEnero el numeor de comprobate automaticamente
+            txtSenaComprobante.Text =
+                GenerarNumeroComprobanteSena();
+
+            txtSenaComprobante.ReadOnly = true;
+
+            dtpSenaFecha.Value = DateTime.Today;
+
+
+            _importeSenaRegistrado = 0m;
+            //gEnero el numeor de comprobate automaticamente
+            lblResultadoSena.Text =
+                "Sena pendiente";
+
+            lblResultadoSena.ForeColor =
+                Color.DimGray;
+
+            lblResultadoSena.BackColor =
+                Color.Gainsboro;
+
+            btnRegistrarSena.Enabled = true;
+        }
+        private string GenerarNumeroComprobanteSena()
+        {
+            string codigo =
+                Guid.NewGuid()
+                    .ToString("N")
+                    .Substring(0, 6)
+                    .ToUpperInvariant();
+
+            return string.Format(
+                "SENA-{0}-{1}",
+                DateTime.Today.Year,
+                codigo);
+        }
+        private void LimpiarSena()
+        {
+            _importeSenaRegistrado = 0m;
+
+            lblSenaCliente.Text =
+                "Sin seleccionar";
+
+            lblSenaPresupuesto.Text =
+                "Sin seleccionar";
+
+            lblSenaTotal.Text =
+                "0,00";
+
+            lblSenaPorcentaje.Text =
+                "0%";
+
+            lblSenaImporteRequerido.Text =
+                "0,00";
+
+            nudSenaImporteRecibido.Value = 0m;
+
+            cboSenaMedioPago.SelectedIndex = -1;
+
+            txtSenaComprobante.Clear();
+
+            dtpSenaFecha.Value = DateTime.Today;
+
+            lblResultadoSena.Text =
+                "Sena pendiente";
+
+            lblResultadoSena.ForeColor =
+                Color.DimGray;
+
+            lblResultadoSena.BackColor =
+                Color.Gainsboro;
+
+            btnRegistrarSena.Enabled = true;
+        }
+
+        private void btnAnteriorSena_Click(
+            object sender,
+            EventArgs e)
+        {
+            TabPage.SelectedTab =
+                tabValidacion;
+        }
+
+        private void btnRegistrarSena_Click(
+            object sender,
+            EventArgs e)
+        {
+            if (_clienteSeleccionado == null ||
+                _presupuestoSeleccionado == null)
+            {
+                MostrarAdvertencia(
+                    "Faltan datos del cliente o del presupuesto.",
+                    "Sena incompleta");
+
+                return;
+            }
+
+            decimal importeRequerido =
+                _presupuestoSeleccionado.CalcularAnticipo();
+
+            decimal importeRecibido =
+                nudSenaImporteRecibido.Value;
+
+            if (importeRequerido <= 0m)
+            {
+                MostrarAdvertencia(
+                    "El presupuesto no requiere anticipo.",
+                    "Sena no requerida");
+
+                return;
+            }
+
+            if (importeRecibido < importeRequerido)
+            {
+                MostrarAdvertencia(
+                    "El importe recibido debe ser igual o mayor " +
+                    "al anticipo requerido.",
+                    "Importe insuficiente");
+
+                nudSenaImporteRecibido.Focus();
+                return;
+            }
+
+            if (cboSenaMedioPago.SelectedIndex < 0)
+            {
+                MostrarAdvertencia(
+                    "Debe seleccionar un medio de pago.",
+                    "Medio de pago requerido");
+
+                cboSenaMedioPago.Focus();
+                return;
+            }
+
+            if (string.IsNullOrWhiteSpace(
+                txtSenaComprobante.Text))
+            {
+                MostrarAdvertencia(
+                    "Debe ingresar el numero de comprobante.",
+                    "Comprobante requerido");
+
+                txtSenaComprobante.Focus();
+                return;
+            }
+
+            if (dtpSenaFecha.Value.Date >
+                DateTime.Today)
+            {
+                MostrarAdvertencia(
+                    "La fecha de pago no puede ser futura.",
+                    "Fecha incorrecta");
+
+                dtpSenaFecha.Focus();
+                return;
+            }
+
+            _importeSenaRegistrado =
+                importeRecibido;
+
+            lblResultadoSena.Text =
+                "SENA REGISTRADA";
+
+            lblResultadoSena.ForeColor =
+                Color.White;
+
+            lblResultadoSena.BackColor =
+                Color.SeaGreen;
+
+            btnRegistrarSena.Enabled = false;
+
+            MessageBox.Show(
+                "La sena fue registrada correctamente.",
+                "Sena registrada",
+                MessageBoxButtons.OK,
+                MessageBoxIcon.Information);
+
+            CargarConfirmacion();
+
+            TabPage.SelectedTab =
+                tabConfirmacion;
+        }
+
         // =====================================================
         // PASO 6: CONFIRMAR PEDIDO
         // =====================================================
@@ -795,59 +1051,44 @@ namespace Edelstahl.WinApp.Forms.Commercial
             lblConfirmacionCondicion.Text =
                 _presupuestoSeleccionado.CondicionPago;
 
-            lblConfirmacionAnticipo.Text =
-                _presupuestoSeleccionado
-                    .CalcularAnticipo()
-                    .ToString("N2") +
-                " " + moneda;
+            decimal anticipoMostrado =
+    _importeSenaRegistrado > 0m
+        ? _importeSenaRegistrado
+        : _presupuestoSeleccionado.CalcularAnticipo();
 
+            lblConfirmacionAnticipo.Text =
+                anticipoMostrado.ToString("N2") +
+                " " + moneda;
             btnConfirmarPedido.Enabled = true;
         }
+     
+        //private void btnAnteriorConfirmacion_Click(
+        //  object sender,
+        //EventArgs e)
+        //{
+        //TabPage.SelectedTab = tabValidacion;
+        //}
 
         private void btnAnteriorConfirmacion_Click(
-            object sender,
-            EventArgs e)
+    object sender,
+    EventArgs e)
         {
+            if (_presupuestoSeleccionado != null &&
+                _presupuestoSeleccionado.RequiereAnticipo())
+            {
+                TabPage.SelectedTab = tabSena;
+                return;
+            }
+
             TabPage.SelectedTab = tabValidacion;
         }
 
+
         private void btnConfirmarPedido_Click(
-            object sender,
-            EventArgs e)
+    object sender,
+    EventArgs e)
         {
-            if (_clienteSeleccionado == null ||
-                _presupuestoSeleccionado == null)
-            {
-                MostrarAdvertencia(
-                    "Faltan datos para confirmar el pedido.",
-                    "Confirmacion incompleta");
 
-                return;
-            }
-
-            DialogResult resultado =
-                MessageBox.Show(
-                    "¿Confirma la generacion del pedido?",
-                    "Confirmar pedido",
-                    MessageBoxButtons.YesNo,
-                    MessageBoxIcon.Question);
-
-            if (resultado != DialogResult.Yes)
-            {
-                return;
-            }
-
-            _numeroPedidoGenerado =
-                GenerarNumeroPedido();
-
-            _presupuestoSeleccionado.Estado =
-                EstadoPresupuesto.ConvertidoEnPedido;
-
-            btnConfirmarPedido.Enabled = false;
-
-            MostrarResultadoExitoso();
-
-            TabPage.SelectedTab = tabResultado;
         }
 
         private string GenerarNumeroPedido()
@@ -1074,6 +1315,53 @@ namespace Edelstahl.WinApp.Forms.Commercial
         private void lblResultadoSena_Click(object sender, EventArgs e)
         {
 
+        }
+
+       
+
+        private void tabConfirmacion_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnConfirmarPedido_Click_1(
+    object sender,
+    EventArgs e)
+        {
+            if (_clienteSeleccionado == null ||
+                _presupuestoSeleccionado == null)
+            {
+                MostrarAdvertencia(
+                    "Faltan datos para confirmar el pedido.",
+                    "Confirmacion incompleta");
+
+                return;
+            }
+
+            DialogResult resultado =
+                MessageBox.Show(
+                    "¿Confirma la generacion del pedido?",
+                    "Confirmar pedido",
+                    MessageBoxButtons.YesNo,
+                    MessageBoxIcon.Question);
+
+            if (resultado != DialogResult.Yes)
+            {
+                return;
+            }
+
+            _numeroPedidoGenerado =
+                GenerarNumeroPedido();
+
+            _presupuestoSeleccionado.Estado =
+                EstadoPresupuesto.ConvertidoEnPedido;
+
+            btnConfirmarPedido.Enabled = false;
+
+            MostrarResultadoExitoso();
+
+            TabPage.SelectedTab =
+                tabResultado;
         }
     }
 }

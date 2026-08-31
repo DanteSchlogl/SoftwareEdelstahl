@@ -28,18 +28,25 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.GroupBox grpResumenSena;
-            System.Windows.Forms.Label btnAnteriorSena;
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle83 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle81 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle82 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle84 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle85 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle86 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle87 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle88 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle89 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle90 = new System.Windows.Forms.DataGridViewCellStyle();
+            this.lblSenaPorcentaje = new System.Windows.Forms.Label();
+            this.lblSenaPorcentajeTitulo = new System.Windows.Forms.Label();
+            this.lblSenaTotal = new System.Windows.Forms.Label();
+            this.lblSenaTotalTitulo = new System.Windows.Forms.Label();
+            this.lblSenaPresupuesto = new System.Windows.Forms.Label();
+            this.lblSenaPresupuestoTitulo = new System.Windows.Forms.Label();
+            this.lblSenaCliente = new System.Windows.Forms.Label();
+            this.lblSenaClienteTitulo = new System.Windows.Forms.Label();
             this.lblTitulo = new System.Windows.Forms.Label();
             this.lblSubtitulo = new System.Windows.Forms.Label();
             this.TabPage = new System.Windows.Forms.TabControl();
@@ -148,9 +155,21 @@
             this.lblAyudaValidacion = new System.Windows.Forms.Label();
             this.lblPasoValidacion = new System.Windows.Forms.Label();
             this.tabSena = new System.Windows.Forms.TabPage();
+            this.grpRegistroSena = new System.Windows.Forms.GroupBox();
+            this.lblResultadoSena = new System.Windows.Forms.Label();
+            this.dtpSenaFecha = new System.Windows.Forms.DateTimePicker();
+            this.lblSenaFechaTitulo = new System.Windows.Forms.Label();
+            this.txtSenaComprobante = new System.Windows.Forms.TextBox();
+            this.lblSenaComprobanteTitulo = new System.Windows.Forms.Label();
+            this.cboSenaMedioPago = new System.Windows.Forms.ComboBox();
+            this.lblSenaMedioPagoTitulo = new System.Windows.Forms.Label();
+            this.nudSenaImporteRecibido = new System.Windows.Forms.NumericUpDown();
+            this.lblSenaImporteRecibidoTitulo = new System.Windows.Forms.Label();
+            this.lblSenaImporteRequerido = new System.Windows.Forms.Label();
+            this.lblSenaImporteRequeridoTitulo = new System.Windows.Forms.Label();
+            this.lblAyudaSena = new System.Windows.Forms.Label();
             this.lblPasoSena = new System.Windows.Forms.Label();
             this.tabConfirmacion = new System.Windows.Forms.TabPage();
-            this.btnConfirmarPedido = new System.Windows.Forms.Button();
             this.btnAnteriorConfirmacion = new System.Windows.Forms.Button();
             this.lblAdvertenciaConfirmacion = new System.Windows.Forms.Label();
             this.grpImportesConfirmacion = new System.Windows.Forms.GroupBox();
@@ -199,30 +218,11 @@
             this.lblEstadoResultado = new System.Windows.Forms.Label();
             this.lblAyudaResultado = new System.Windows.Forms.Label();
             this.lblPasoResultado = new System.Windows.Forms.Label();
-            this.lblAyudaSena = new System.Windows.Forms.Label();
-            this.lblSenaClienteTitulo = new System.Windows.Forms.Label();
-            this.lblSenaCliente = new System.Windows.Forms.Label();
-            this.lblSenaPresupuestoTitulo = new System.Windows.Forms.Label();
-            this.lblSenaPresupuesto = new System.Windows.Forms.Label();
-            this.lblSenaTotalTitulo = new System.Windows.Forms.Label();
-            this.lblSenaTotal = new System.Windows.Forms.Label();
-            this.lblSenaPorcentajeTitulo = new System.Windows.Forms.Label();
-            this.lblSenaPorcentaje = new System.Windows.Forms.Label();
-            this.grpRegistroSena = new System.Windows.Forms.GroupBox();
-            this.lblSenaImporteRequeridoTitulo = new System.Windows.Forms.Label();
-            this.lblSenaImporteRequerido = new System.Windows.Forms.Label();
-            this.lblSenaImporteRecibidoTitulo = new System.Windows.Forms.Label();
-            this.nudSenaImporteRecibido = new System.Windows.Forms.NumericUpDown();
-            this.lblSenaMedioPagoTitulo = new System.Windows.Forms.Label();
-            this.cboSenaMedioPago = new System.Windows.Forms.ComboBox();
-            this.lblSenaComprobanteTitulo = new System.Windows.Forms.Label();
-            this.txtSenaComprobante = new System.Windows.Forms.TextBox();
-            this.lblSenaFechaTitulo = new System.Windows.Forms.Label();
-            this.dtpSenaFecha = new System.Windows.Forms.DateTimePicker();
-            this.lblResultadoSena = new System.Windows.Forms.Label();
-            this.btnRegistrarSena = new System.Windows.Forms.Label();
+            this.btnAnteriorSena = new System.Windows.Forms.Button();
+            this.btnRegistrarSena = new System.Windows.Forms.Button();
+            this.btnConfirmarPedido = new System.Windows.Forms.Button();
             grpResumenSena = new System.Windows.Forms.GroupBox();
-            btnAnteriorSena = new System.Windows.Forms.Label();
+            grpResumenSena.SuspendLayout();
             this.TabPage.SuspendLayout();
             this.tabCliente.SuspendLayout();
             this.grpClienteSeleccionado.SuspendLayout();
@@ -240,15 +240,112 @@
             this.grpValidacionCredito.SuspendLayout();
             this.grpDatosValidacion.SuspendLayout();
             this.tabSena.SuspendLayout();
+            this.grpRegistroSena.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nudSenaImporteRecibido)).BeginInit();
             this.tabConfirmacion.SuspendLayout();
             this.grpImportesConfirmacion.SuspendLayout();
             this.grpResumenConfirmacion.SuspendLayout();
             this.tabResultado.SuspendLayout();
             this.grpResultadoPedido.SuspendLayout();
-            grpResumenSena.SuspendLayout();
-            this.grpRegistroSena.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nudSenaImporteRecibido)).BeginInit();
             this.SuspendLayout();
+            // 
+            // grpResumenSena
+            // 
+            grpResumenSena.Controls.Add(this.lblSenaPorcentaje);
+            grpResumenSena.Controls.Add(this.lblSenaPorcentajeTitulo);
+            grpResumenSena.Controls.Add(this.lblSenaTotal);
+            grpResumenSena.Controls.Add(this.lblSenaTotalTitulo);
+            grpResumenSena.Controls.Add(this.lblSenaPresupuesto);
+            grpResumenSena.Controls.Add(this.lblSenaPresupuestoTitulo);
+            grpResumenSena.Controls.Add(this.lblSenaCliente);
+            grpResumenSena.Controls.Add(this.lblSenaClienteTitulo);
+            grpResumenSena.Location = new System.Drawing.Point(28, 90);
+            grpResumenSena.Name = "grpResumenSena";
+            grpResumenSena.Size = new System.Drawing.Size(1040, 105);
+            grpResumenSena.TabIndex = 2;
+            grpResumenSena.TabStop = false;
+            grpResumenSena.Text = "Operación seleccionada";
+            // 
+            // lblSenaPorcentaje
+            // 
+            this.lblSenaPorcentaje.AutoSize = true;
+            this.lblSenaPorcentaje.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.lblSenaPorcentaje.ForeColor = System.Drawing.Color.DarkOrange;
+            this.lblSenaPorcentaje.Location = new System.Drawing.Point(660, 65);
+            this.lblSenaPorcentaje.Name = "lblSenaPorcentaje";
+            this.lblSenaPorcentaje.Size = new System.Drawing.Size(23, 15);
+            this.lblSenaPorcentaje.TabIndex = 11;
+            this.lblSenaPorcentaje.Text = "0%";
+            // 
+            // lblSenaPorcentajeTitulo
+            // 
+            this.lblSenaPorcentajeTitulo.AutoSize = true;
+            this.lblSenaPorcentajeTitulo.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.lblSenaPorcentajeTitulo.Location = new System.Drawing.Point(520, 65);
+            this.lblSenaPorcentajeTitulo.Name = "lblSenaPorcentajeTitulo";
+            this.lblSenaPorcentajeTitulo.Size = new System.Drawing.Size(109, 15);
+            this.lblSenaPorcentajeTitulo.TabIndex = 10;
+            this.lblSenaPorcentajeTitulo.Text = "Anticipo requerido:";
+            // 
+            // lblSenaTotal
+            // 
+            this.lblSenaTotal.AutoSize = true;
+            this.lblSenaTotal.ForeColor = System.Drawing.Color.DimGray;
+            this.lblSenaTotal.Location = new System.Drawing.Point(100, 65);
+            this.lblSenaTotal.Name = "lblSenaTotal";
+            this.lblSenaTotal.Size = new System.Drawing.Size(28, 13);
+            this.lblSenaTotal.TabIndex = 9;
+            this.lblSenaTotal.Text = "0,00";
+            // 
+            // lblSenaTotalTitulo
+            // 
+            this.lblSenaTotalTitulo.AutoSize = true;
+            this.lblSenaTotalTitulo.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.lblSenaTotalTitulo.Location = new System.Drawing.Point(20, 65);
+            this.lblSenaTotalTitulo.Name = "lblSenaTotalTitulo";
+            this.lblSenaTotalTitulo.Size = new System.Drawing.Size(36, 15);
+            this.lblSenaTotalTitulo.TabIndex = 8;
+            this.lblSenaTotalTitulo.Text = "Total:";
+            // 
+            // lblSenaPresupuesto
+            // 
+            this.lblSenaPresupuesto.AutoSize = true;
+            this.lblSenaPresupuesto.ForeColor = System.Drawing.Color.DimGray;
+            this.lblSenaPresupuesto.Location = new System.Drawing.Point(620, 30);
+            this.lblSenaPresupuesto.Name = "lblSenaPresupuesto";
+            this.lblSenaPresupuesto.Size = new System.Drawing.Size(79, 13);
+            this.lblSenaPresupuesto.TabIndex = 7;
+            this.lblSenaPresupuesto.Text = "Sin seleccionar";
+            // 
+            // lblSenaPresupuestoTitulo
+            // 
+            this.lblSenaPresupuestoTitulo.AutoSize = true;
+            this.lblSenaPresupuestoTitulo.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.lblSenaPresupuestoTitulo.Location = new System.Drawing.Point(520, 30);
+            this.lblSenaPresupuestoTitulo.Name = "lblSenaPresupuestoTitulo";
+            this.lblSenaPresupuestoTitulo.Size = new System.Drawing.Size(75, 15);
+            this.lblSenaPresupuestoTitulo.TabIndex = 6;
+            this.lblSenaPresupuestoTitulo.Text = "Presupuesto:";
+            // 
+            // lblSenaCliente
+            // 
+            this.lblSenaCliente.AutoSize = true;
+            this.lblSenaCliente.ForeColor = System.Drawing.Color.DimGray;
+            this.lblSenaCliente.Location = new System.Drawing.Point(100, 30);
+            this.lblSenaCliente.Name = "lblSenaCliente";
+            this.lblSenaCliente.Size = new System.Drawing.Size(79, 13);
+            this.lblSenaCliente.TabIndex = 5;
+            this.lblSenaCliente.Text = "Sin seleccionar";
+            // 
+            // lblSenaClienteTitulo
+            // 
+            this.lblSenaClienteTitulo.AutoSize = true;
+            this.lblSenaClienteTitulo.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.lblSenaClienteTitulo.Location = new System.Drawing.Point(20, 30);
+            this.lblSenaClienteTitulo.Name = "lblSenaClienteTitulo";
+            this.lblSenaClienteTitulo.Size = new System.Drawing.Size(47, 15);
+            this.lblSenaClienteTitulo.TabIndex = 4;
+            this.lblSenaClienteTitulo.Text = "Cliente:";
             // 
             // lblTitulo
             // 
@@ -398,14 +495,14 @@
             this.colSeleccionLocalida,
             this.colSeleccionCredito,
             this.colSeleccionActivo});
-            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle13.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle13.Font = new System.Drawing.Font("Segoe UI", 9F);
-            dataGridViewCellStyle13.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle13.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(215)))));
-            dataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvSeleccionClientes.DefaultCellStyle = dataGridViewCellStyle13;
+            dataGridViewCellStyle83.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle83.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle83.Font = new System.Drawing.Font("Segoe UI", 9F);
+            dataGridViewCellStyle83.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle83.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle83.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(215)))));
+            dataGridViewCellStyle83.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvSeleccionClientes.DefaultCellStyle = dataGridViewCellStyle83;
             this.dgvSeleccionClientes.Location = new System.Drawing.Point(28, 150);
             this.dgvSeleccionClientes.MultiSelect = false;
             this.dgvSeleccionClientes.Name = "dgvSeleccionClientes";
@@ -448,9 +545,9 @@
             // 
             this.colSeleccionCredito.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
             this.colSeleccionCredito.DataPropertyName = "CreditoDisponible";
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle11.Format = "N2";
-            this.colSeleccionCredito.DefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle81.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle81.Format = "N2";
+            this.colSeleccionCredito.DefaultCellStyle = dataGridViewCellStyle81;
             this.colSeleccionCredito.FillWeight = 20F;
             this.colSeleccionCredito.HeaderText = "Crédito disponible";
             this.colSeleccionCredito.MinimumWidth = 160;
@@ -461,8 +558,8 @@
             // 
             this.colSeleccionActivo.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
             this.colSeleccionActivo.DataPropertyName = "Activo";
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.colSeleccionActivo.DefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle82.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.colSeleccionActivo.DefaultCellStyle = dataGridViewCellStyle82;
             this.colSeleccionActivo.HeaderText = "Activo";
             this.colSeleccionActivo.MinimumWidth = 70;
             this.colSeleccionActivo.Name = "colSeleccionActivo";
@@ -683,8 +780,8 @@
             // 
             this.colPresupuestoEmision.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
             this.colPresupuestoEmision.DataPropertyName = "FechaEmision";
-            dataGridViewCellStyle14.Format = "dd/MM/yyyy";
-            this.colPresupuestoEmision.DefaultCellStyle = dataGridViewCellStyle14;
+            dataGridViewCellStyle84.Format = "dd/MM/yyyy";
+            this.colPresupuestoEmision.DefaultCellStyle = dataGridViewCellStyle84;
             this.colPresupuestoEmision.HeaderText = "Emisión";
             this.colPresupuestoEmision.Name = "colPresupuestoEmision";
             this.colPresupuestoEmision.ReadOnly = true;
@@ -694,8 +791,8 @@
             // 
             this.colPresupuestoVencimiento.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
             this.colPresupuestoVencimiento.DataPropertyName = "FechaVencimiento";
-            dataGridViewCellStyle15.Format = "dd/MM/yyyy";
-            this.colPresupuestoVencimiento.DefaultCellStyle = dataGridViewCellStyle15;
+            dataGridViewCellStyle85.Format = "dd/MM/yyyy";
+            this.colPresupuestoVencimiento.DefaultCellStyle = dataGridViewCellStyle85;
             this.colPresupuestoVencimiento.HeaderText = "Vencimiento";
             this.colPresupuestoVencimiento.Name = "colPresupuestoVencimiento";
             this.colPresupuestoVencimiento.ReadOnly = true;
@@ -714,9 +811,9 @@
             // 
             this.colPresupuestoTotal.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
             this.colPresupuestoTotal.DataPropertyName = "Total";
-            dataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle16.Format = "N2";
-            this.colPresupuestoTotal.DefaultCellStyle = dataGridViewCellStyle16;
+            dataGridViewCellStyle86.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle86.Format = "N2";
+            this.colPresupuestoTotal.DefaultCellStyle = dataGridViewCellStyle86;
             this.colPresupuestoTotal.HeaderText = "Total";
             this.colPresupuestoTotal.Name = "colPresupuestoTotal";
             this.colPresupuestoTotal.ReadOnly = true;
@@ -725,9 +822,9 @@
             // 
             this.colPresupuestoAnticipo.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
             this.colPresupuestoAnticipo.DataPropertyName = "Anticipo";
-            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle17.Format = "N2";
-            this.colPresupuestoAnticipo.DefaultCellStyle = dataGridViewCellStyle17;
+            dataGridViewCellStyle87.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle87.Format = "N2";
+            this.colPresupuestoAnticipo.DefaultCellStyle = dataGridViewCellStyle87;
             this.colPresupuestoAnticipo.HeaderText = "Anticipo";
             this.colPresupuestoAnticipo.Name = "colPresupuestoAnticipo";
             this.colPresupuestoAnticipo.ReadOnly = true;
@@ -1034,27 +1131,27 @@
             // colDetalleCantidad
             // 
             this.colDetalleCantidad.DataPropertyName = "Cantidad";
-            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle18.Format = "n2";
-            this.colDetalleCantidad.DefaultCellStyle = dataGridViewCellStyle18;
+            dataGridViewCellStyle88.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle88.Format = "n2";
+            this.colDetalleCantidad.DefaultCellStyle = dataGridViewCellStyle88;
             this.colDetalleCantidad.HeaderText = "Cantidad";
             this.colDetalleCantidad.Name = "colDetalleCantidad";
             // 
             // colDetallePrecioUnitario
             // 
             this.colDetallePrecioUnitario.DataPropertyName = "Precio unitario";
-            dataGridViewCellStyle19.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle19.Format = "N2";
-            this.colDetallePrecioUnitario.DefaultCellStyle = dataGridViewCellStyle19;
+            dataGridViewCellStyle89.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle89.Format = "N2";
+            this.colDetallePrecioUnitario.DefaultCellStyle = dataGridViewCellStyle89;
             this.colDetallePrecioUnitario.HeaderText = "Precio unitario";
             this.colDetallePrecioUnitario.Name = "colDetallePrecioUnitario";
             // 
             // colDetalleSubtotal
             // 
             this.colDetalleSubtotal.DataPropertyName = "DataGridViewTextBoxColumn";
-            dataGridViewCellStyle20.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle20.Format = "N2";
-            this.colDetalleSubtotal.DefaultCellStyle = dataGridViewCellStyle20;
+            dataGridViewCellStyle90.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle90.Format = "N2";
+            this.colDetalleSubtotal.DefaultCellStyle = dataGridViewCellStyle90;
             this.colDetalleSubtotal.HeaderText = "Subtotal";
             this.colDetalleSubtotal.Name = "colDetalleSubtotal";
             // 
@@ -1474,7 +1571,7 @@
             // tabSena
             // 
             this.tabSena.Controls.Add(this.btnRegistrarSena);
-            this.tabSena.Controls.Add(btnAnteriorSena);
+            this.tabSena.Controls.Add(this.btnAnteriorSena);
             this.tabSena.Controls.Add(this.grpRegistroSena);
             this.tabSena.Controls.Add(grpResumenSena);
             this.tabSena.Controls.Add(this.lblAyudaSena);
@@ -1485,6 +1582,150 @@
             this.tabSena.TabIndex = 4;
             this.tabSena.Text = "Seña";
             this.tabSena.UseVisualStyleBackColor = true;
+            // 
+            // grpRegistroSena
+            // 
+            this.grpRegistroSena.Controls.Add(this.lblResultadoSena);
+            this.grpRegistroSena.Controls.Add(this.dtpSenaFecha);
+            this.grpRegistroSena.Controls.Add(this.lblSenaFechaTitulo);
+            this.grpRegistroSena.Controls.Add(this.txtSenaComprobante);
+            this.grpRegistroSena.Controls.Add(this.lblSenaComprobanteTitulo);
+            this.grpRegistroSena.Controls.Add(this.cboSenaMedioPago);
+            this.grpRegistroSena.Controls.Add(this.lblSenaMedioPagoTitulo);
+            this.grpRegistroSena.Controls.Add(this.nudSenaImporteRecibido);
+            this.grpRegistroSena.Controls.Add(this.lblSenaImporteRecibidoTitulo);
+            this.grpRegistroSena.Controls.Add(this.lblSenaImporteRequerido);
+            this.grpRegistroSena.Controls.Add(this.lblSenaImporteRequeridoTitulo);
+            this.grpRegistroSena.Location = new System.Drawing.Point(28, 215);
+            this.grpRegistroSena.Name = "grpRegistroSena";
+            this.grpRegistroSena.Size = new System.Drawing.Size(1040, 210);
+            this.grpRegistroSena.TabIndex = 3;
+            this.grpRegistroSena.TabStop = false;
+            this.grpRegistroSena.Text = "Datos del anticipo";
+            // 
+            // lblResultadoSena
+            // 
+            this.lblResultadoSena.BackColor = System.Drawing.Color.Gainsboro;
+            this.lblResultadoSena.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblResultadoSena.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.lblResultadoSena.ForeColor = System.Drawing.Color.DimGray;
+            this.lblResultadoSena.Location = new System.Drawing.Point(520, 125);
+            this.lblResultadoSena.Name = "lblResultadoSena";
+            this.lblResultadoSena.Size = new System.Drawing.Size(410, 45);
+            this.lblResultadoSena.TabIndex = 17;
+            this.lblResultadoSena.Text = "Seña pendiente";
+            this.lblResultadoSena.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // dtpSenaFecha
+            // 
+            this.dtpSenaFecha.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpSenaFecha.Location = new System.Drawing.Point(180, 124);
+            this.dtpSenaFecha.Name = "dtpSenaFecha";
+            this.dtpSenaFecha.Size = new System.Drawing.Size(250, 20);
+            this.dtpSenaFecha.TabIndex = 15;
+            // 
+            // lblSenaFechaTitulo
+            // 
+            this.lblSenaFechaTitulo.AutoSize = true;
+            this.lblSenaFechaTitulo.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.lblSenaFechaTitulo.Location = new System.Drawing.Point(25, 128);
+            this.lblSenaFechaTitulo.Name = "lblSenaFechaTitulo";
+            this.lblSenaFechaTitulo.Size = new System.Drawing.Size(87, 15);
+            this.lblSenaFechaTitulo.TabIndex = 14;
+            this.lblSenaFechaTitulo.Text = "Fecha de pago:";
+            // 
+            // txtSenaComprobante
+            // 
+            this.txtSenaComprobante.Location = new System.Drawing.Point(650, 78);
+            this.txtSenaComprobante.MaxLength = 50;
+            this.txtSenaComprobante.Name = "txtSenaComprobante";
+            this.txtSenaComprobante.Size = new System.Drawing.Size(280, 20);
+            this.txtSenaComprobante.TabIndex = 12;
+            // 
+            // lblSenaComprobanteTitulo
+            // 
+            this.lblSenaComprobanteTitulo.AutoSize = true;
+            this.lblSenaComprobanteTitulo.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.lblSenaComprobanteTitulo.Location = new System.Drawing.Point(520, 82);
+            this.lblSenaComprobanteTitulo.Name = "lblSenaComprobanteTitulo";
+            this.lblSenaComprobanteTitulo.Size = new System.Drawing.Size(84, 15);
+            this.lblSenaComprobanteTitulo.TabIndex = 11;
+            this.lblSenaComprobanteTitulo.Text = "Comprobante:";
+            // 
+            // cboSenaMedioPago
+            // 
+            this.cboSenaMedioPago.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboSenaMedioPago.FormattingEnabled = true;
+            this.cboSenaMedioPago.Location = new System.Drawing.Point(650, 34);
+            this.cboSenaMedioPago.Name = "cboSenaMedioPago";
+            this.cboSenaMedioPago.Size = new System.Drawing.Size(280, 21);
+            this.cboSenaMedioPago.TabIndex = 10;
+            // 
+            // lblSenaMedioPagoTitulo
+            // 
+            this.lblSenaMedioPagoTitulo.AutoSize = true;
+            this.lblSenaMedioPagoTitulo.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.lblSenaMedioPagoTitulo.Location = new System.Drawing.Point(520, 38);
+            this.lblSenaMedioPagoTitulo.Name = "lblSenaMedioPagoTitulo";
+            this.lblSenaMedioPagoTitulo.Size = new System.Drawing.Size(90, 15);
+            this.lblSenaMedioPagoTitulo.TabIndex = 9;
+            this.lblSenaMedioPagoTitulo.Text = "Medio de pago:";
+            // 
+            // nudSenaImporteRecibido
+            // 
+            this.nudSenaImporteRecibido.DecimalPlaces = 2;
+            this.nudSenaImporteRecibido.Location = new System.Drawing.Point(180, 78);
+            this.nudSenaImporteRecibido.Maximum = new decimal(new int[] {
+            999999999,
+            0,
+            0,
+            0});
+            this.nudSenaImporteRecibido.Name = "nudSenaImporteRecibido";
+            this.nudSenaImporteRecibido.Size = new System.Drawing.Size(250, 20);
+            this.nudSenaImporteRecibido.TabIndex = 8;
+            this.nudSenaImporteRecibido.ThousandsSeparator = true;
+            // 
+            // lblSenaImporteRecibidoTitulo
+            // 
+            this.lblSenaImporteRecibidoTitulo.AutoSize = true;
+            this.lblSenaImporteRecibidoTitulo.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.lblSenaImporteRecibidoTitulo.Location = new System.Drawing.Point(25, 82);
+            this.lblSenaImporteRecibidoTitulo.Name = "lblSenaImporteRecibidoTitulo";
+            this.lblSenaImporteRecibidoTitulo.Size = new System.Drawing.Size(113, 19);
+            this.lblSenaImporteRecibidoTitulo.TabIndex = 7;
+            this.lblSenaImporteRecibidoTitulo.Text = "Importe recibido:";
+            // 
+            // lblSenaImporteRequerido
+            // 
+            this.lblSenaImporteRequerido.AutoSize = true;
+            this.lblSenaImporteRequerido.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.lblSenaImporteRequerido.ForeColor = System.Drawing.Color.DarkOrange;
+            this.lblSenaImporteRequerido.Location = new System.Drawing.Point(180, 38);
+            this.lblSenaImporteRequerido.Name = "lblSenaImporteRequerido";
+            this.lblSenaImporteRequerido.Size = new System.Drawing.Size(36, 19);
+            this.lblSenaImporteRequerido.TabIndex = 6;
+            this.lblSenaImporteRequerido.Text = "0,00";
+            // 
+            // lblSenaImporteRequeridoTitulo
+            // 
+            this.lblSenaImporteRequeridoTitulo.AutoSize = true;
+            this.lblSenaImporteRequeridoTitulo.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.lblSenaImporteRequeridoTitulo.Location = new System.Drawing.Point(25, 38);
+            this.lblSenaImporteRequeridoTitulo.Name = "lblSenaImporteRequeridoTitulo";
+            this.lblSenaImporteRequeridoTitulo.Size = new System.Drawing.Size(124, 19);
+            this.lblSenaImporteRequeridoTitulo.TabIndex = 5;
+            this.lblSenaImporteRequeridoTitulo.Text = "Importe requerido:";
+            // 
+            // lblAyudaSena
+            // 
+            this.lblAyudaSena.AutoSize = true;
+            this.lblAyudaSena.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.lblAyudaSena.ForeColor = System.Drawing.Color.DimGray;
+            this.lblAyudaSena.Location = new System.Drawing.Point(28, 60);
+            this.lblAyudaSena.Name = "lblAyudaSena";
+            this.lblAyudaSena.Size = new System.Drawing.Size(318, 15);
+            this.lblAyudaSena.TabIndex = 1;
+            this.lblAyudaSena.Text = "Registre el anticipo requerido antes de confirmar el pedido.";
             // 
             // lblPasoSena
             // 
@@ -1512,26 +1753,14 @@
             this.tabConfirmacion.TabIndex = 5;
             this.tabConfirmacion.Text = "Confirmación";
             this.tabConfirmacion.UseVisualStyleBackColor = true;
-            // 
-            // btnConfirmarPedido
-            // 
-            this.btnConfirmarPedido.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnConfirmarPedido.BackColor = System.Drawing.Color.SeaGreen;
-            this.btnConfirmarPedido.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnConfirmarPedido.ForeColor = System.Drawing.Color.White;
-            this.btnConfirmarPedido.Location = new System.Drawing.Point(885, 480);
-            this.btnConfirmarPedido.Name = "btnConfirmarPedido";
-            this.btnConfirmarPedido.Size = new System.Drawing.Size(160, 40);
-            this.btnConfirmarPedido.TabIndex = 6;
-            this.btnConfirmarPedido.Text = "Confirmar pedido";
-            this.btnConfirmarPedido.UseVisualStyleBackColor = false;
+            this.tabConfirmacion.Click += new System.EventHandler(this.tabConfirmacion_Click);
             // 
             // btnAnteriorConfirmacion
             // 
             this.btnAnteriorConfirmacion.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnAnteriorConfirmacion.BackColor = System.Drawing.Color.Gainsboro;
             this.btnAnteriorConfirmacion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAnteriorConfirmacion.Location = new System.Drawing.Point(730, 480);
+            this.btnAnteriorConfirmacion.Location = new System.Drawing.Point(581, 548);
             this.btnAnteriorConfirmacion.Name = "btnAnteriorConfirmacion";
             this.btnAnteriorConfirmacion.Size = new System.Drawing.Size(140, 40);
             this.btnAnteriorConfirmacion.TabIndex = 5;
@@ -2071,269 +2300,41 @@
             this.lblPasoResultado.TabIndex = 0;
             this.lblPasoResultado.Text = "Resultado de la operación";
             // 
-            // lblAyudaSena
-            // 
-            this.lblAyudaSena.AutoSize = true;
-            this.lblAyudaSena.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.lblAyudaSena.ForeColor = System.Drawing.Color.DimGray;
-            this.lblAyudaSena.Location = new System.Drawing.Point(28, 60);
-            this.lblAyudaSena.Name = "lblAyudaSena";
-            this.lblAyudaSena.Size = new System.Drawing.Size(318, 15);
-            this.lblAyudaSena.TabIndex = 1;
-            this.lblAyudaSena.Text = "Registre el anticipo requerido antes de confirmar el pedido.";
-            // 
-            // grpResumenSena
-            // 
-            grpResumenSena.Controls.Add(this.lblSenaPorcentaje);
-            grpResumenSena.Controls.Add(this.lblSenaPorcentajeTitulo);
-            grpResumenSena.Controls.Add(this.lblSenaTotal);
-            grpResumenSena.Controls.Add(this.lblSenaTotalTitulo);
-            grpResumenSena.Controls.Add(this.lblSenaPresupuesto);
-            grpResumenSena.Controls.Add(this.lblSenaPresupuestoTitulo);
-            grpResumenSena.Controls.Add(this.lblSenaCliente);
-            grpResumenSena.Controls.Add(this.lblSenaClienteTitulo);
-            grpResumenSena.Location = new System.Drawing.Point(28, 90);
-            grpResumenSena.Name = "grpResumenSena";
-            grpResumenSena.Size = new System.Drawing.Size(1040, 105);
-            grpResumenSena.TabIndex = 2;
-            grpResumenSena.TabStop = false;
-            grpResumenSena.Text = "Operación seleccionada";
-            // 
-            // lblSenaClienteTitulo
-            // 
-            this.lblSenaClienteTitulo.AutoSize = true;
-            this.lblSenaClienteTitulo.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.lblSenaClienteTitulo.Location = new System.Drawing.Point(20, 30);
-            this.lblSenaClienteTitulo.Name = "lblSenaClienteTitulo";
-            this.lblSenaClienteTitulo.Size = new System.Drawing.Size(47, 15);
-            this.lblSenaClienteTitulo.TabIndex = 4;
-            this.lblSenaClienteTitulo.Text = "Cliente:";
-            // 
-            // lblSenaCliente
-            // 
-            this.lblSenaCliente.AutoSize = true;
-            this.lblSenaCliente.ForeColor = System.Drawing.Color.DimGray;
-            this.lblSenaCliente.Location = new System.Drawing.Point(100, 30);
-            this.lblSenaCliente.Name = "lblSenaCliente";
-            this.lblSenaCliente.Size = new System.Drawing.Size(79, 13);
-            this.lblSenaCliente.TabIndex = 5;
-            this.lblSenaCliente.Text = "Sin seleccionar";
-            // 
-            // lblSenaPresupuestoTitulo
-            // 
-            this.lblSenaPresupuestoTitulo.AutoSize = true;
-            this.lblSenaPresupuestoTitulo.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.lblSenaPresupuestoTitulo.Location = new System.Drawing.Point(520, 30);
-            this.lblSenaPresupuestoTitulo.Name = "lblSenaPresupuestoTitulo";
-            this.lblSenaPresupuestoTitulo.Size = new System.Drawing.Size(75, 15);
-            this.lblSenaPresupuestoTitulo.TabIndex = 6;
-            this.lblSenaPresupuestoTitulo.Text = "Presupuesto:";
-            // 
-            // lblSenaPresupuesto
-            // 
-            this.lblSenaPresupuesto.AutoSize = true;
-            this.lblSenaPresupuesto.ForeColor = System.Drawing.Color.DimGray;
-            this.lblSenaPresupuesto.Location = new System.Drawing.Point(620, 30);
-            this.lblSenaPresupuesto.Name = "lblSenaPresupuesto";
-            this.lblSenaPresupuesto.Size = new System.Drawing.Size(79, 13);
-            this.lblSenaPresupuesto.TabIndex = 7;
-            this.lblSenaPresupuesto.Text = "Sin seleccionar";
-            // 
-            // lblSenaTotalTitulo
-            // 
-            this.lblSenaTotalTitulo.AutoSize = true;
-            this.lblSenaTotalTitulo.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.lblSenaTotalTitulo.Location = new System.Drawing.Point(20, 65);
-            this.lblSenaTotalTitulo.Name = "lblSenaTotalTitulo";
-            this.lblSenaTotalTitulo.Size = new System.Drawing.Size(36, 15);
-            this.lblSenaTotalTitulo.TabIndex = 8;
-            this.lblSenaTotalTitulo.Text = "Total:";
-            // 
-            // lblSenaTotal
-            // 
-            this.lblSenaTotal.AutoSize = true;
-            this.lblSenaTotal.ForeColor = System.Drawing.Color.DimGray;
-            this.lblSenaTotal.Location = new System.Drawing.Point(100, 65);
-            this.lblSenaTotal.Name = "lblSenaTotal";
-            this.lblSenaTotal.Size = new System.Drawing.Size(28, 13);
-            this.lblSenaTotal.TabIndex = 9;
-            this.lblSenaTotal.Text = "0,00";
-            // 
-            // lblSenaPorcentajeTitulo
-            // 
-            this.lblSenaPorcentajeTitulo.AutoSize = true;
-            this.lblSenaPorcentajeTitulo.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.lblSenaPorcentajeTitulo.Location = new System.Drawing.Point(520, 65);
-            this.lblSenaPorcentajeTitulo.Name = "lblSenaPorcentajeTitulo";
-            this.lblSenaPorcentajeTitulo.Size = new System.Drawing.Size(109, 15);
-            this.lblSenaPorcentajeTitulo.TabIndex = 10;
-            this.lblSenaPorcentajeTitulo.Text = "Anticipo requerido:";
-            // 
-            // lblSenaPorcentaje
-            // 
-            this.lblSenaPorcentaje.AutoSize = true;
-            this.lblSenaPorcentaje.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.lblSenaPorcentaje.ForeColor = System.Drawing.Color.DarkOrange;
-            this.lblSenaPorcentaje.Location = new System.Drawing.Point(660, 65);
-            this.lblSenaPorcentaje.Name = "lblSenaPorcentaje";
-            this.lblSenaPorcentaje.Size = new System.Drawing.Size(23, 15);
-            this.lblSenaPorcentaje.TabIndex = 11;
-            this.lblSenaPorcentaje.Text = "0%";
-            // 
-            // grpRegistroSena
-            // 
-            this.grpRegistroSena.Controls.Add(this.lblResultadoSena);
-            this.grpRegistroSena.Controls.Add(this.dtpSenaFecha);
-            this.grpRegistroSena.Controls.Add(this.lblSenaFechaTitulo);
-            this.grpRegistroSena.Controls.Add(this.txtSenaComprobante);
-            this.grpRegistroSena.Controls.Add(this.lblSenaComprobanteTitulo);
-            this.grpRegistroSena.Controls.Add(this.cboSenaMedioPago);
-            this.grpRegistroSena.Controls.Add(this.lblSenaMedioPagoTitulo);
-            this.grpRegistroSena.Controls.Add(this.nudSenaImporteRecibido);
-            this.grpRegistroSena.Controls.Add(this.lblSenaImporteRecibidoTitulo);
-            this.grpRegistroSena.Controls.Add(this.lblSenaImporteRequerido);
-            this.grpRegistroSena.Controls.Add(this.lblSenaImporteRequeridoTitulo);
-            this.grpRegistroSena.Location = new System.Drawing.Point(28, 215);
-            this.grpRegistroSena.Name = "grpRegistroSena";
-            this.grpRegistroSena.Size = new System.Drawing.Size(1040, 210);
-            this.grpRegistroSena.TabIndex = 3;
-            this.grpRegistroSena.TabStop = false;
-            this.grpRegistroSena.Text = "Datos del anticipo";
-            // 
-            // lblSenaImporteRequeridoTitulo
-            // 
-            this.lblSenaImporteRequeridoTitulo.AutoSize = true;
-            this.lblSenaImporteRequeridoTitulo.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.lblSenaImporteRequeridoTitulo.Location = new System.Drawing.Point(25, 38);
-            this.lblSenaImporteRequeridoTitulo.Name = "lblSenaImporteRequeridoTitulo";
-            this.lblSenaImporteRequeridoTitulo.Size = new System.Drawing.Size(124, 19);
-            this.lblSenaImporteRequeridoTitulo.TabIndex = 5;
-            this.lblSenaImporteRequeridoTitulo.Text = "Importe requerido:";
-            // 
-            // lblSenaImporteRequerido
-            // 
-            this.lblSenaImporteRequerido.AutoSize = true;
-            this.lblSenaImporteRequerido.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.lblSenaImporteRequerido.ForeColor = System.Drawing.Color.DarkOrange;
-            this.lblSenaImporteRequerido.Location = new System.Drawing.Point(180, 38);
-            this.lblSenaImporteRequerido.Name = "lblSenaImporteRequerido";
-            this.lblSenaImporteRequerido.Size = new System.Drawing.Size(36, 19);
-            this.lblSenaImporteRequerido.TabIndex = 6;
-            this.lblSenaImporteRequerido.Text = "0,00";
-            // 
-            // lblSenaImporteRecibidoTitulo
-            // 
-            this.lblSenaImporteRecibidoTitulo.AutoSize = true;
-            this.lblSenaImporteRecibidoTitulo.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.lblSenaImporteRecibidoTitulo.Location = new System.Drawing.Point(25, 82);
-            this.lblSenaImporteRecibidoTitulo.Name = "lblSenaImporteRecibidoTitulo";
-            this.lblSenaImporteRecibidoTitulo.Size = new System.Drawing.Size(113, 19);
-            this.lblSenaImporteRecibidoTitulo.TabIndex = 7;
-            this.lblSenaImporteRecibidoTitulo.Text = "Importe recibido:";
-            // 
-            // nudSenaImporteRecibido
-            // 
-            this.nudSenaImporteRecibido.DecimalPlaces = 2;
-            this.nudSenaImporteRecibido.Location = new System.Drawing.Point(180, 78);
-            this.nudSenaImporteRecibido.Maximum = new decimal(new int[] {
-            999999999,
-            0,
-            0,
-            0});
-            this.nudSenaImporteRecibido.Name = "nudSenaImporteRecibido";
-            this.nudSenaImporteRecibido.Size = new System.Drawing.Size(250, 20);
-            this.nudSenaImporteRecibido.TabIndex = 8;
-            this.nudSenaImporteRecibido.ThousandsSeparator = true;
-            // 
-            // lblSenaMedioPagoTitulo
-            // 
-            this.lblSenaMedioPagoTitulo.AutoSize = true;
-            this.lblSenaMedioPagoTitulo.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.lblSenaMedioPagoTitulo.Location = new System.Drawing.Point(520, 38);
-            this.lblSenaMedioPagoTitulo.Name = "lblSenaMedioPagoTitulo";
-            this.lblSenaMedioPagoTitulo.Size = new System.Drawing.Size(90, 15);
-            this.lblSenaMedioPagoTitulo.TabIndex = 9;
-            this.lblSenaMedioPagoTitulo.Text = "Medio de pago:";
-            // 
-            // cboSenaMedioPago
-            // 
-            this.cboSenaMedioPago.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboSenaMedioPago.FormattingEnabled = true;
-            this.cboSenaMedioPago.Location = new System.Drawing.Point(650, 34);
-            this.cboSenaMedioPago.Name = "cboSenaMedioPago";
-            this.cboSenaMedioPago.Size = new System.Drawing.Size(280, 21);
-            this.cboSenaMedioPago.TabIndex = 10;
-            // 
-            // lblSenaComprobanteTitulo
-            // 
-            this.lblSenaComprobanteTitulo.AutoSize = true;
-            this.lblSenaComprobanteTitulo.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.lblSenaComprobanteTitulo.Location = new System.Drawing.Point(520, 82);
-            this.lblSenaComprobanteTitulo.Name = "lblSenaComprobanteTitulo";
-            this.lblSenaComprobanteTitulo.Size = new System.Drawing.Size(84, 15);
-            this.lblSenaComprobanteTitulo.TabIndex = 11;
-            this.lblSenaComprobanteTitulo.Text = "Comprobante:";
-            // 
-            // txtSenaComprobante
-            // 
-            this.txtSenaComprobante.Location = new System.Drawing.Point(650, 78);
-            this.txtSenaComprobante.MaxLength = 50;
-            this.txtSenaComprobante.Name = "txtSenaComprobante";
-            this.txtSenaComprobante.Size = new System.Drawing.Size(280, 20);
-            this.txtSenaComprobante.TabIndex = 12;
-            // 
-            // lblSenaFechaTitulo
-            // 
-            this.lblSenaFechaTitulo.AutoSize = true;
-            this.lblSenaFechaTitulo.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.lblSenaFechaTitulo.Location = new System.Drawing.Point(25, 128);
-            this.lblSenaFechaTitulo.Name = "lblSenaFechaTitulo";
-            this.lblSenaFechaTitulo.Size = new System.Drawing.Size(87, 15);
-            this.lblSenaFechaTitulo.TabIndex = 14;
-            this.lblSenaFechaTitulo.Text = "Fecha de pago:";
-            // 
-            // dtpSenaFecha
-            // 
-            this.dtpSenaFecha.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpSenaFecha.Location = new System.Drawing.Point(180, 124);
-            this.dtpSenaFecha.Name = "dtpSenaFecha";
-            this.dtpSenaFecha.Size = new System.Drawing.Size(250, 20);
-            this.dtpSenaFecha.TabIndex = 15;
-            // 
-            // lblResultadoSena
-            // 
-            this.lblResultadoSena.BackColor = System.Drawing.Color.Gainsboro;
-            this.lblResultadoSena.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblResultadoSena.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.lblResultadoSena.ForeColor = System.Drawing.Color.DimGray;
-            this.lblResultadoSena.Location = new System.Drawing.Point(520, 125);
-            this.lblResultadoSena.Name = "lblResultadoSena";
-            this.lblResultadoSena.Size = new System.Drawing.Size(410, 45);
-            this.lblResultadoSena.TabIndex = 17;
-            this.lblResultadoSena.Text = "Seña pendiente";
-            this.lblResultadoSena.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // btnAnteriorSena
             // 
-            btnAnteriorSena.BackColor = System.Drawing.Color.Gainsboro;
-            btnAnteriorSena.Cursor = System.Windows.Forms.Cursors.Default;
-            btnAnteriorSena.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            btnAnteriorSena.Location = new System.Drawing.Point(700, 460);
-            btnAnteriorSena.Name = "btnAnteriorSena";
-            btnAnteriorSena.Size = new System.Drawing.Size(140, 40);
-            btnAnteriorSena.TabIndex = 4;
-            btnAnteriorSena.Text = "< Anterior";
+            this.btnAnteriorSena.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnAnteriorSena.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAnteriorSena.Location = new System.Drawing.Point(551, 508);
+            this.btnAnteriorSena.Name = "btnAnteriorSena";
+            this.btnAnteriorSena.Size = new System.Drawing.Size(140, 40);
+            this.btnAnteriorSena.TabIndex = 6;
+            this.btnAnteriorSena.Text = "< Anterior";
+            this.btnAnteriorSena.UseVisualStyleBackColor = false;
             // 
             // btnRegistrarSena
             // 
             this.btnRegistrarSena.BackColor = System.Drawing.Color.SeaGreen;
             this.btnRegistrarSena.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRegistrarSena.ForeColor = System.Drawing.Color.White;
-            this.btnRegistrarSena.Location = new System.Drawing.Point(855, 460);
+            this.btnRegistrarSena.Location = new System.Drawing.Point(788, 508);
             this.btnRegistrarSena.Name = "btnRegistrarSena";
             this.btnRegistrarSena.Size = new System.Drawing.Size(170, 40);
-            this.btnRegistrarSena.TabIndex = 5;
+            this.btnRegistrarSena.TabIndex = 7;
             this.btnRegistrarSena.Text = "Registrar seña";
+            this.btnRegistrarSena.UseVisualStyleBackColor = false;
+            // 
+            // btnConfirmarPedido
+            // 
+            this.btnConfirmarPedido.BackColor = System.Drawing.Color.SeaGreen;
+            this.btnConfirmarPedido.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnConfirmarPedido.ForeColor = System.Drawing.Color.White;
+            this.btnConfirmarPedido.Location = new System.Drawing.Point(792, 548);
+            this.btnConfirmarPedido.Name = "btnConfirmarPedido";
+            this.btnConfirmarPedido.Size = new System.Drawing.Size(160, 40);
+            this.btnConfirmarPedido.TabIndex = 7;
+            this.btnConfirmarPedido.Text = "Confirmar pedido";
+            this.btnConfirmarPedido.UseVisualStyleBackColor = false;
+            this.btnConfirmarPedido.Click += new System.EventHandler(this.btnConfirmarPedido_Click_1);
             // 
             // FrmConfirmarPedido
             // 
@@ -2346,6 +2347,8 @@
             this.Name = "FrmConfirmarPedido";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Confirmar pedido";
+            grpResumenSena.ResumeLayout(false);
+            grpResumenSena.PerformLayout();
             this.TabPage.ResumeLayout(false);
             this.tabCliente.ResumeLayout(false);
             this.tabCliente.PerformLayout();
@@ -2376,6 +2379,9 @@
             this.grpDatosValidacion.PerformLayout();
             this.tabSena.ResumeLayout(false);
             this.tabSena.PerformLayout();
+            this.grpRegistroSena.ResumeLayout(false);
+            this.grpRegistroSena.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nudSenaImporteRecibido)).EndInit();
             this.tabConfirmacion.ResumeLayout(false);
             this.tabConfirmacion.PerformLayout();
             this.grpImportesConfirmacion.ResumeLayout(false);
@@ -2386,11 +2392,6 @@
             this.tabResultado.PerformLayout();
             this.grpResultadoPedido.ResumeLayout(false);
             this.grpResultadoPedido.PerformLayout();
-            grpResumenSena.ResumeLayout(false);
-            grpResumenSena.PerformLayout();
-            this.grpRegistroSena.ResumeLayout(false);
-            this.grpRegistroSena.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nudSenaImporteRecibido)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -2536,7 +2537,6 @@
         private System.Windows.Forms.Label lblConfirmacionCondicion;
         private System.Windows.Forms.Label lblConfirmacionAnticipoTitulo;
         private System.Windows.Forms.Label lblConfirmacionAnticipo;
-        private System.Windows.Forms.Button btnConfirmarPedido;
         private System.Windows.Forms.Button btnAnteriorConfirmacion;
         private System.Windows.Forms.Label lblAdvertenciaConfirmacion;
         private System.Windows.Forms.Label lblEstadoResultado;
@@ -2578,6 +2578,8 @@
         private System.Windows.Forms.TextBox txtSenaComprobante;
         private System.Windows.Forms.Label lblSenaComprobanteTitulo;
         private System.Windows.Forms.Label lblResultadoSena;
-        private System.Windows.Forms.Label btnRegistrarSena;
+        private System.Windows.Forms.Button btnAnteriorSena;
+        private System.Windows.Forms.Button btnRegistrarSena;
+        private System.Windows.Forms.Button btnConfirmarPedido;
     }
 }
