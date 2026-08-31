@@ -3,11 +3,7 @@
   "WorkspaceRootPath": "C:\\Users\\Dana Eilin\\Documents\\Edelstahl\\Edelstahl\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2303C0B0-B684-442E-B2AB-E14BBF058313}|Edelstahl.WinApp\\Edelstahl.WinApp.csproj|c:\\users\\dana eilin\\documents\\edelstahl\\edelstahl\\edelstahl.winapp\\forms\\commercial\\frmconfirmarpedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2303C0B0-B684-442E-B2AB-E14BBF058313}|Edelstahl.WinApp\\Edelstahl.WinApp.csproj|solutionrelative:edelstahl.winapp\\forms\\commercial\\frmconfirmarpedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2303C0B0-B684-442E-B2AB-E14BBF058313}|Edelstahl.WinApp\\Edelstahl.WinApp.csproj|c:\\users\\dana eilin\\documents\\edelstahl\\edelstahl\\edelstahl.winapp\\forms\\commercial\\frmconfirmarpedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{2303C0B0-B684-442E-B2AB-E14BBF058313}|Edelstahl.WinApp\\Edelstahl.WinApp.csproj|C:\\Users\\Dana Eilin\\Documents\\Edelstahl\\Edelstahl\\edelstahl.winapp\\forms\\commercial\\frmconfirmarpedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{2303C0B0-B684-442E-B2AB-E14BBF058313}|Edelstahl.WinApp\\Edelstahl.WinApp.csproj|solutionrelative:edelstahl.winapp\\forms\\commercial\\frmconfirmarpedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -30,19 +26,6 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "FrmConfirmarPedido.cs",
-              "DocumentMoniker": "C:\\Users\\Dana Eilin\\Documents\\Edelstahl\\Edelstahl\\Edelstahl.WinApp\\Forms\\Commercial\\FrmConfirmarPedido.cs",
-              "RelativeDocumentMoniker": "Edelstahl.WinApp\\Forms\\Commercial\\FrmConfirmarPedido.cs",
-              "ToolTip": "C:\\Users\\Dana Eilin\\Documents\\Edelstahl\\Edelstahl\\Edelstahl.WinApp\\Forms\\Commercial\\FrmConfirmarPedido.cs",
-              "RelativeToolTip": "Edelstahl.WinApp\\Forms\\Commercial\\FrmConfirmarPedido.cs",
-              "ViewState": "AgIAAGQDAAAAAAAAAADwv7cDAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-31T16:06:33.968Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "FrmConfirmarPedido.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\Dana Eilin\\Documents\\Edelstahl\\Edelstahl\\Edelstahl.WinApp\\Forms\\Commercial\\FrmConfirmarPedido.cs",
               "RelativeDocumentMoniker": "Edelstahl.WinApp\\Forms\\Commercial\\FrmConfirmarPedido.cs",
@@ -54,7 +37,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "FrmConfirmarPedido_validacion.cs",
               "DocumentMoniker": "C:\\Users\\Dana Eilin\\Downloads\\FrmConfirmarPedido_validacion.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\Downloads\\FrmConfirmarPedido_validacion.cs",
@@ -62,12 +45,11 @@
               "RelativeToolTip": "..\\..\\..\\Downloads\\FrmConfirmarPedido_validacion.cs",
               "ViewState": "AgIAANECAAAAAAAAAAAAAOsCAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-31T14:31:21.201Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-08-31T14:31:21.201Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "DetallePresupuestoDto.cs",
               "DocumentMoniker": "C:\\Users\\Dana Eilin\\Documents\\Edelstahl\\Edelstahl\\Edelstahl.BLL\\DTOs\\DetallePresupuestoDto.cs",
               "RelativeDocumentMoniker": "Edelstahl.BLL\\DTOs\\DetallePresupuestoDto.cs",

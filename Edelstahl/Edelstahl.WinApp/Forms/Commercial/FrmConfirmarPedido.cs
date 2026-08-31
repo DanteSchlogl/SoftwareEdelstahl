@@ -1070,6 +1070,11 @@ namespace Edelstahl.WinApp.Forms.Commercial
             EventArgs e)
         {
         }
+
+        private void lblResultadoSena_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 

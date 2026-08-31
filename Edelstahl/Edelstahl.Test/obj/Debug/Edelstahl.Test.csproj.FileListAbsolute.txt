@@ -1,0 +1,16 @@
+C:\Users\Dana Eilin\Documents\Edelstahl\Edelstahl\Edelstahl.Test\bin\Debug\Edelstahl.Test.exe.config
+C:\Users\Dana Eilin\Documents\Edelstahl\Edelstahl\Edelstahl.Test\bin\Debug\Edelstahl.Test.exe
+C:\Users\Dana Eilin\Documents\Edelstahl\Edelstahl\Edelstahl.Test\bin\Debug\Edelstahl.Test.pdb
+C:\Users\Dana Eilin\Documents\Edelstahl\Edelstahl\Edelstahl.Test\bin\Debug\Edelstahl.BLL.dll
+C:\Users\Dana Eilin\Documents\Edelstahl\Edelstahl\Edelstahl.Test\bin\Debug\Edelstahl.DAL.dll
+C:\Users\Dana Eilin\Documents\Edelstahl\Edelstahl\Edelstahl.Test\bin\Debug\Edelstahl.Domain.dll
+C:\Users\Dana Eilin\Documents\Edelstahl\Edelstahl\Edelstahl.Test\bin\Debug\Edelstahl.Services.dll
+C:\Users\Dana Eilin\Documents\Edelstahl\Edelstahl\Edelstahl.Test\bin\Debug\Edelstahl.BLL.pdb
+C:\Users\Dana Eilin\Documents\Edelstahl\Edelstahl\Edelstahl.Test\bin\Debug\Edelstahl.DAL.pdb
+C:\Users\Dana Eilin\Documents\Edelstahl\Edelstahl\Edelstahl.Test\bin\Debug\Edelstahl.Domain.pdb
+C:\Users\Dana Eilin\Documents\Edelstahl\Edelstahl\Edelstahl.Test\bin\Debug\Edelstahl.Services.pdb
+C:\Users\Dana Eilin\Documents\Edelstahl\Edelstahl\Edelstahl.Test\obj\Debug\Edelstahl.Test.csproj.AssemblyReference.cache
+C:\Users\Dana Eilin\Documents\Edelstahl\Edelstahl\Edelstahl.Test\obj\Debug\Edelstahl.Test.csproj.CoreCompileInputs.cache
+C:\Users\Dana Eilin\Documents\Edelstahl\Edelstahl\Edelstahl.Test\obj\Debug\Edelstah.FA0FCAEB.Up2Date
+C:\Users\Dana Eilin\Documents\Edelstahl\Edelstahl\Edelstahl.Test\obj\Debug\Edelstahl.Test.exe
+C:\Users\Dana Eilin\Documents\Edelstahl\Edelstahl\Edelstahl.Test\obj\Debug\Edelstahl.Test.pdb

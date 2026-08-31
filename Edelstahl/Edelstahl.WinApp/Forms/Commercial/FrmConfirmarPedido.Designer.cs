@@ -28,16 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.GroupBox grpResumenSena;
+            System.Windows.Forms.Label btnAnteriorSena;
             this.lblTitulo = new System.Windows.Forms.Label();
             this.lblSubtitulo = new System.Windows.Forms.Label();
             this.TabPage = new System.Windows.Forms.TabControl();
@@ -148,55 +150,79 @@
             this.tabSena = new System.Windows.Forms.TabPage();
             this.lblPasoSena = new System.Windows.Forms.Label();
             this.tabConfirmacion = new System.Windows.Forms.TabPage();
+            this.btnConfirmarPedido = new System.Windows.Forms.Button();
+            this.btnAnteriorConfirmacion = new System.Windows.Forms.Button();
+            this.lblAdvertenciaConfirmacion = new System.Windows.Forms.Label();
+            this.grpImportesConfirmacion = new System.Windows.Forms.GroupBox();
+            this.lblConfirmacionAnticipo = new System.Windows.Forms.Label();
+            this.lblConfirmacionAnticipoTitulo = new System.Windows.Forms.Label();
+            this.lblConfirmacionCondicion = new System.Windows.Forms.Label();
+            this.lblConfirmacionCondicionTitulo = new System.Windows.Forms.Label();
+            this.lblConfirmacionMoneda = new System.Windows.Forms.Label();
+            this.lblConfirmacionMonedaTitulo = new System.Windows.Forms.Label();
+            this.lblConfirmacionTotal = new System.Windows.Forms.Label();
+            this.lblConfirmacionTotalTitulo = new System.Windows.Forms.Label();
+            this.lblConfirmacionIVA = new System.Windows.Forms.Label();
+            this.lblConfirmacionIVATitulo = new System.Windows.Forms.Label();
+            this.lblConfirmacionSubtotal = new System.Windows.Forms.Label();
+            this.lblConfirmacionSubtotalTitulo = new System.Windows.Forms.Label();
+            this.grpResumenConfirmacion = new System.Windows.Forms.GroupBox();
+            this.lblConfirmacionItems = new System.Windows.Forms.Label();
+            this.lblConfirmacionItemsTitulo = new System.Windows.Forms.Label();
+            this.lblConfirmacionCredito = new System.Windows.Forms.Label();
+            this.lblConfirmacionCreditoTitulo = new System.Windows.Forms.Label();
+            this.lblConfirmacionPresupuesto = new System.Windows.Forms.Label();
+            this.lblConfirmacionPresupuestoTitulo = new System.Windows.Forms.Label();
+            this.lblConfirmacionCUIT = new System.Windows.Forms.Label();
+            this.lblConfirmacionCUITTitulo = new System.Windows.Forms.Label();
+            this.lblConfirmacionCliente = new System.Windows.Forms.Label();
+            this.lblConfirmacionClienteTitulo = new System.Windows.Forms.Label();
+            this.lblAyudaConfirmacion = new System.Windows.Forms.Label();
             this.lblPasoConfirmacion = new System.Windows.Forms.Label();
             this.tabResultado = new System.Windows.Forms.TabPage();
-            this.lblPasoResultado = new System.Windows.Forms.Label();
-            this.lblAyudaConfirmacion = new System.Windows.Forms.Label();
-            this.grpResumenConfirmacion = new System.Windows.Forms.GroupBox();
-            this.lblConfirmacionClienteTitulo = new System.Windows.Forms.Label();
-            this.lblConfirmacionCliente = new System.Windows.Forms.Label();
-            this.lblConfirmacionCUITTitulo = new System.Windows.Forms.Label();
-            this.lblConfirmacionCUIT = new System.Windows.Forms.Label();
-            this.lblConfirmacionPresupuestoTitulo = new System.Windows.Forms.Label();
-            this.lblConfirmacionPresupuesto = new System.Windows.Forms.Label();
-            this.lblConfirmacionCreditoTitulo = new System.Windows.Forms.Label();
-            this.lblConfirmacionCredito = new System.Windows.Forms.Label();
-            this.lblConfirmacionItemsTitulo = new System.Windows.Forms.Label();
-            this.lblConfirmacionItems = new System.Windows.Forms.Label();
-            this.grpImportesConfirmacion = new System.Windows.Forms.GroupBox();
-            this.lblConfirmacionSubtotalTitulo = new System.Windows.Forms.Label();
-            this.lblConfirmacionSubtotal = new System.Windows.Forms.Label();
-            this.lblConfirmacionIVATitulo = new System.Windows.Forms.Label();
-            this.lblConfirmacionIVA = new System.Windows.Forms.Label();
-            this.lblConfirmacionTotalTitulo = new System.Windows.Forms.Label();
-            this.lblConfirmacionTotal = new System.Windows.Forms.Label();
-            this.lblConfirmacionMonedaTitulo = new System.Windows.Forms.Label();
-            this.lblConfirmacionMoneda = new System.Windows.Forms.Label();
-            this.lblConfirmacionCondicionTitulo = new System.Windows.Forms.Label();
-            this.lblConfirmacionCondicion = new System.Windows.Forms.Label();
-            this.lblConfirmacionAnticipoTitulo = new System.Windows.Forms.Label();
-            this.lblConfirmacionAnticipo = new System.Windows.Forms.Label();
-            this.lblAdvertenciaConfirmacion = new System.Windows.Forms.Label();
-            this.btnAnteriorConfirmacion = new System.Windows.Forms.Button();
-            this.btnConfirmarPedido = new System.Windows.Forms.Button();
-            this.lblAyudaResultado = new System.Windows.Forms.Label();
-            this.lblEstadoResultado = new System.Windows.Forms.Label();
-            this.grpResultadoPedido = new System.Windows.Forms.GroupBox();
-            this.lblResultadoNumeroPedidoTitulo = new System.Windows.Forms.Label();
-            this.lblResultadoNumeroPedido = new System.Windows.Forms.Label();
-            this.lblResultadoClienteTitulo = new System.Windows.Forms.Label();
-            this.lblResultadoCliente = new System.Windows.Forms.Label();
-            this.lblResultadoPresupuestoTitulo = new System.Windows.Forms.Label();
-            this.lblResultadoPresupuesto = new System.Windows.Forms.Label();
-            this.lblResultadoTotalTitulo = new System.Windows.Forms.Label();
-            this.lblResultadoTotal = new System.Windows.Forms.Label();
-            this.lblResultadoFechaTitulo = new System.Windows.Forms.Label();
-            this.lblResultadoFecha = new System.Windows.Forms.Label();
-            this.lblResultadoEstadoTitulo = new System.Windows.Forms.Label();
-            this.lblResultadoEstado = new System.Windows.Forms.Label();
-            this.lblMensajeResultado = new System.Windows.Forms.Label();
-            this.btnNuevoPedido = new System.Windows.Forms.Button();
             this.btnCerrarResultado = new System.Windows.Forms.Button();
+            this.btnNuevoPedido = new System.Windows.Forms.Button();
+            this.lblMensajeResultado = new System.Windows.Forms.Label();
+            this.grpResultadoPedido = new System.Windows.Forms.GroupBox();
+            this.lblResultadoEstado = new System.Windows.Forms.Label();
+            this.lblResultadoEstadoTitulo = new System.Windows.Forms.Label();
+            this.lblResultadoFecha = new System.Windows.Forms.Label();
+            this.lblResultadoFechaTitulo = new System.Windows.Forms.Label();
+            this.lblResultadoTotal = new System.Windows.Forms.Label();
+            this.lblResultadoTotalTitulo = new System.Windows.Forms.Label();
+            this.lblResultadoPresupuesto = new System.Windows.Forms.Label();
+            this.lblResultadoPresupuestoTitulo = new System.Windows.Forms.Label();
+            this.lblResultadoCliente = new System.Windows.Forms.Label();
+            this.lblResultadoClienteTitulo = new System.Windows.Forms.Label();
+            this.lblResultadoNumeroPedido = new System.Windows.Forms.Label();
+            this.lblResultadoNumeroPedidoTitulo = new System.Windows.Forms.Label();
+            this.lblEstadoResultado = new System.Windows.Forms.Label();
+            this.lblAyudaResultado = new System.Windows.Forms.Label();
+            this.lblPasoResultado = new System.Windows.Forms.Label();
+            this.lblAyudaSena = new System.Windows.Forms.Label();
+            this.lblSenaClienteTitulo = new System.Windows.Forms.Label();
+            this.lblSenaCliente = new System.Windows.Forms.Label();
+            this.lblSenaPresupuestoTitulo = new System.Windows.Forms.Label();
+            this.lblSenaPresupuesto = new System.Windows.Forms.Label();
+            this.lblSenaTotalTitulo = new System.Windows.Forms.Label();
+            this.lblSenaTotal = new System.Windows.Forms.Label();
+            this.lblSenaPorcentajeTitulo = new System.Windows.Forms.Label();
+            this.lblSenaPorcentaje = new System.Windows.Forms.Label();
+            this.grpRegistroSena = new System.Windows.Forms.GroupBox();
+            this.lblSenaImporteRequeridoTitulo = new System.Windows.Forms.Label();
+            this.lblSenaImporteRequerido = new System.Windows.Forms.Label();
+            this.lblSenaImporteRecibidoTitulo = new System.Windows.Forms.Label();
+            this.nudSenaImporteRecibido = new System.Windows.Forms.NumericUpDown();
+            this.lblSenaMedioPagoTitulo = new System.Windows.Forms.Label();
+            this.cboSenaMedioPago = new System.Windows.Forms.ComboBox();
+            this.lblSenaComprobanteTitulo = new System.Windows.Forms.Label();
+            this.txtSenaComprobante = new System.Windows.Forms.TextBox();
+            this.lblSenaFechaTitulo = new System.Windows.Forms.Label();
+            this.dtpSenaFecha = new System.Windows.Forms.DateTimePicker();
+            this.lblResultadoSena = new System.Windows.Forms.Label();
+            this.btnRegistrarSena = new System.Windows.Forms.Label();
+            grpResumenSena = new System.Windows.Forms.GroupBox();
+            btnAnteriorSena = new System.Windows.Forms.Label();
             this.TabPage.SuspendLayout();
             this.tabCliente.SuspendLayout();
             this.grpClienteSeleccionado.SuspendLayout();
@@ -215,10 +241,13 @@
             this.grpDatosValidacion.SuspendLayout();
             this.tabSena.SuspendLayout();
             this.tabConfirmacion.SuspendLayout();
-            this.tabResultado.SuspendLayout();
-            this.grpResumenConfirmacion.SuspendLayout();
             this.grpImportesConfirmacion.SuspendLayout();
+            this.grpResumenConfirmacion.SuspendLayout();
+            this.tabResultado.SuspendLayout();
             this.grpResultadoPedido.SuspendLayout();
+            grpResumenSena.SuspendLayout();
+            this.grpRegistroSena.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nudSenaImporteRecibido)).BeginInit();
             this.SuspendLayout();
             // 
             // lblTitulo
@@ -369,14 +398,14 @@
             this.colSeleccionLocalida,
             this.colSeleccionCredito,
             this.colSeleccionActivo});
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 9F);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(215)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvSeleccionClientes.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle13.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle13.Font = new System.Drawing.Font("Segoe UI", 9F);
+            dataGridViewCellStyle13.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle13.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(120)))), ((int)(((byte)(215)))));
+            dataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvSeleccionClientes.DefaultCellStyle = dataGridViewCellStyle13;
             this.dgvSeleccionClientes.Location = new System.Drawing.Point(28, 150);
             this.dgvSeleccionClientes.MultiSelect = false;
             this.dgvSeleccionClientes.Name = "dgvSeleccionClientes";
@@ -419,9 +448,9 @@
             // 
             this.colSeleccionCredito.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
             this.colSeleccionCredito.DataPropertyName = "CreditoDisponible";
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle1.Format = "N2";
-            this.colSeleccionCredito.DefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle11.Format = "N2";
+            this.colSeleccionCredito.DefaultCellStyle = dataGridViewCellStyle11;
             this.colSeleccionCredito.FillWeight = 20F;
             this.colSeleccionCredito.HeaderText = "Crédito disponible";
             this.colSeleccionCredito.MinimumWidth = 160;
@@ -432,8 +461,8 @@
             // 
             this.colSeleccionActivo.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
             this.colSeleccionActivo.DataPropertyName = "Activo";
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.colSeleccionActivo.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.colSeleccionActivo.DefaultCellStyle = dataGridViewCellStyle12;
             this.colSeleccionActivo.HeaderText = "Activo";
             this.colSeleccionActivo.MinimumWidth = 70;
             this.colSeleccionActivo.Name = "colSeleccionActivo";
@@ -654,8 +683,8 @@
             // 
             this.colPresupuestoEmision.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
             this.colPresupuestoEmision.DataPropertyName = "FechaEmision";
-            dataGridViewCellStyle4.Format = "dd/MM/yyyy";
-            this.colPresupuestoEmision.DefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle14.Format = "dd/MM/yyyy";
+            this.colPresupuestoEmision.DefaultCellStyle = dataGridViewCellStyle14;
             this.colPresupuestoEmision.HeaderText = "Emisión";
             this.colPresupuestoEmision.Name = "colPresupuestoEmision";
             this.colPresupuestoEmision.ReadOnly = true;
@@ -665,8 +694,8 @@
             // 
             this.colPresupuestoVencimiento.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
             this.colPresupuestoVencimiento.DataPropertyName = "FechaVencimiento";
-            dataGridViewCellStyle5.Format = "dd/MM/yyyy";
-            this.colPresupuestoVencimiento.DefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle15.Format = "dd/MM/yyyy";
+            this.colPresupuestoVencimiento.DefaultCellStyle = dataGridViewCellStyle15;
             this.colPresupuestoVencimiento.HeaderText = "Vencimiento";
             this.colPresupuestoVencimiento.Name = "colPresupuestoVencimiento";
             this.colPresupuestoVencimiento.ReadOnly = true;
@@ -685,9 +714,9 @@
             // 
             this.colPresupuestoTotal.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
             this.colPresupuestoTotal.DataPropertyName = "Total";
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle6.Format = "N2";
-            this.colPresupuestoTotal.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle16.Format = "N2";
+            this.colPresupuestoTotal.DefaultCellStyle = dataGridViewCellStyle16;
             this.colPresupuestoTotal.HeaderText = "Total";
             this.colPresupuestoTotal.Name = "colPresupuestoTotal";
             this.colPresupuestoTotal.ReadOnly = true;
@@ -696,9 +725,9 @@
             // 
             this.colPresupuestoAnticipo.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
             this.colPresupuestoAnticipo.DataPropertyName = "Anticipo";
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle7.Format = "N2";
-            this.colPresupuestoAnticipo.DefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle17.Format = "N2";
+            this.colPresupuestoAnticipo.DefaultCellStyle = dataGridViewCellStyle17;
             this.colPresupuestoAnticipo.HeaderText = "Anticipo";
             this.colPresupuestoAnticipo.Name = "colPresupuestoAnticipo";
             this.colPresupuestoAnticipo.ReadOnly = true;
@@ -1005,27 +1034,27 @@
             // colDetalleCantidad
             // 
             this.colDetalleCantidad.DataPropertyName = "Cantidad";
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle8.Format = "n2";
-            this.colDetalleCantidad.DefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle18.Format = "n2";
+            this.colDetalleCantidad.DefaultCellStyle = dataGridViewCellStyle18;
             this.colDetalleCantidad.HeaderText = "Cantidad";
             this.colDetalleCantidad.Name = "colDetalleCantidad";
             // 
             // colDetallePrecioUnitario
             // 
             this.colDetallePrecioUnitario.DataPropertyName = "Precio unitario";
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle9.Format = "N2";
-            this.colDetallePrecioUnitario.DefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle19.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle19.Format = "N2";
+            this.colDetallePrecioUnitario.DefaultCellStyle = dataGridViewCellStyle19;
             this.colDetallePrecioUnitario.HeaderText = "Precio unitario";
             this.colDetallePrecioUnitario.Name = "colDetallePrecioUnitario";
             // 
             // colDetalleSubtotal
             // 
             this.colDetalleSubtotal.DataPropertyName = "DataGridViewTextBoxColumn";
-            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle10.Format = "N2";
-            this.colDetalleSubtotal.DefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle20.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle20.Format = "N2";
+            this.colDetalleSubtotal.DefaultCellStyle = dataGridViewCellStyle20;
             this.colDetalleSubtotal.HeaderText = "Subtotal";
             this.colDetalleSubtotal.Name = "colDetalleSubtotal";
             // 
@@ -1444,6 +1473,11 @@
             // 
             // tabSena
             // 
+            this.tabSena.Controls.Add(this.btnRegistrarSena);
+            this.tabSena.Controls.Add(btnAnteriorSena);
+            this.tabSena.Controls.Add(this.grpRegistroSena);
+            this.tabSena.Controls.Add(grpResumenSena);
+            this.tabSena.Controls.Add(this.lblAyudaSena);
             this.tabSena.Controls.Add(this.lblPasoSena);
             this.tabSena.Location = new System.Drawing.Point(4, 22);
             this.tabSena.Name = "tabSena";
@@ -1479,6 +1513,322 @@
             this.tabConfirmacion.Text = "Confirmación";
             this.tabConfirmacion.UseVisualStyleBackColor = true;
             // 
+            // btnConfirmarPedido
+            // 
+            this.btnConfirmarPedido.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnConfirmarPedido.BackColor = System.Drawing.Color.SeaGreen;
+            this.btnConfirmarPedido.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnConfirmarPedido.ForeColor = System.Drawing.Color.White;
+            this.btnConfirmarPedido.Location = new System.Drawing.Point(885, 480);
+            this.btnConfirmarPedido.Name = "btnConfirmarPedido";
+            this.btnConfirmarPedido.Size = new System.Drawing.Size(160, 40);
+            this.btnConfirmarPedido.TabIndex = 6;
+            this.btnConfirmarPedido.Text = "Confirmar pedido";
+            this.btnConfirmarPedido.UseVisualStyleBackColor = false;
+            // 
+            // btnAnteriorConfirmacion
+            // 
+            this.btnAnteriorConfirmacion.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnAnteriorConfirmacion.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnAnteriorConfirmacion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAnteriorConfirmacion.Location = new System.Drawing.Point(730, 480);
+            this.btnAnteriorConfirmacion.Name = "btnAnteriorConfirmacion";
+            this.btnAnteriorConfirmacion.Size = new System.Drawing.Size(140, 40);
+            this.btnAnteriorConfirmacion.TabIndex = 5;
+            this.btnAnteriorConfirmacion.Text = "< Anterior";
+            this.btnAnteriorConfirmacion.UseVisualStyleBackColor = false;
+            // 
+            // lblAdvertenciaConfirmacion
+            // 
+            this.lblAdvertenciaConfirmacion.BackColor = System.Drawing.Color.LemonChiffon;
+            this.lblAdvertenciaConfirmacion.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblAdvertenciaConfirmacion.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.lblAdvertenciaConfirmacion.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(70)))), ((int)(((byte)(20)))));
+            this.lblAdvertenciaConfirmacion.Location = new System.Drawing.Point(28, 410);
+            this.lblAdvertenciaConfirmacion.Name = "lblAdvertenciaConfirmacion";
+            this.lblAdvertenciaConfirmacion.Size = new System.Drawing.Size(1040, 45);
+            this.lblAdvertenciaConfirmacion.TabIndex = 4;
+            this.lblAdvertenciaConfirmacion.Text = "Al confirmar, el presupuesto quedará convertido en pedido y no podrá utilizarse n" +
+    "uevamente.";
+            this.lblAdvertenciaConfirmacion.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // grpImportesConfirmacion
+            // 
+            this.grpImportesConfirmacion.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.grpImportesConfirmacion.Controls.Add(this.lblConfirmacionAnticipo);
+            this.grpImportesConfirmacion.Controls.Add(this.lblConfirmacionAnticipoTitulo);
+            this.grpImportesConfirmacion.Controls.Add(this.lblConfirmacionCondicion);
+            this.grpImportesConfirmacion.Controls.Add(this.lblConfirmacionCondicionTitulo);
+            this.grpImportesConfirmacion.Controls.Add(this.lblConfirmacionMoneda);
+            this.grpImportesConfirmacion.Controls.Add(this.lblConfirmacionMonedaTitulo);
+            this.grpImportesConfirmacion.Controls.Add(this.lblConfirmacionTotal);
+            this.grpImportesConfirmacion.Controls.Add(this.lblConfirmacionTotalTitulo);
+            this.grpImportesConfirmacion.Controls.Add(this.lblConfirmacionIVA);
+            this.grpImportesConfirmacion.Controls.Add(this.lblConfirmacionIVATitulo);
+            this.grpImportesConfirmacion.Controls.Add(this.lblConfirmacionSubtotal);
+            this.grpImportesConfirmacion.Controls.Add(this.lblConfirmacionSubtotalTitulo);
+            this.grpImportesConfirmacion.Location = new System.Drawing.Point(28, 240);
+            this.grpImportesConfirmacion.Name = "grpImportesConfirmacion";
+            this.grpImportesConfirmacion.Size = new System.Drawing.Size(1040, 150);
+            this.grpImportesConfirmacion.TabIndex = 3;
+            this.grpImportesConfirmacion.TabStop = false;
+            this.grpImportesConfirmacion.Text = "Importes y condiciones";
+            // 
+            // lblConfirmacionAnticipo
+            // 
+            this.lblConfirmacionAnticipo.AutoSize = true;
+            this.lblConfirmacionAnticipo.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.lblConfirmacionAnticipo.ForeColor = System.Drawing.Color.DarkOrange;
+            this.lblConfirmacionAnticipo.Location = new System.Drawing.Point(150, 110);
+            this.lblConfirmacionAnticipo.Name = "lblConfirmacionAnticipo";
+            this.lblConfirmacionAnticipo.Size = new System.Drawing.Size(28, 15);
+            this.lblConfirmacionAnticipo.TabIndex = 16;
+            this.lblConfirmacionAnticipo.Text = "0,00";
+            // 
+            // lblConfirmacionAnticipoTitulo
+            // 
+            this.lblConfirmacionAnticipoTitulo.AutoSize = true;
+            this.lblConfirmacionAnticipoTitulo.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.lblConfirmacionAnticipoTitulo.Location = new System.Drawing.Point(20, 110);
+            this.lblConfirmacionAnticipoTitulo.Name = "lblConfirmacionAnticipoTitulo";
+            this.lblConfirmacionAnticipoTitulo.Size = new System.Drawing.Size(55, 15);
+            this.lblConfirmacionAnticipoTitulo.TabIndex = 15;
+            this.lblConfirmacionAnticipoTitulo.Text = "Anticipo:";
+            // 
+            // lblConfirmacionCondicion
+            // 
+            this.lblConfirmacionCondicion.AutoSize = true;
+            this.lblConfirmacionCondicion.ForeColor = System.Drawing.Color.DimGray;
+            this.lblConfirmacionCondicion.Location = new System.Drawing.Point(490, 75);
+            this.lblConfirmacionCondicion.Name = "lblConfirmacionCondicion";
+            this.lblConfirmacionCondicion.Size = new System.Drawing.Size(79, 13);
+            this.lblConfirmacionCondicion.TabIndex = 14;
+            this.lblConfirmacionCondicion.Text = "Sin seleccionar";
+            // 
+            // lblConfirmacionCondicionTitulo
+            // 
+            this.lblConfirmacionCondicionTitulo.AutoSize = true;
+            this.lblConfirmacionCondicionTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.lblConfirmacionCondicionTitulo.Location = new System.Drawing.Point(360, 75);
+            this.lblConfirmacionCondicionTitulo.Name = "lblConfirmacionCondicionTitulo";
+            this.lblConfirmacionCondicionTitulo.Size = new System.Drawing.Size(113, 15);
+            this.lblConfirmacionCondicionTitulo.TabIndex = 13;
+            this.lblConfirmacionCondicionTitulo.Text = "Condición de pago:";
+            // 
+            // lblConfirmacionMoneda
+            // 
+            this.lblConfirmacionMoneda.AutoSize = true;
+            this.lblConfirmacionMoneda.ForeColor = System.Drawing.Color.DimGray;
+            this.lblConfirmacionMoneda.Location = new System.Drawing.Point(150, 75);
+            this.lblConfirmacionMoneda.Name = "lblConfirmacionMoneda";
+            this.lblConfirmacionMoneda.Size = new System.Drawing.Size(79, 13);
+            this.lblConfirmacionMoneda.TabIndex = 12;
+            this.lblConfirmacionMoneda.Text = "Sin seleccionar";
+            // 
+            // lblConfirmacionMonedaTitulo
+            // 
+            this.lblConfirmacionMonedaTitulo.AutoSize = true;
+            this.lblConfirmacionMonedaTitulo.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.lblConfirmacionMonedaTitulo.Location = new System.Drawing.Point(20, 75);
+            this.lblConfirmacionMonedaTitulo.Name = "lblConfirmacionMonedaTitulo";
+            this.lblConfirmacionMonedaTitulo.Size = new System.Drawing.Size(54, 15);
+            this.lblConfirmacionMonedaTitulo.TabIndex = 11;
+            this.lblConfirmacionMonedaTitulo.Text = "Moneda:";
+            // 
+            // lblConfirmacionTotal
+            // 
+            this.lblConfirmacionTotal.AutoSize = true;
+            this.lblConfirmacionTotal.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.lblConfirmacionTotal.ForeColor = System.Drawing.Color.Crimson;
+            this.lblConfirmacionTotal.Location = new System.Drawing.Point(710, 35);
+            this.lblConfirmacionTotal.Name = "lblConfirmacionTotal";
+            this.lblConfirmacionTotal.Size = new System.Drawing.Size(36, 20);
+            this.lblConfirmacionTotal.TabIndex = 10;
+            this.lblConfirmacionTotal.Text = "0,00";
+            // 
+            // lblConfirmacionTotalTitulo
+            // 
+            this.lblConfirmacionTotalTitulo.AutoSize = true;
+            this.lblConfirmacionTotalTitulo.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.lblConfirmacionTotalTitulo.Location = new System.Drawing.Point(650, 35);
+            this.lblConfirmacionTotalTitulo.Name = "lblConfirmacionTotalTitulo";
+            this.lblConfirmacionTotalTitulo.Size = new System.Drawing.Size(41, 19);
+            this.lblConfirmacionTotalTitulo.TabIndex = 9;
+            this.lblConfirmacionTotalTitulo.Text = "Total:";
+            // 
+            // lblConfirmacionIVA
+            // 
+            this.lblConfirmacionIVA.AutoSize = true;
+            this.lblConfirmacionIVA.ForeColor = System.Drawing.Color.DimGray;
+            this.lblConfirmacionIVA.Location = new System.Drawing.Point(410, 35);
+            this.lblConfirmacionIVA.Name = "lblConfirmacionIVA";
+            this.lblConfirmacionIVA.Size = new System.Drawing.Size(28, 13);
+            this.lblConfirmacionIVA.TabIndex = 8;
+            this.lblConfirmacionIVA.Text = "0,00";
+            // 
+            // lblConfirmacionIVATitulo
+            // 
+            this.lblConfirmacionIVATitulo.AutoSize = true;
+            this.lblConfirmacionIVATitulo.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.lblConfirmacionIVATitulo.Location = new System.Drawing.Point(360, 35);
+            this.lblConfirmacionIVATitulo.Name = "lblConfirmacionIVATitulo";
+            this.lblConfirmacionIVATitulo.Size = new System.Drawing.Size(27, 15);
+            this.lblConfirmacionIVATitulo.TabIndex = 7;
+            this.lblConfirmacionIVATitulo.Text = "IVA:";
+            // 
+            // lblConfirmacionSubtotal
+            // 
+            this.lblConfirmacionSubtotal.AutoSize = true;
+            this.lblConfirmacionSubtotal.ForeColor = System.Drawing.Color.DimGray;
+            this.lblConfirmacionSubtotal.Location = new System.Drawing.Point(150, 35);
+            this.lblConfirmacionSubtotal.Name = "lblConfirmacionSubtotal";
+            this.lblConfirmacionSubtotal.Size = new System.Drawing.Size(28, 13);
+            this.lblConfirmacionSubtotal.TabIndex = 6;
+            this.lblConfirmacionSubtotal.Text = "0,00";
+            // 
+            // lblConfirmacionSubtotalTitulo
+            // 
+            this.lblConfirmacionSubtotalTitulo.AutoSize = true;
+            this.lblConfirmacionSubtotalTitulo.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.lblConfirmacionSubtotalTitulo.Location = new System.Drawing.Point(20, 35);
+            this.lblConfirmacionSubtotalTitulo.Name = "lblConfirmacionSubtotalTitulo";
+            this.lblConfirmacionSubtotalTitulo.Size = new System.Drawing.Size(54, 15);
+            this.lblConfirmacionSubtotalTitulo.TabIndex = 5;
+            this.lblConfirmacionSubtotalTitulo.Text = "Subtotal:\n";
+            // 
+            // grpResumenConfirmacion
+            // 
+            this.grpResumenConfirmacion.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.grpResumenConfirmacion.Controls.Add(this.lblConfirmacionItems);
+            this.grpResumenConfirmacion.Controls.Add(this.lblConfirmacionItemsTitulo);
+            this.grpResumenConfirmacion.Controls.Add(this.lblConfirmacionCredito);
+            this.grpResumenConfirmacion.Controls.Add(this.lblConfirmacionCreditoTitulo);
+            this.grpResumenConfirmacion.Controls.Add(this.lblConfirmacionPresupuesto);
+            this.grpResumenConfirmacion.Controls.Add(this.lblConfirmacionPresupuestoTitulo);
+            this.grpResumenConfirmacion.Controls.Add(this.lblConfirmacionCUIT);
+            this.grpResumenConfirmacion.Controls.Add(this.lblConfirmacionCUITTitulo);
+            this.grpResumenConfirmacion.Controls.Add(this.lblConfirmacionCliente);
+            this.grpResumenConfirmacion.Controls.Add(this.lblConfirmacionClienteTitulo);
+            this.grpResumenConfirmacion.Location = new System.Drawing.Point(28, 90);
+            this.grpResumenConfirmacion.Name = "grpResumenConfirmacion";
+            this.grpResumenConfirmacion.Size = new System.Drawing.Size(1040, 130);
+            this.grpResumenConfirmacion.TabIndex = 2;
+            this.grpResumenConfirmacion.TabStop = false;
+            this.grpResumenConfirmacion.Text = "Resumen de la operación";
+            // 
+            // lblConfirmacionItems
+            // 
+            this.lblConfirmacionItems.AutoSize = true;
+            this.lblConfirmacionItems.ForeColor = System.Drawing.Color.DimGray;
+            this.lblConfirmacionItems.Location = new System.Drawing.Point(100, 100);
+            this.lblConfirmacionItems.Name = "lblConfirmacionItems";
+            this.lblConfirmacionItems.Size = new System.Drawing.Size(13, 13);
+            this.lblConfirmacionItems.TabIndex = 13;
+            this.lblConfirmacionItems.Text = "0";
+            // 
+            // lblConfirmacionItemsTitulo
+            // 
+            this.lblConfirmacionItemsTitulo.AutoSize = true;
+            this.lblConfirmacionItemsTitulo.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.lblConfirmacionItemsTitulo.Location = new System.Drawing.Point(20, 100);
+            this.lblConfirmacionItemsTitulo.Name = "lblConfirmacionItemsTitulo";
+            this.lblConfirmacionItemsTitulo.Size = new System.Drawing.Size(39, 15);
+            this.lblConfirmacionItemsTitulo.TabIndex = 12;
+            this.lblConfirmacionItemsTitulo.Text = "Ítems:";
+            // 
+            // lblConfirmacionCredito
+            // 
+            this.lblConfirmacionCredito.AutoSize = true;
+            this.lblConfirmacionCredito.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.lblConfirmacionCredito.ForeColor = System.Drawing.Color.DimGray;
+            this.lblConfirmacionCredito.Location = new System.Drawing.Point(610, 65);
+            this.lblConfirmacionCredito.Name = "lblConfirmacionCredito";
+            this.lblConfirmacionCredito.Size = new System.Drawing.Size(61, 15);
+            this.lblConfirmacionCredito.TabIndex = 11;
+            this.lblConfirmacionCredito.Text = "Sin validar";
+            // 
+            // lblConfirmacionCreditoTitulo
+            // 
+            this.lblConfirmacionCreditoTitulo.AutoSize = true;
+            this.lblConfirmacionCreditoTitulo.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.lblConfirmacionCreditoTitulo.Location = new System.Drawing.Point(550, 65);
+            this.lblConfirmacionCreditoTitulo.Name = "lblConfirmacionCreditoTitulo";
+            this.lblConfirmacionCreditoTitulo.Size = new System.Drawing.Size(49, 15);
+            this.lblConfirmacionCreditoTitulo.TabIndex = 10;
+            this.lblConfirmacionCreditoTitulo.Text = "Crédito:";
+            // 
+            // lblConfirmacionPresupuesto
+            // 
+            this.lblConfirmacionPresupuesto.AutoSize = true;
+            this.lblConfirmacionPresupuesto.Location = new System.Drawing.Point(100, 65);
+            this.lblConfirmacionPresupuesto.Name = "lblConfirmacionPresupuesto";
+            this.lblConfirmacionPresupuesto.Size = new System.Drawing.Size(79, 13);
+            this.lblConfirmacionPresupuesto.TabIndex = 9;
+            this.lblConfirmacionPresupuesto.Text = "Sin seleccionar";
+            // 
+            // lblConfirmacionPresupuestoTitulo
+            // 
+            this.lblConfirmacionPresupuestoTitulo.AutoSize = true;
+            this.lblConfirmacionPresupuestoTitulo.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.lblConfirmacionPresupuestoTitulo.Location = new System.Drawing.Point(20, 65);
+            this.lblConfirmacionPresupuestoTitulo.Name = "lblConfirmacionPresupuestoTitulo";
+            this.lblConfirmacionPresupuestoTitulo.Size = new System.Drawing.Size(75, 15);
+            this.lblConfirmacionPresupuestoTitulo.TabIndex = 8;
+            this.lblConfirmacionPresupuestoTitulo.Text = "Presupuesto:";
+            // 
+            // lblConfirmacionCUIT
+            // 
+            this.lblConfirmacionCUIT.AutoSize = true;
+            this.lblConfirmacionCUIT.ForeColor = System.Drawing.Color.DimGray;
+            this.lblConfirmacionCUIT.Location = new System.Drawing.Point(610, 30);
+            this.lblConfirmacionCUIT.Name = "lblConfirmacionCUIT";
+            this.lblConfirmacionCUIT.Size = new System.Drawing.Size(79, 13);
+            this.lblConfirmacionCUIT.TabIndex = 7;
+            this.lblConfirmacionCUIT.Text = "Sin seleccionar";
+            // 
+            // lblConfirmacionCUITTitulo
+            // 
+            this.lblConfirmacionCUITTitulo.AutoSize = true;
+            this.lblConfirmacionCUITTitulo.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.lblConfirmacionCUITTitulo.Location = new System.Drawing.Point(550, 30);
+            this.lblConfirmacionCUITTitulo.Name = "lblConfirmacionCUITTitulo";
+            this.lblConfirmacionCUITTitulo.Size = new System.Drawing.Size(36, 15);
+            this.lblConfirmacionCUITTitulo.TabIndex = 6;
+            this.lblConfirmacionCUITTitulo.Text = "CUIT:";
+            // 
+            // lblConfirmacionCliente
+            // 
+            this.lblConfirmacionCliente.AutoSize = true;
+            this.lblConfirmacionCliente.ForeColor = System.Drawing.Color.DimGray;
+            this.lblConfirmacionCliente.Location = new System.Drawing.Point(100, 30);
+            this.lblConfirmacionCliente.Name = "lblConfirmacionCliente";
+            this.lblConfirmacionCliente.Size = new System.Drawing.Size(79, 13);
+            this.lblConfirmacionCliente.TabIndex = 5;
+            this.lblConfirmacionCliente.Text = "Sin seleccionar";
+            // 
+            // lblConfirmacionClienteTitulo
+            // 
+            this.lblConfirmacionClienteTitulo.AutoSize = true;
+            this.lblConfirmacionClienteTitulo.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.lblConfirmacionClienteTitulo.Location = new System.Drawing.Point(20, 30);
+            this.lblConfirmacionClienteTitulo.Name = "lblConfirmacionClienteTitulo";
+            this.lblConfirmacionClienteTitulo.Size = new System.Drawing.Size(47, 15);
+            this.lblConfirmacionClienteTitulo.TabIndex = 4;
+            this.lblConfirmacionClienteTitulo.Text = "Cliente:";
+            // 
+            // lblAyudaConfirmacion
+            // 
+            this.lblAyudaConfirmacion.AutoSize = true;
+            this.lblAyudaConfirmacion.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.lblAyudaConfirmacion.ForeColor = System.Drawing.Color.DimGray;
+            this.lblAyudaConfirmacion.Location = new System.Drawing.Point(28, 70);
+            this.lblAyudaConfirmacion.Name = "lblAyudaConfirmacion";
+            this.lblAyudaConfirmacion.Size = new System.Drawing.Size(303, 15);
+            this.lblAyudaConfirmacion.TabIndex = 1;
+            this.lblAyudaConfirmacion.Text = "Revise la información final antes de confirmar el pedido.";
+            // 
             // lblPasoConfirmacion
             // 
             this.lblPasoConfirmacion.AutoSize = true;
@@ -1506,357 +1856,41 @@
             this.tabResultado.Text = "Resultado";
             this.tabResultado.UseVisualStyleBackColor = true;
             // 
-            // lblPasoResultado
+            // btnCerrarResultado
             // 
-            this.lblPasoResultado.AutoSize = true;
-            this.lblPasoResultado.Font = new System.Drawing.Font("Segoe UI", 14F);
-            this.lblPasoResultado.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(55)))), ((int)(((byte)(72)))));
-            this.lblPasoResultado.Location = new System.Drawing.Point(25, 25);
-            this.lblPasoResultado.Name = "lblPasoResultado";
-            this.lblPasoResultado.Size = new System.Drawing.Size(230, 25);
-            this.lblPasoResultado.TabIndex = 0;
-            this.lblPasoResultado.Text = "Resultado de la operación";
+            this.btnCerrarResultado.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnCerrarResultado.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCerrarResultado.Location = new System.Drawing.Point(750, 510);
+            this.btnCerrarResultado.Name = "btnCerrarResultado";
+            this.btnCerrarResultado.Size = new System.Drawing.Size(150, 40);
+            this.btnCerrarResultado.TabIndex = 6;
+            this.btnCerrarResultado.Text = "Cerrar";
+            this.btnCerrarResultado.UseVisualStyleBackColor = false;
             // 
-            // lblAyudaConfirmacion
+            // btnNuevoPedido
             // 
-            this.lblAyudaConfirmacion.AutoSize = true;
-            this.lblAyudaConfirmacion.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.lblAyudaConfirmacion.ForeColor = System.Drawing.Color.DimGray;
-            this.lblAyudaConfirmacion.Location = new System.Drawing.Point(28, 70);
-            this.lblAyudaConfirmacion.Name = "lblAyudaConfirmacion";
-            this.lblAyudaConfirmacion.Size = new System.Drawing.Size(303, 15);
-            this.lblAyudaConfirmacion.TabIndex = 1;
-            this.lblAyudaConfirmacion.Text = "Revise la información final antes de confirmar el pedido.";
+            this.btnNuevoPedido.BackColor = System.Drawing.Color.LightBlue;
+            this.btnNuevoPedido.Enabled = false;
+            this.btnNuevoPedido.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnNuevoPedido.Location = new System.Drawing.Point(580, 510);
+            this.btnNuevoPedido.Name = "btnNuevoPedido";
+            this.btnNuevoPedido.Size = new System.Drawing.Size(150, 40);
+            this.btnNuevoPedido.TabIndex = 5;
+            this.btnNuevoPedido.Text = "Nuevo pedido";
+            this.btnNuevoPedido.UseVisualStyleBackColor = false;
             // 
-            // grpResumenConfirmacion
+            // lblMensajeResultado
             // 
-            this.grpResumenConfirmacion.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.grpResumenConfirmacion.Controls.Add(this.lblConfirmacionItems);
-            this.grpResumenConfirmacion.Controls.Add(this.lblConfirmacionItemsTitulo);
-            this.grpResumenConfirmacion.Controls.Add(this.lblConfirmacionCredito);
-            this.grpResumenConfirmacion.Controls.Add(this.lblConfirmacionCreditoTitulo);
-            this.grpResumenConfirmacion.Controls.Add(this.lblConfirmacionPresupuesto);
-            this.grpResumenConfirmacion.Controls.Add(this.lblConfirmacionPresupuestoTitulo);
-            this.grpResumenConfirmacion.Controls.Add(this.lblConfirmacionCUIT);
-            this.grpResumenConfirmacion.Controls.Add(this.lblConfirmacionCUITTitulo);
-            this.grpResumenConfirmacion.Controls.Add(this.lblConfirmacionCliente);
-            this.grpResumenConfirmacion.Controls.Add(this.lblConfirmacionClienteTitulo);
-            this.grpResumenConfirmacion.Location = new System.Drawing.Point(28, 90);
-            this.grpResumenConfirmacion.Name = "grpResumenConfirmacion";
-            this.grpResumenConfirmacion.Size = new System.Drawing.Size(1040, 130);
-            this.grpResumenConfirmacion.TabIndex = 2;
-            this.grpResumenConfirmacion.TabStop = false;
-            this.grpResumenConfirmacion.Text = "Resumen de la operación";
-            // 
-            // lblConfirmacionClienteTitulo
-            // 
-            this.lblConfirmacionClienteTitulo.AutoSize = true;
-            this.lblConfirmacionClienteTitulo.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.lblConfirmacionClienteTitulo.Location = new System.Drawing.Point(20, 30);
-            this.lblConfirmacionClienteTitulo.Name = "lblConfirmacionClienteTitulo";
-            this.lblConfirmacionClienteTitulo.Size = new System.Drawing.Size(47, 15);
-            this.lblConfirmacionClienteTitulo.TabIndex = 4;
-            this.lblConfirmacionClienteTitulo.Text = "Cliente:";
-            // 
-            // lblConfirmacionCliente
-            // 
-            this.lblConfirmacionCliente.AutoSize = true;
-            this.lblConfirmacionCliente.ForeColor = System.Drawing.Color.DimGray;
-            this.lblConfirmacionCliente.Location = new System.Drawing.Point(100, 30);
-            this.lblConfirmacionCliente.Name = "lblConfirmacionCliente";
-            this.lblConfirmacionCliente.Size = new System.Drawing.Size(79, 13);
-            this.lblConfirmacionCliente.TabIndex = 5;
-            this.lblConfirmacionCliente.Text = "Sin seleccionar";
-            // 
-            // lblConfirmacionCUITTitulo
-            // 
-            this.lblConfirmacionCUITTitulo.AutoSize = true;
-            this.lblConfirmacionCUITTitulo.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.lblConfirmacionCUITTitulo.Location = new System.Drawing.Point(550, 30);
-            this.lblConfirmacionCUITTitulo.Name = "lblConfirmacionCUITTitulo";
-            this.lblConfirmacionCUITTitulo.Size = new System.Drawing.Size(36, 15);
-            this.lblConfirmacionCUITTitulo.TabIndex = 6;
-            this.lblConfirmacionCUITTitulo.Text = "CUIT:";
-            // 
-            // lblConfirmacionCUIT
-            // 
-            this.lblConfirmacionCUIT.AutoSize = true;
-            this.lblConfirmacionCUIT.ForeColor = System.Drawing.Color.DimGray;
-            this.lblConfirmacionCUIT.Location = new System.Drawing.Point(610, 30);
-            this.lblConfirmacionCUIT.Name = "lblConfirmacionCUIT";
-            this.lblConfirmacionCUIT.Size = new System.Drawing.Size(79, 13);
-            this.lblConfirmacionCUIT.TabIndex = 7;
-            this.lblConfirmacionCUIT.Text = "Sin seleccionar";
-            // 
-            // lblConfirmacionPresupuestoTitulo
-            // 
-            this.lblConfirmacionPresupuestoTitulo.AutoSize = true;
-            this.lblConfirmacionPresupuestoTitulo.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.lblConfirmacionPresupuestoTitulo.Location = new System.Drawing.Point(20, 65);
-            this.lblConfirmacionPresupuestoTitulo.Name = "lblConfirmacionPresupuestoTitulo";
-            this.lblConfirmacionPresupuestoTitulo.Size = new System.Drawing.Size(75, 15);
-            this.lblConfirmacionPresupuestoTitulo.TabIndex = 8;
-            this.lblConfirmacionPresupuestoTitulo.Text = "Presupuesto:";
-            // 
-            // lblConfirmacionPresupuesto
-            // 
-            this.lblConfirmacionPresupuesto.AutoSize = true;
-            this.lblConfirmacionPresupuesto.Location = new System.Drawing.Point(100, 65);
-            this.lblConfirmacionPresupuesto.Name = "lblConfirmacionPresupuesto";
-            this.lblConfirmacionPresupuesto.Size = new System.Drawing.Size(79, 13);
-            this.lblConfirmacionPresupuesto.TabIndex = 9;
-            this.lblConfirmacionPresupuesto.Text = "Sin seleccionar";
-            // 
-            // lblConfirmacionCreditoTitulo
-            // 
-            this.lblConfirmacionCreditoTitulo.AutoSize = true;
-            this.lblConfirmacionCreditoTitulo.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.lblConfirmacionCreditoTitulo.Location = new System.Drawing.Point(550, 65);
-            this.lblConfirmacionCreditoTitulo.Name = "lblConfirmacionCreditoTitulo";
-            this.lblConfirmacionCreditoTitulo.Size = new System.Drawing.Size(49, 15);
-            this.lblConfirmacionCreditoTitulo.TabIndex = 10;
-            this.lblConfirmacionCreditoTitulo.Text = "Crédito:";
-            // 
-            // lblConfirmacionCredito
-            // 
-            this.lblConfirmacionCredito.AutoSize = true;
-            this.lblConfirmacionCredito.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.lblConfirmacionCredito.ForeColor = System.Drawing.Color.DimGray;
-            this.lblConfirmacionCredito.Location = new System.Drawing.Point(610, 65);
-            this.lblConfirmacionCredito.Name = "lblConfirmacionCredito";
-            this.lblConfirmacionCredito.Size = new System.Drawing.Size(61, 15);
-            this.lblConfirmacionCredito.TabIndex = 11;
-            this.lblConfirmacionCredito.Text = "Sin validar";
-            // 
-            // lblConfirmacionItemsTitulo
-            // 
-            this.lblConfirmacionItemsTitulo.AutoSize = true;
-            this.lblConfirmacionItemsTitulo.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.lblConfirmacionItemsTitulo.Location = new System.Drawing.Point(20, 100);
-            this.lblConfirmacionItemsTitulo.Name = "lblConfirmacionItemsTitulo";
-            this.lblConfirmacionItemsTitulo.Size = new System.Drawing.Size(39, 15);
-            this.lblConfirmacionItemsTitulo.TabIndex = 12;
-            this.lblConfirmacionItemsTitulo.Text = "Ítems:";
-            // 
-            // lblConfirmacionItems
-            // 
-            this.lblConfirmacionItems.AutoSize = true;
-            this.lblConfirmacionItems.ForeColor = System.Drawing.Color.DimGray;
-            this.lblConfirmacionItems.Location = new System.Drawing.Point(100, 100);
-            this.lblConfirmacionItems.Name = "lblConfirmacionItems";
-            this.lblConfirmacionItems.Size = new System.Drawing.Size(13, 13);
-            this.lblConfirmacionItems.TabIndex = 13;
-            this.lblConfirmacionItems.Text = "0";
-            // 
-            // grpImportesConfirmacion
-            // 
-            this.grpImportesConfirmacion.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.grpImportesConfirmacion.Controls.Add(this.lblConfirmacionAnticipo);
-            this.grpImportesConfirmacion.Controls.Add(this.lblConfirmacionAnticipoTitulo);
-            this.grpImportesConfirmacion.Controls.Add(this.lblConfirmacionCondicion);
-            this.grpImportesConfirmacion.Controls.Add(this.lblConfirmacionCondicionTitulo);
-            this.grpImportesConfirmacion.Controls.Add(this.lblConfirmacionMoneda);
-            this.grpImportesConfirmacion.Controls.Add(this.lblConfirmacionMonedaTitulo);
-            this.grpImportesConfirmacion.Controls.Add(this.lblConfirmacionTotal);
-            this.grpImportesConfirmacion.Controls.Add(this.lblConfirmacionTotalTitulo);
-            this.grpImportesConfirmacion.Controls.Add(this.lblConfirmacionIVA);
-            this.grpImportesConfirmacion.Controls.Add(this.lblConfirmacionIVATitulo);
-            this.grpImportesConfirmacion.Controls.Add(this.lblConfirmacionSubtotal);
-            this.grpImportesConfirmacion.Controls.Add(this.lblConfirmacionSubtotalTitulo);
-            this.grpImportesConfirmacion.Location = new System.Drawing.Point(28, 240);
-            this.grpImportesConfirmacion.Name = "grpImportesConfirmacion";
-            this.grpImportesConfirmacion.Size = new System.Drawing.Size(1040, 150);
-            this.grpImportesConfirmacion.TabIndex = 3;
-            this.grpImportesConfirmacion.TabStop = false;
-            this.grpImportesConfirmacion.Text = "Importes y condiciones";
-            // 
-            // lblConfirmacionSubtotalTitulo
-            // 
-            this.lblConfirmacionSubtotalTitulo.AutoSize = true;
-            this.lblConfirmacionSubtotalTitulo.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.lblConfirmacionSubtotalTitulo.Location = new System.Drawing.Point(20, 35);
-            this.lblConfirmacionSubtotalTitulo.Name = "lblConfirmacionSubtotalTitulo";
-            this.lblConfirmacionSubtotalTitulo.Size = new System.Drawing.Size(54, 15);
-            this.lblConfirmacionSubtotalTitulo.TabIndex = 5;
-            this.lblConfirmacionSubtotalTitulo.Text = "Subtotal:\n";
-            // 
-            // lblConfirmacionSubtotal
-            // 
-            this.lblConfirmacionSubtotal.AutoSize = true;
-            this.lblConfirmacionSubtotal.ForeColor = System.Drawing.Color.DimGray;
-            this.lblConfirmacionSubtotal.Location = new System.Drawing.Point(150, 35);
-            this.lblConfirmacionSubtotal.Name = "lblConfirmacionSubtotal";
-            this.lblConfirmacionSubtotal.Size = new System.Drawing.Size(28, 13);
-            this.lblConfirmacionSubtotal.TabIndex = 6;
-            this.lblConfirmacionSubtotal.Text = "0,00";
-            // 
-            // lblConfirmacionIVATitulo
-            // 
-            this.lblConfirmacionIVATitulo.AutoSize = true;
-            this.lblConfirmacionIVATitulo.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.lblConfirmacionIVATitulo.Location = new System.Drawing.Point(360, 35);
-            this.lblConfirmacionIVATitulo.Name = "lblConfirmacionIVATitulo";
-            this.lblConfirmacionIVATitulo.Size = new System.Drawing.Size(27, 15);
-            this.lblConfirmacionIVATitulo.TabIndex = 7;
-            this.lblConfirmacionIVATitulo.Text = "IVA:";
-            // 
-            // lblConfirmacionIVA
-            // 
-            this.lblConfirmacionIVA.AutoSize = true;
-            this.lblConfirmacionIVA.ForeColor = System.Drawing.Color.DimGray;
-            this.lblConfirmacionIVA.Location = new System.Drawing.Point(410, 35);
-            this.lblConfirmacionIVA.Name = "lblConfirmacionIVA";
-            this.lblConfirmacionIVA.Size = new System.Drawing.Size(28, 13);
-            this.lblConfirmacionIVA.TabIndex = 8;
-            this.lblConfirmacionIVA.Text = "0,00";
-            // 
-            // lblConfirmacionTotalTitulo
-            // 
-            this.lblConfirmacionTotalTitulo.AutoSize = true;
-            this.lblConfirmacionTotalTitulo.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.lblConfirmacionTotalTitulo.Location = new System.Drawing.Point(650, 35);
-            this.lblConfirmacionTotalTitulo.Name = "lblConfirmacionTotalTitulo";
-            this.lblConfirmacionTotalTitulo.Size = new System.Drawing.Size(41, 19);
-            this.lblConfirmacionTotalTitulo.TabIndex = 9;
-            this.lblConfirmacionTotalTitulo.Text = "Total:";
-            // 
-            // lblConfirmacionTotal
-            // 
-            this.lblConfirmacionTotal.AutoSize = true;
-            this.lblConfirmacionTotal.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.lblConfirmacionTotal.ForeColor = System.Drawing.Color.Crimson;
-            this.lblConfirmacionTotal.Location = new System.Drawing.Point(710, 35);
-            this.lblConfirmacionTotal.Name = "lblConfirmacionTotal";
-            this.lblConfirmacionTotal.Size = new System.Drawing.Size(36, 20);
-            this.lblConfirmacionTotal.TabIndex = 10;
-            this.lblConfirmacionTotal.Text = "0,00";
-            // 
-            // lblConfirmacionMonedaTitulo
-            // 
-            this.lblConfirmacionMonedaTitulo.AutoSize = true;
-            this.lblConfirmacionMonedaTitulo.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.lblConfirmacionMonedaTitulo.Location = new System.Drawing.Point(20, 75);
-            this.lblConfirmacionMonedaTitulo.Name = "lblConfirmacionMonedaTitulo";
-            this.lblConfirmacionMonedaTitulo.Size = new System.Drawing.Size(54, 15);
-            this.lblConfirmacionMonedaTitulo.TabIndex = 11;
-            this.lblConfirmacionMonedaTitulo.Text = "Moneda:";
-            // 
-            // lblConfirmacionMoneda
-            // 
-            this.lblConfirmacionMoneda.AutoSize = true;
-            this.lblConfirmacionMoneda.ForeColor = System.Drawing.Color.DimGray;
-            this.lblConfirmacionMoneda.Location = new System.Drawing.Point(150, 75);
-            this.lblConfirmacionMoneda.Name = "lblConfirmacionMoneda";
-            this.lblConfirmacionMoneda.Size = new System.Drawing.Size(79, 13);
-            this.lblConfirmacionMoneda.TabIndex = 12;
-            this.lblConfirmacionMoneda.Text = "Sin seleccionar";
-            // 
-            // lblConfirmacionCondicionTitulo
-            // 
-            this.lblConfirmacionCondicionTitulo.AutoSize = true;
-            this.lblConfirmacionCondicionTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.lblConfirmacionCondicionTitulo.Location = new System.Drawing.Point(360, 75);
-            this.lblConfirmacionCondicionTitulo.Name = "lblConfirmacionCondicionTitulo";
-            this.lblConfirmacionCondicionTitulo.Size = new System.Drawing.Size(113, 15);
-            this.lblConfirmacionCondicionTitulo.TabIndex = 13;
-            this.lblConfirmacionCondicionTitulo.Text = "Condición de pago:";
-            // 
-            // lblConfirmacionCondicion
-            // 
-            this.lblConfirmacionCondicion.AutoSize = true;
-            this.lblConfirmacionCondicion.ForeColor = System.Drawing.Color.DimGray;
-            this.lblConfirmacionCondicion.Location = new System.Drawing.Point(490, 75);
-            this.lblConfirmacionCondicion.Name = "lblConfirmacionCondicion";
-            this.lblConfirmacionCondicion.Size = new System.Drawing.Size(79, 13);
-            this.lblConfirmacionCondicion.TabIndex = 14;
-            this.lblConfirmacionCondicion.Text = "Sin seleccionar";
-            // 
-            // lblConfirmacionAnticipoTitulo
-            // 
-            this.lblConfirmacionAnticipoTitulo.AutoSize = true;
-            this.lblConfirmacionAnticipoTitulo.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.lblConfirmacionAnticipoTitulo.Location = new System.Drawing.Point(20, 110);
-            this.lblConfirmacionAnticipoTitulo.Name = "lblConfirmacionAnticipoTitulo";
-            this.lblConfirmacionAnticipoTitulo.Size = new System.Drawing.Size(55, 15);
-            this.lblConfirmacionAnticipoTitulo.TabIndex = 15;
-            this.lblConfirmacionAnticipoTitulo.Text = "Anticipo:";
-            // 
-            // lblConfirmacionAnticipo
-            // 
-            this.lblConfirmacionAnticipo.AutoSize = true;
-            this.lblConfirmacionAnticipo.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.lblConfirmacionAnticipo.ForeColor = System.Drawing.Color.DarkOrange;
-            this.lblConfirmacionAnticipo.Location = new System.Drawing.Point(150, 110);
-            this.lblConfirmacionAnticipo.Name = "lblConfirmacionAnticipo";
-            this.lblConfirmacionAnticipo.Size = new System.Drawing.Size(28, 15);
-            this.lblConfirmacionAnticipo.TabIndex = 16;
-            this.lblConfirmacionAnticipo.Text = "0,00";
-            // 
-            // lblAdvertenciaConfirmacion
-            // 
-            this.lblAdvertenciaConfirmacion.BackColor = System.Drawing.Color.LemonChiffon;
-            this.lblAdvertenciaConfirmacion.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblAdvertenciaConfirmacion.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.lblAdvertenciaConfirmacion.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(70)))), ((int)(((byte)(20)))));
-            this.lblAdvertenciaConfirmacion.Location = new System.Drawing.Point(28, 410);
-            this.lblAdvertenciaConfirmacion.Name = "lblAdvertenciaConfirmacion";
-            this.lblAdvertenciaConfirmacion.Size = new System.Drawing.Size(1040, 45);
-            this.lblAdvertenciaConfirmacion.TabIndex = 4;
-            this.lblAdvertenciaConfirmacion.Text = "Al confirmar, el presupuesto quedará convertido en pedido y no podrá utilizarse n" +
-    "uevamente.";
-            this.lblAdvertenciaConfirmacion.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // btnAnteriorConfirmacion
-            // 
-            this.btnAnteriorConfirmacion.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnAnteriorConfirmacion.BackColor = System.Drawing.Color.Gainsboro;
-            this.btnAnteriorConfirmacion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAnteriorConfirmacion.Location = new System.Drawing.Point(730, 480);
-            this.btnAnteriorConfirmacion.Name = "btnAnteriorConfirmacion";
-            this.btnAnteriorConfirmacion.Size = new System.Drawing.Size(140, 40);
-            this.btnAnteriorConfirmacion.TabIndex = 5;
-            this.btnAnteriorConfirmacion.Text = "< Anterior";
-            this.btnAnteriorConfirmacion.UseVisualStyleBackColor = false;
-            // 
-            // btnConfirmarPedido
-            // 
-            this.btnConfirmarPedido.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnConfirmarPedido.BackColor = System.Drawing.Color.SeaGreen;
-            this.btnConfirmarPedido.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnConfirmarPedido.ForeColor = System.Drawing.Color.White;
-            this.btnConfirmarPedido.Location = new System.Drawing.Point(885, 480);
-            this.btnConfirmarPedido.Name = "btnConfirmarPedido";
-            this.btnConfirmarPedido.Size = new System.Drawing.Size(160, 40);
-            this.btnConfirmarPedido.TabIndex = 6;
-            this.btnConfirmarPedido.Text = "Confirmar pedido";
-            this.btnConfirmarPedido.UseVisualStyleBackColor = false;
-            // 
-            // lblAyudaResultado
-            // 
-            this.lblAyudaResultado.AutoSize = true;
-            this.lblAyudaResultado.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.lblAyudaResultado.ForeColor = System.Drawing.Color.DimGray;
-            this.lblAyudaResultado.Location = new System.Drawing.Point(28, 60);
-            this.lblAyudaResultado.Name = "lblAyudaResultado";
-            this.lblAyudaResultado.Size = new System.Drawing.Size(308, 15);
-            this.lblAyudaResultado.TabIndex = 1;
-            this.lblAyudaResultado.Text = "Consulte el resultado final de la confirmación del pedido.";
-            // 
-            // lblEstadoResultado
-            // 
-            this.lblEstadoResultado.AutoSize = true;
-            this.lblEstadoResultado.BackColor = System.Drawing.Color.Gainsboro;
-            this.lblEstadoResultado.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblEstadoResultado.Font = new System.Drawing.Font("Segoe UI", 18F);
-            this.lblEstadoResultado.ForeColor = System.Drawing.Color.DimGray;
-            this.lblEstadoResultado.Location = new System.Drawing.Point(120, 105);
-            this.lblEstadoResultado.Name = "lblEstadoResultado";
-            this.lblEstadoResultado.Size = new System.Drawing.Size(273, 34);
-            this.lblEstadoResultado.TabIndex = 2;
-            this.lblEstadoResultado.Text = "OPERACIÓN PENDIENTE";
-            this.lblEstadoResultado.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblMensajeResultado.BackColor = System.Drawing.Color.AliceBlue;
+            this.lblMensajeResultado.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblMensajeResultado.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.lblMensajeResultado.ForeColor = System.Drawing.Color.DimGray;
+            this.lblMensajeResultado.Location = new System.Drawing.Point(120, 430);
+            this.lblMensajeResultado.Name = "lblMensajeResultado";
+            this.lblMensajeResultado.Size = new System.Drawing.Size(800, 55);
+            this.lblMensajeResultado.TabIndex = 4;
+            this.lblMensajeResultado.Text = "El resultado de la operación aparecerá aquí.";
+            this.lblMensajeResultado.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // grpResultadoPedido
             // 
@@ -1879,76 +1913,45 @@
             this.grpResultadoPedido.TabStop = false;
             this.grpResultadoPedido.Text = "Pedido generado";
             // 
-            // lblResultadoNumeroPedidoTitulo
+            // lblResultadoEstado
             // 
-            this.lblResultadoNumeroPedidoTitulo.AutoSize = true;
-            this.lblResultadoNumeroPedidoTitulo.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.lblResultadoNumeroPedidoTitulo.Location = new System.Drawing.Point(30, 35);
-            this.lblResultadoNumeroPedidoTitulo.Name = "lblResultadoNumeroPedidoTitulo";
-            this.lblResultadoNumeroPedidoTitulo.Size = new System.Drawing.Size(127, 19);
-            this.lblResultadoNumeroPedidoTitulo.TabIndex = 5;
-            this.lblResultadoNumeroPedidoTitulo.Text = "Número de pedido:";
+            this.lblResultadoEstado.AutoSize = true;
+            this.lblResultadoEstado.ForeColor = System.Drawing.Color.DimGray;
+            this.lblResultadoEstado.Location = new System.Drawing.Point(510, 75);
+            this.lblResultadoEstado.Name = "lblResultadoEstado";
+            this.lblResultadoEstado.Size = new System.Drawing.Size(55, 13);
+            this.lblResultadoEstado.TabIndex = 16;
+            this.lblResultadoEstado.Text = "Pendiente";
             // 
-            // lblResultadoNumeroPedido
+            // lblResultadoEstadoTitulo
             // 
-            this.lblResultadoNumeroPedido.AutoSize = true;
-            this.lblResultadoNumeroPedido.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.lblResultadoNumeroPedido.ForeColor = System.Drawing.Color.Crimson;
-            this.lblResultadoNumeroPedido.Location = new System.Drawing.Point(180, 35);
-            this.lblResultadoNumeroPedido.Name = "lblResultadoNumeroPedido";
-            this.lblResultadoNumeroPedido.Size = new System.Drawing.Size(84, 20);
-            this.lblResultadoNumeroPedido.TabIndex = 6;
-            this.lblResultadoNumeroPedido.Text = "Sin generar";
+            this.lblResultadoEstadoTitulo.AutoSize = true;
+            this.lblResultadoEstadoTitulo.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.lblResultadoEstadoTitulo.Location = new System.Drawing.Point(450, 75);
+            this.lblResultadoEstadoTitulo.Name = "lblResultadoEstadoTitulo";
+            this.lblResultadoEstadoTitulo.Size = new System.Drawing.Size(45, 15);
+            this.lblResultadoEstadoTitulo.TabIndex = 15;
+            this.lblResultadoEstadoTitulo.Text = "Estado:";
             // 
-            // lblResultadoClienteTitulo
+            // lblResultadoFecha
             // 
-            this.lblResultadoClienteTitulo.AutoSize = true;
-            this.lblResultadoClienteTitulo.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.lblResultadoClienteTitulo.Location = new System.Drawing.Point(30, 75);
-            this.lblResultadoClienteTitulo.Name = "lblResultadoClienteTitulo";
-            this.lblResultadoClienteTitulo.Size = new System.Drawing.Size(47, 15);
-            this.lblResultadoClienteTitulo.TabIndex = 7;
-            this.lblResultadoClienteTitulo.Text = "Cliente:";
+            this.lblResultadoFecha.AutoSize = true;
+            this.lblResultadoFecha.ForeColor = System.Drawing.Color.DimGray;
+            this.lblResultadoFecha.Location = new System.Drawing.Point(510, 35);
+            this.lblResultadoFecha.Name = "lblResultadoFecha";
+            this.lblResultadoFecha.Size = new System.Drawing.Size(61, 13);
+            this.lblResultadoFecha.TabIndex = 14;
+            this.lblResultadoFecha.Text = "Sin generar";
             // 
-            // lblResultadoCliente
+            // lblResultadoFechaTitulo
             // 
-            this.lblResultadoCliente.AutoSize = true;
-            this.lblResultadoCliente.ForeColor = System.Drawing.Color.DimGray;
-            this.lblResultadoCliente.Location = new System.Drawing.Point(180, 75);
-            this.lblResultadoCliente.Name = "lblResultadoCliente";
-            this.lblResultadoCliente.Size = new System.Drawing.Size(79, 13);
-            this.lblResultadoCliente.TabIndex = 8;
-            this.lblResultadoCliente.Text = "Sin seleccionar";
-            // 
-            // lblResultadoPresupuestoTitulo
-            // 
-            this.lblResultadoPresupuestoTitulo.AutoSize = true;
-            this.lblResultadoPresupuestoTitulo.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.lblResultadoPresupuestoTitulo.Location = new System.Drawing.Point(30, 110);
-            this.lblResultadoPresupuestoTitulo.Name = "lblResultadoPresupuestoTitulo";
-            this.lblResultadoPresupuestoTitulo.Size = new System.Drawing.Size(75, 15);
-            this.lblResultadoPresupuestoTitulo.TabIndex = 9;
-            this.lblResultadoPresupuestoTitulo.Text = "Presupuesto:";
-            // 
-            // lblResultadoPresupuesto
-            // 
-            this.lblResultadoPresupuesto.AutoSize = true;
-            this.lblResultadoPresupuesto.ForeColor = System.Drawing.Color.DimGray;
-            this.lblResultadoPresupuesto.Location = new System.Drawing.Point(180, 110);
-            this.lblResultadoPresupuesto.Name = "lblResultadoPresupuesto";
-            this.lblResultadoPresupuesto.Size = new System.Drawing.Size(79, 13);
-            this.lblResultadoPresupuesto.TabIndex = 10;
-            this.lblResultadoPresupuesto.Text = "Sin seleccionar";
-            // 
-            // lblResultadoTotalTitulo
-            // 
-            this.lblResultadoTotalTitulo.AutoSize = true;
-            this.lblResultadoTotalTitulo.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.lblResultadoTotalTitulo.Location = new System.Drawing.Point(30, 145);
-            this.lblResultadoTotalTitulo.Name = "lblResultadoTotalTitulo";
-            this.lblResultadoTotalTitulo.Size = new System.Drawing.Size(36, 15);
-            this.lblResultadoTotalTitulo.TabIndex = 11;
-            this.lblResultadoTotalTitulo.Text = "Total:";
+            this.lblResultadoFechaTitulo.AutoSize = true;
+            this.lblResultadoFechaTitulo.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.lblResultadoFechaTitulo.Location = new System.Drawing.Point(450, 35);
+            this.lblResultadoFechaTitulo.Name = "lblResultadoFechaTitulo";
+            this.lblResultadoFechaTitulo.Size = new System.Drawing.Size(41, 15);
+            this.lblResultadoFechaTitulo.TabIndex = 13;
+            this.lblResultadoFechaTitulo.Text = "Fecha:";
             // 
             // lblResultadoTotal
             // 
@@ -1961,81 +1964,376 @@
             this.lblResultadoTotal.TabIndex = 12;
             this.lblResultadoTotal.Text = "0,00";
             // 
-            // lblResultadoFechaTitulo
+            // lblResultadoTotalTitulo
             // 
-            this.lblResultadoFechaTitulo.AutoSize = true;
-            this.lblResultadoFechaTitulo.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.lblResultadoFechaTitulo.Location = new System.Drawing.Point(450, 35);
-            this.lblResultadoFechaTitulo.Name = "lblResultadoFechaTitulo";
-            this.lblResultadoFechaTitulo.Size = new System.Drawing.Size(41, 15);
-            this.lblResultadoFechaTitulo.TabIndex = 13;
-            this.lblResultadoFechaTitulo.Text = "Fecha:";
+            this.lblResultadoTotalTitulo.AutoSize = true;
+            this.lblResultadoTotalTitulo.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.lblResultadoTotalTitulo.Location = new System.Drawing.Point(30, 145);
+            this.lblResultadoTotalTitulo.Name = "lblResultadoTotalTitulo";
+            this.lblResultadoTotalTitulo.Size = new System.Drawing.Size(36, 15);
+            this.lblResultadoTotalTitulo.TabIndex = 11;
+            this.lblResultadoTotalTitulo.Text = "Total:";
             // 
-            // lblResultadoFecha
+            // lblResultadoPresupuesto
             // 
-            this.lblResultadoFecha.AutoSize = true;
-            this.lblResultadoFecha.ForeColor = System.Drawing.Color.DimGray;
-            this.lblResultadoFecha.Location = new System.Drawing.Point(510, 35);
-            this.lblResultadoFecha.Name = "lblResultadoFecha";
-            this.lblResultadoFecha.Size = new System.Drawing.Size(61, 13);
-            this.lblResultadoFecha.TabIndex = 14;
-            this.lblResultadoFecha.Text = "Sin generar";
+            this.lblResultadoPresupuesto.AutoSize = true;
+            this.lblResultadoPresupuesto.ForeColor = System.Drawing.Color.DimGray;
+            this.lblResultadoPresupuesto.Location = new System.Drawing.Point(180, 110);
+            this.lblResultadoPresupuesto.Name = "lblResultadoPresupuesto";
+            this.lblResultadoPresupuesto.Size = new System.Drawing.Size(79, 13);
+            this.lblResultadoPresupuesto.TabIndex = 10;
+            this.lblResultadoPresupuesto.Text = "Sin seleccionar";
             // 
-            // lblResultadoEstadoTitulo
+            // lblResultadoPresupuestoTitulo
             // 
-            this.lblResultadoEstadoTitulo.AutoSize = true;
-            this.lblResultadoEstadoTitulo.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.lblResultadoEstadoTitulo.Location = new System.Drawing.Point(450, 75);
-            this.lblResultadoEstadoTitulo.Name = "lblResultadoEstadoTitulo";
-            this.lblResultadoEstadoTitulo.Size = new System.Drawing.Size(45, 15);
-            this.lblResultadoEstadoTitulo.TabIndex = 15;
-            this.lblResultadoEstadoTitulo.Text = "Estado:";
+            this.lblResultadoPresupuestoTitulo.AutoSize = true;
+            this.lblResultadoPresupuestoTitulo.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.lblResultadoPresupuestoTitulo.Location = new System.Drawing.Point(30, 110);
+            this.lblResultadoPresupuestoTitulo.Name = "lblResultadoPresupuestoTitulo";
+            this.lblResultadoPresupuestoTitulo.Size = new System.Drawing.Size(75, 15);
+            this.lblResultadoPresupuestoTitulo.TabIndex = 9;
+            this.lblResultadoPresupuestoTitulo.Text = "Presupuesto:";
             // 
-            // lblResultadoEstado
+            // lblResultadoCliente
             // 
-            this.lblResultadoEstado.AutoSize = true;
-            this.lblResultadoEstado.ForeColor = System.Drawing.Color.DimGray;
-            this.lblResultadoEstado.Location = new System.Drawing.Point(510, 75);
-            this.lblResultadoEstado.Name = "lblResultadoEstado";
-            this.lblResultadoEstado.Size = new System.Drawing.Size(55, 13);
-            this.lblResultadoEstado.TabIndex = 16;
-            this.lblResultadoEstado.Text = "Pendiente";
+            this.lblResultadoCliente.AutoSize = true;
+            this.lblResultadoCliente.ForeColor = System.Drawing.Color.DimGray;
+            this.lblResultadoCliente.Location = new System.Drawing.Point(180, 75);
+            this.lblResultadoCliente.Name = "lblResultadoCliente";
+            this.lblResultadoCliente.Size = new System.Drawing.Size(79, 13);
+            this.lblResultadoCliente.TabIndex = 8;
+            this.lblResultadoCliente.Text = "Sin seleccionar";
             // 
-            // lblMensajeResultado
+            // lblResultadoClienteTitulo
             // 
-            this.lblMensajeResultado.BackColor = System.Drawing.Color.AliceBlue;
-            this.lblMensajeResultado.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblMensajeResultado.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.lblMensajeResultado.ForeColor = System.Drawing.Color.DimGray;
-            this.lblMensajeResultado.Location = new System.Drawing.Point(120, 430);
-            this.lblMensajeResultado.Name = "lblMensajeResultado";
-            this.lblMensajeResultado.Size = new System.Drawing.Size(800, 55);
-            this.lblMensajeResultado.TabIndex = 4;
-            this.lblMensajeResultado.Text = "El resultado de la operación aparecerá aquí.";
-            this.lblMensajeResultado.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblResultadoClienteTitulo.AutoSize = true;
+            this.lblResultadoClienteTitulo.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.lblResultadoClienteTitulo.Location = new System.Drawing.Point(30, 75);
+            this.lblResultadoClienteTitulo.Name = "lblResultadoClienteTitulo";
+            this.lblResultadoClienteTitulo.Size = new System.Drawing.Size(47, 15);
+            this.lblResultadoClienteTitulo.TabIndex = 7;
+            this.lblResultadoClienteTitulo.Text = "Cliente:";
             // 
-            // btnNuevoPedido
+            // lblResultadoNumeroPedido
             // 
-            this.btnNuevoPedido.BackColor = System.Drawing.Color.LightBlue;
-            this.btnNuevoPedido.Enabled = false;
-            this.btnNuevoPedido.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnNuevoPedido.Location = new System.Drawing.Point(580, 510);
-            this.btnNuevoPedido.Name = "btnNuevoPedido";
-            this.btnNuevoPedido.Size = new System.Drawing.Size(150, 40);
-            this.btnNuevoPedido.TabIndex = 5;
-            this.btnNuevoPedido.Text = "Nuevo pedido";
-            this.btnNuevoPedido.UseVisualStyleBackColor = false;
+            this.lblResultadoNumeroPedido.AutoSize = true;
+            this.lblResultadoNumeroPedido.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.lblResultadoNumeroPedido.ForeColor = System.Drawing.Color.Crimson;
+            this.lblResultadoNumeroPedido.Location = new System.Drawing.Point(180, 35);
+            this.lblResultadoNumeroPedido.Name = "lblResultadoNumeroPedido";
+            this.lblResultadoNumeroPedido.Size = new System.Drawing.Size(84, 20);
+            this.lblResultadoNumeroPedido.TabIndex = 6;
+            this.lblResultadoNumeroPedido.Text = "Sin generar";
             // 
-            // btnCerrarResultado
+            // lblResultadoNumeroPedidoTitulo
             // 
-            this.btnCerrarResultado.BackColor = System.Drawing.Color.Gainsboro;
-            this.btnCerrarResultado.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCerrarResultado.Location = new System.Drawing.Point(750, 510);
-            this.btnCerrarResultado.Name = "btnCerrarResultado";
-            this.btnCerrarResultado.Size = new System.Drawing.Size(150, 40);
-            this.btnCerrarResultado.TabIndex = 6;
-            this.btnCerrarResultado.Text = "Cerrar";
-            this.btnCerrarResultado.UseVisualStyleBackColor = false;
+            this.lblResultadoNumeroPedidoTitulo.AutoSize = true;
+            this.lblResultadoNumeroPedidoTitulo.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.lblResultadoNumeroPedidoTitulo.Location = new System.Drawing.Point(30, 35);
+            this.lblResultadoNumeroPedidoTitulo.Name = "lblResultadoNumeroPedidoTitulo";
+            this.lblResultadoNumeroPedidoTitulo.Size = new System.Drawing.Size(127, 19);
+            this.lblResultadoNumeroPedidoTitulo.TabIndex = 5;
+            this.lblResultadoNumeroPedidoTitulo.Text = "Número de pedido:";
+            // 
+            // lblEstadoResultado
+            // 
+            this.lblEstadoResultado.AutoSize = true;
+            this.lblEstadoResultado.BackColor = System.Drawing.Color.Gainsboro;
+            this.lblEstadoResultado.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblEstadoResultado.Font = new System.Drawing.Font("Segoe UI", 18F);
+            this.lblEstadoResultado.ForeColor = System.Drawing.Color.DimGray;
+            this.lblEstadoResultado.Location = new System.Drawing.Point(120, 105);
+            this.lblEstadoResultado.Name = "lblEstadoResultado";
+            this.lblEstadoResultado.Size = new System.Drawing.Size(273, 34);
+            this.lblEstadoResultado.TabIndex = 2;
+            this.lblEstadoResultado.Text = "OPERACIÓN PENDIENTE";
+            this.lblEstadoResultado.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblAyudaResultado
+            // 
+            this.lblAyudaResultado.AutoSize = true;
+            this.lblAyudaResultado.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.lblAyudaResultado.ForeColor = System.Drawing.Color.DimGray;
+            this.lblAyudaResultado.Location = new System.Drawing.Point(28, 60);
+            this.lblAyudaResultado.Name = "lblAyudaResultado";
+            this.lblAyudaResultado.Size = new System.Drawing.Size(308, 15);
+            this.lblAyudaResultado.TabIndex = 1;
+            this.lblAyudaResultado.Text = "Consulte el resultado final de la confirmación del pedido.";
+            // 
+            // lblPasoResultado
+            // 
+            this.lblPasoResultado.AutoSize = true;
+            this.lblPasoResultado.Font = new System.Drawing.Font("Segoe UI", 14F);
+            this.lblPasoResultado.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(55)))), ((int)(((byte)(72)))));
+            this.lblPasoResultado.Location = new System.Drawing.Point(25, 25);
+            this.lblPasoResultado.Name = "lblPasoResultado";
+            this.lblPasoResultado.Size = new System.Drawing.Size(230, 25);
+            this.lblPasoResultado.TabIndex = 0;
+            this.lblPasoResultado.Text = "Resultado de la operación";
+            // 
+            // lblAyudaSena
+            // 
+            this.lblAyudaSena.AutoSize = true;
+            this.lblAyudaSena.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.lblAyudaSena.ForeColor = System.Drawing.Color.DimGray;
+            this.lblAyudaSena.Location = new System.Drawing.Point(28, 60);
+            this.lblAyudaSena.Name = "lblAyudaSena";
+            this.lblAyudaSena.Size = new System.Drawing.Size(318, 15);
+            this.lblAyudaSena.TabIndex = 1;
+            this.lblAyudaSena.Text = "Registre el anticipo requerido antes de confirmar el pedido.";
+            // 
+            // grpResumenSena
+            // 
+            grpResumenSena.Controls.Add(this.lblSenaPorcentaje);
+            grpResumenSena.Controls.Add(this.lblSenaPorcentajeTitulo);
+            grpResumenSena.Controls.Add(this.lblSenaTotal);
+            grpResumenSena.Controls.Add(this.lblSenaTotalTitulo);
+            grpResumenSena.Controls.Add(this.lblSenaPresupuesto);
+            grpResumenSena.Controls.Add(this.lblSenaPresupuestoTitulo);
+            grpResumenSena.Controls.Add(this.lblSenaCliente);
+            grpResumenSena.Controls.Add(this.lblSenaClienteTitulo);
+            grpResumenSena.Location = new System.Drawing.Point(28, 90);
+            grpResumenSena.Name = "grpResumenSena";
+            grpResumenSena.Size = new System.Drawing.Size(1040, 105);
+            grpResumenSena.TabIndex = 2;
+            grpResumenSena.TabStop = false;
+            grpResumenSena.Text = "Operación seleccionada";
+            // 
+            // lblSenaClienteTitulo
+            // 
+            this.lblSenaClienteTitulo.AutoSize = true;
+            this.lblSenaClienteTitulo.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.lblSenaClienteTitulo.Location = new System.Drawing.Point(20, 30);
+            this.lblSenaClienteTitulo.Name = "lblSenaClienteTitulo";
+            this.lblSenaClienteTitulo.Size = new System.Drawing.Size(47, 15);
+            this.lblSenaClienteTitulo.TabIndex = 4;
+            this.lblSenaClienteTitulo.Text = "Cliente:";
+            // 
+            // lblSenaCliente
+            // 
+            this.lblSenaCliente.AutoSize = true;
+            this.lblSenaCliente.ForeColor = System.Drawing.Color.DimGray;
+            this.lblSenaCliente.Location = new System.Drawing.Point(100, 30);
+            this.lblSenaCliente.Name = "lblSenaCliente";
+            this.lblSenaCliente.Size = new System.Drawing.Size(79, 13);
+            this.lblSenaCliente.TabIndex = 5;
+            this.lblSenaCliente.Text = "Sin seleccionar";
+            // 
+            // lblSenaPresupuestoTitulo
+            // 
+            this.lblSenaPresupuestoTitulo.AutoSize = true;
+            this.lblSenaPresupuestoTitulo.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.lblSenaPresupuestoTitulo.Location = new System.Drawing.Point(520, 30);
+            this.lblSenaPresupuestoTitulo.Name = "lblSenaPresupuestoTitulo";
+            this.lblSenaPresupuestoTitulo.Size = new System.Drawing.Size(75, 15);
+            this.lblSenaPresupuestoTitulo.TabIndex = 6;
+            this.lblSenaPresupuestoTitulo.Text = "Presupuesto:";
+            // 
+            // lblSenaPresupuesto
+            // 
+            this.lblSenaPresupuesto.AutoSize = true;
+            this.lblSenaPresupuesto.ForeColor = System.Drawing.Color.DimGray;
+            this.lblSenaPresupuesto.Location = new System.Drawing.Point(620, 30);
+            this.lblSenaPresupuesto.Name = "lblSenaPresupuesto";
+            this.lblSenaPresupuesto.Size = new System.Drawing.Size(79, 13);
+            this.lblSenaPresupuesto.TabIndex = 7;
+            this.lblSenaPresupuesto.Text = "Sin seleccionar";
+            // 
+            // lblSenaTotalTitulo
+            // 
+            this.lblSenaTotalTitulo.AutoSize = true;
+            this.lblSenaTotalTitulo.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.lblSenaTotalTitulo.Location = new System.Drawing.Point(20, 65);
+            this.lblSenaTotalTitulo.Name = "lblSenaTotalTitulo";
+            this.lblSenaTotalTitulo.Size = new System.Drawing.Size(36, 15);
+            this.lblSenaTotalTitulo.TabIndex = 8;
+            this.lblSenaTotalTitulo.Text = "Total:";
+            // 
+            // lblSenaTotal
+            // 
+            this.lblSenaTotal.AutoSize = true;
+            this.lblSenaTotal.ForeColor = System.Drawing.Color.DimGray;
+            this.lblSenaTotal.Location = new System.Drawing.Point(100, 65);
+            this.lblSenaTotal.Name = "lblSenaTotal";
+            this.lblSenaTotal.Size = new System.Drawing.Size(28, 13);
+            this.lblSenaTotal.TabIndex = 9;
+            this.lblSenaTotal.Text = "0,00";
+            // 
+            // lblSenaPorcentajeTitulo
+            // 
+            this.lblSenaPorcentajeTitulo.AutoSize = true;
+            this.lblSenaPorcentajeTitulo.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.lblSenaPorcentajeTitulo.Location = new System.Drawing.Point(520, 65);
+            this.lblSenaPorcentajeTitulo.Name = "lblSenaPorcentajeTitulo";
+            this.lblSenaPorcentajeTitulo.Size = new System.Drawing.Size(109, 15);
+            this.lblSenaPorcentajeTitulo.TabIndex = 10;
+            this.lblSenaPorcentajeTitulo.Text = "Anticipo requerido:";
+            // 
+            // lblSenaPorcentaje
+            // 
+            this.lblSenaPorcentaje.AutoSize = true;
+            this.lblSenaPorcentaje.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.lblSenaPorcentaje.ForeColor = System.Drawing.Color.DarkOrange;
+            this.lblSenaPorcentaje.Location = new System.Drawing.Point(660, 65);
+            this.lblSenaPorcentaje.Name = "lblSenaPorcentaje";
+            this.lblSenaPorcentaje.Size = new System.Drawing.Size(23, 15);
+            this.lblSenaPorcentaje.TabIndex = 11;
+            this.lblSenaPorcentaje.Text = "0%";
+            // 
+            // grpRegistroSena
+            // 
+            this.grpRegistroSena.Controls.Add(this.lblResultadoSena);
+            this.grpRegistroSena.Controls.Add(this.dtpSenaFecha);
+            this.grpRegistroSena.Controls.Add(this.lblSenaFechaTitulo);
+            this.grpRegistroSena.Controls.Add(this.txtSenaComprobante);
+            this.grpRegistroSena.Controls.Add(this.lblSenaComprobanteTitulo);
+            this.grpRegistroSena.Controls.Add(this.cboSenaMedioPago);
+            this.grpRegistroSena.Controls.Add(this.lblSenaMedioPagoTitulo);
+            this.grpRegistroSena.Controls.Add(this.nudSenaImporteRecibido);
+            this.grpRegistroSena.Controls.Add(this.lblSenaImporteRecibidoTitulo);
+            this.grpRegistroSena.Controls.Add(this.lblSenaImporteRequerido);
+            this.grpRegistroSena.Controls.Add(this.lblSenaImporteRequeridoTitulo);
+            this.grpRegistroSena.Location = new System.Drawing.Point(28, 215);
+            this.grpRegistroSena.Name = "grpRegistroSena";
+            this.grpRegistroSena.Size = new System.Drawing.Size(1040, 210);
+            this.grpRegistroSena.TabIndex = 3;
+            this.grpRegistroSena.TabStop = false;
+            this.grpRegistroSena.Text = "Datos del anticipo";
+            // 
+            // lblSenaImporteRequeridoTitulo
+            // 
+            this.lblSenaImporteRequeridoTitulo.AutoSize = true;
+            this.lblSenaImporteRequeridoTitulo.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.lblSenaImporteRequeridoTitulo.Location = new System.Drawing.Point(25, 38);
+            this.lblSenaImporteRequeridoTitulo.Name = "lblSenaImporteRequeridoTitulo";
+            this.lblSenaImporteRequeridoTitulo.Size = new System.Drawing.Size(124, 19);
+            this.lblSenaImporteRequeridoTitulo.TabIndex = 5;
+            this.lblSenaImporteRequeridoTitulo.Text = "Importe requerido:";
+            // 
+            // lblSenaImporteRequerido
+            // 
+            this.lblSenaImporteRequerido.AutoSize = true;
+            this.lblSenaImporteRequerido.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.lblSenaImporteRequerido.ForeColor = System.Drawing.Color.DarkOrange;
+            this.lblSenaImporteRequerido.Location = new System.Drawing.Point(180, 38);
+            this.lblSenaImporteRequerido.Name = "lblSenaImporteRequerido";
+            this.lblSenaImporteRequerido.Size = new System.Drawing.Size(36, 19);
+            this.lblSenaImporteRequerido.TabIndex = 6;
+            this.lblSenaImporteRequerido.Text = "0,00";
+            // 
+            // lblSenaImporteRecibidoTitulo
+            // 
+            this.lblSenaImporteRecibidoTitulo.AutoSize = true;
+            this.lblSenaImporteRecibidoTitulo.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.lblSenaImporteRecibidoTitulo.Location = new System.Drawing.Point(25, 82);
+            this.lblSenaImporteRecibidoTitulo.Name = "lblSenaImporteRecibidoTitulo";
+            this.lblSenaImporteRecibidoTitulo.Size = new System.Drawing.Size(113, 19);
+            this.lblSenaImporteRecibidoTitulo.TabIndex = 7;
+            this.lblSenaImporteRecibidoTitulo.Text = "Importe recibido:";
+            // 
+            // nudSenaImporteRecibido
+            // 
+            this.nudSenaImporteRecibido.DecimalPlaces = 2;
+            this.nudSenaImporteRecibido.Location = new System.Drawing.Point(180, 78);
+            this.nudSenaImporteRecibido.Maximum = new decimal(new int[] {
+            999999999,
+            0,
+            0,
+            0});
+            this.nudSenaImporteRecibido.Name = "nudSenaImporteRecibido";
+            this.nudSenaImporteRecibido.Size = new System.Drawing.Size(250, 20);
+            this.nudSenaImporteRecibido.TabIndex = 8;
+            this.nudSenaImporteRecibido.ThousandsSeparator = true;
+            // 
+            // lblSenaMedioPagoTitulo
+            // 
+            this.lblSenaMedioPagoTitulo.AutoSize = true;
+            this.lblSenaMedioPagoTitulo.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.lblSenaMedioPagoTitulo.Location = new System.Drawing.Point(520, 38);
+            this.lblSenaMedioPagoTitulo.Name = "lblSenaMedioPagoTitulo";
+            this.lblSenaMedioPagoTitulo.Size = new System.Drawing.Size(90, 15);
+            this.lblSenaMedioPagoTitulo.TabIndex = 9;
+            this.lblSenaMedioPagoTitulo.Text = "Medio de pago:";
+            // 
+            // cboSenaMedioPago
+            // 
+            this.cboSenaMedioPago.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboSenaMedioPago.FormattingEnabled = true;
+            this.cboSenaMedioPago.Location = new System.Drawing.Point(650, 34);
+            this.cboSenaMedioPago.Name = "cboSenaMedioPago";
+            this.cboSenaMedioPago.Size = new System.Drawing.Size(280, 21);
+            this.cboSenaMedioPago.TabIndex = 10;
+            // 
+            // lblSenaComprobanteTitulo
+            // 
+            this.lblSenaComprobanteTitulo.AutoSize = true;
+            this.lblSenaComprobanteTitulo.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.lblSenaComprobanteTitulo.Location = new System.Drawing.Point(520, 82);
+            this.lblSenaComprobanteTitulo.Name = "lblSenaComprobanteTitulo";
+            this.lblSenaComprobanteTitulo.Size = new System.Drawing.Size(84, 15);
+            this.lblSenaComprobanteTitulo.TabIndex = 11;
+            this.lblSenaComprobanteTitulo.Text = "Comprobante:";
+            // 
+            // txtSenaComprobante
+            // 
+            this.txtSenaComprobante.Location = new System.Drawing.Point(650, 78);
+            this.txtSenaComprobante.MaxLength = 50;
+            this.txtSenaComprobante.Name = "txtSenaComprobante";
+            this.txtSenaComprobante.Size = new System.Drawing.Size(280, 20);
+            this.txtSenaComprobante.TabIndex = 12;
+            // 
+            // lblSenaFechaTitulo
+            // 
+            this.lblSenaFechaTitulo.AutoSize = true;
+            this.lblSenaFechaTitulo.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.lblSenaFechaTitulo.Location = new System.Drawing.Point(25, 128);
+            this.lblSenaFechaTitulo.Name = "lblSenaFechaTitulo";
+            this.lblSenaFechaTitulo.Size = new System.Drawing.Size(87, 15);
+            this.lblSenaFechaTitulo.TabIndex = 14;
+            this.lblSenaFechaTitulo.Text = "Fecha de pago:";
+            // 
+            // dtpSenaFecha
+            // 
+            this.dtpSenaFecha.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpSenaFecha.Location = new System.Drawing.Point(180, 124);
+            this.dtpSenaFecha.Name = "dtpSenaFecha";
+            this.dtpSenaFecha.Size = new System.Drawing.Size(250, 20);
+            this.dtpSenaFecha.TabIndex = 15;
+            // 
+            // lblResultadoSena
+            // 
+            this.lblResultadoSena.BackColor = System.Drawing.Color.Gainsboro;
+            this.lblResultadoSena.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblResultadoSena.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.lblResultadoSena.ForeColor = System.Drawing.Color.DimGray;
+            this.lblResultadoSena.Location = new System.Drawing.Point(520, 125);
+            this.lblResultadoSena.Name = "lblResultadoSena";
+            this.lblResultadoSena.Size = new System.Drawing.Size(410, 45);
+            this.lblResultadoSena.TabIndex = 17;
+            this.lblResultadoSena.Text = "Seña pendiente";
+            this.lblResultadoSena.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // btnAnteriorSena
+            // 
+            btnAnteriorSena.BackColor = System.Drawing.Color.Gainsboro;
+            btnAnteriorSena.Cursor = System.Windows.Forms.Cursors.Default;
+            btnAnteriorSena.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            btnAnteriorSena.Location = new System.Drawing.Point(700, 460);
+            btnAnteriorSena.Name = "btnAnteriorSena";
+            btnAnteriorSena.Size = new System.Drawing.Size(140, 40);
+            btnAnteriorSena.TabIndex = 4;
+            btnAnteriorSena.Text = "< Anterior";
+            // 
+            // btnRegistrarSena
+            // 
+            this.btnRegistrarSena.BackColor = System.Drawing.Color.SeaGreen;
+            this.btnRegistrarSena.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRegistrarSena.ForeColor = System.Drawing.Color.White;
+            this.btnRegistrarSena.Location = new System.Drawing.Point(855, 460);
+            this.btnRegistrarSena.Name = "btnRegistrarSena";
+            this.btnRegistrarSena.Size = new System.Drawing.Size(170, 40);
+            this.btnRegistrarSena.TabIndex = 5;
+            this.btnRegistrarSena.Text = "Registrar seña";
             // 
             // FrmConfirmarPedido
             // 
@@ -2080,14 +2378,19 @@
             this.tabSena.PerformLayout();
             this.tabConfirmacion.ResumeLayout(false);
             this.tabConfirmacion.PerformLayout();
-            this.tabResultado.ResumeLayout(false);
-            this.tabResultado.PerformLayout();
-            this.grpResumenConfirmacion.ResumeLayout(false);
-            this.grpResumenConfirmacion.PerformLayout();
             this.grpImportesConfirmacion.ResumeLayout(false);
             this.grpImportesConfirmacion.PerformLayout();
+            this.grpResumenConfirmacion.ResumeLayout(false);
+            this.grpResumenConfirmacion.PerformLayout();
+            this.tabResultado.ResumeLayout(false);
+            this.tabResultado.PerformLayout();
             this.grpResultadoPedido.ResumeLayout(false);
             this.grpResultadoPedido.PerformLayout();
+            grpResumenSena.ResumeLayout(false);
+            grpResumenSena.PerformLayout();
+            this.grpRegistroSena.ResumeLayout(false);
+            this.grpRegistroSena.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nudSenaImporteRecibido)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -2254,5 +2557,27 @@
         private System.Windows.Forms.Label lblResultadoEstado;
         private System.Windows.Forms.Button btnCerrarResultado;
         private System.Windows.Forms.Button btnNuevoPedido;
+        private System.Windows.Forms.Label lblAyudaSena;
+        private System.Windows.Forms.Label lblSenaClienteTitulo;
+        private System.Windows.Forms.Label lblSenaCliente;
+        private System.Windows.Forms.Label lblSenaPresupuestoTitulo;
+        private System.Windows.Forms.Label lblSenaPresupuesto;
+        private System.Windows.Forms.Label lblSenaTotalTitulo;
+        private System.Windows.Forms.Label lblSenaTotal;
+        private System.Windows.Forms.Label lblSenaPorcentajeTitulo;
+        private System.Windows.Forms.Label lblSenaPorcentaje;
+        private System.Windows.Forms.GroupBox grpRegistroSena;
+        private System.Windows.Forms.Label lblSenaImporteRecibidoTitulo;
+        private System.Windows.Forms.Label lblSenaImporteRequerido;
+        private System.Windows.Forms.Label lblSenaImporteRequeridoTitulo;
+        private System.Windows.Forms.ComboBox cboSenaMedioPago;
+        private System.Windows.Forms.Label lblSenaMedioPagoTitulo;
+        private System.Windows.Forms.NumericUpDown nudSenaImporteRecibido;
+        private System.Windows.Forms.DateTimePicker dtpSenaFecha;
+        private System.Windows.Forms.Label lblSenaFechaTitulo;
+        private System.Windows.Forms.TextBox txtSenaComprobante;
+        private System.Windows.Forms.Label lblSenaComprobanteTitulo;
+        private System.Windows.Forms.Label lblResultadoSena;
+        private System.Windows.Forms.Label btnRegistrarSena;
     }
 }
