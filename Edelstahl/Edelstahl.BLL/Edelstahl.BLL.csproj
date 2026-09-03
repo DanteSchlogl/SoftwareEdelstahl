@@ -48,6 +48,7 @@
     <Compile Include="Exceptions\Commercial\ClienteDuplicadoException.cs" />
     <Compile Include="Exceptions\Commercial\CUITInvalidoException.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\ClienteImportService.cs" />
     <Compile Include="Services\ClienteService.cs" />
     <Compile Include="Services\ConfirmarPedidoService.cs" />
     <Compile Include="Services\PresupuestoService.cs" />

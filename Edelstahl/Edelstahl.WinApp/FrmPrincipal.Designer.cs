@@ -33,6 +33,7 @@
             this.mnuClientes = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuPedidos = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuConfirmarPedido = new System.Windows.Forms.ToolStripMenuItem();
+            this.importarClientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -51,7 +52,8 @@
             // 
             this.mnuGestionComercia.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.mnuClientes,
-            this.mnuPedidos});
+            this.mnuPedidos,
+            this.importarClientesToolStripMenuItem});
             this.mnuGestionComercia.Name = "mnuGestionComercia";
             this.mnuGestionComercia.Size = new System.Drawing.Size(116, 20);
             this.mnuGestionComercia.Text = "Gestión Comercial";
@@ -74,9 +76,16 @@
             // mnuConfirmarPedido
             // 
             this.mnuConfirmarPedido.Name = "mnuConfirmarPedido";
-            this.mnuConfirmarPedido.Size = new System.Drawing.Size(180, 22);
+            this.mnuConfirmarPedido.Size = new System.Drawing.Size(168, 22);
             this.mnuConfirmarPedido.Text = "Confirmar pedido";
             this.mnuConfirmarPedido.Click += new System.EventHandler(this.mnuConfirmarPedido_Click);
+            // 
+            // importarClientesToolStripMenuItem
+            // 
+            this.importarClientesToolStripMenuItem.Name = "importarClientesToolStripMenuItem";
+            this.importarClientesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.importarClientesToolStripMenuItem.Text = "Importar Clientes";
+            this.importarClientesToolStripMenuItem.Click += new System.EventHandler(this.importarClientesToolStripMenuItem_Click);
             // 
             // FrmPrincipal
             // 
@@ -105,6 +114,7 @@
         private System.Windows.Forms.ToolStripMenuItem mnuClientes;
         private System.Windows.Forms.ToolStripMenuItem mnuPedidos;
         private System.Windows.Forms.ToolStripMenuItem mnuConfirmarPedido;
+        private System.Windows.Forms.ToolStripMenuItem importarClientesToolStripMenuItem;
     }
 }
 

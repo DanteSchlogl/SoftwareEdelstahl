@@ -3,8 +3,10 @@ using System.Windows.Forms;
 using Edelstahl.BLL.Exceptions.Base;
 using Edelstahl.BLL.Services;
 using Edelstahl.Domain.Comercial;
+using Edelstahl.Services.Localization;
 
 namespace Edelstahl.WinApp.Forms.Commercial
+
 {
     public partial class FrmClientes : Form
     {

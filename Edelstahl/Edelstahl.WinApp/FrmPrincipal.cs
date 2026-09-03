@@ -1,6 +1,9 @@
-﻿using System;
-using System.Windows.Forms;
+﻿using Edelstahl.Services.Localization;
+using Edelstahl.WinApp.Forms;
 using Edelstahl.WinApp.Forms.Commercial;
+using System;
+using System.Windows.Forms;
+
 
 namespace Edelstahl.WinApp
 {
@@ -11,10 +14,20 @@ namespace Edelstahl.WinApp
             InitializeComponent();
         }
 
-        private void FrmPrincipal_Load(object sender, EventArgs e)
+
+        private void FrmPrincipal_Load(
+    object sender,
+    EventArgs e)
         {
-            // Inicialización del formulario principal.
+            MessageBox.Show(
+                LanguageService.Translate(
+                    "Cliente",
+                    "en-US"));
         }
+        //private void FrmPrincipal_Load(object sender, EventArgs e)
+        //{
+        // Inicialización del formulario principal.
+        //}
 
         private void menuStrip1_ItemClicked(
             object sender,
@@ -64,5 +77,13 @@ namespace Edelstahl.WinApp
 
             formulario.Show();
         }
+
+        private void importarClientesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmImportarClientes formulario = new FrmImportarClientes();
+
+            formulario.ShowDialog();
+        }
+
     }
 }
